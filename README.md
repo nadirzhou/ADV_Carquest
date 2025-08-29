@@ -34,6 +34,7 @@ This project references the following open-source libraries and resources:
 - https://github.com/m5stack/M5Unified.git
 - https://github.com/pikasTech/PikaPython
 - https://github.com/jgromes/RadioLib
+- https://github.com/raysan5/raylib
 - https://github.com/mikalhart/TinyGPSPlus
 - https://github.com/m5stack/M5GFX.git
 - https://github.com/Forairaaaaa/mooncake_log
