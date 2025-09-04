@@ -1,6 +1,6 @@
 # Cardputer ADV User Demo
 
-User demo source code of [Cardputer ADV](https://docs.m5stack.com/en/core/todo).
+User demo source code of [Cardputer ADV](https://docs.m5stack.com/en/products/sku/K132-Adv).
 
 ## Build
 
