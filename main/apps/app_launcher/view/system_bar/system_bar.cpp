@@ -44,7 +44,7 @@ void Launcher::render_system_bar()
     _data.system_state.time = fmt::format("{:02d}:{:02d}", timeinfo.tm_hour, timeinfo.tm_min);
 
     // Bat
-    if ((GetHAL().millis() - _data.bat_update_time_count) > 3000 || _data.bat_update_time_count == 0) {
+    if ((GetHAL().millis() - _data.bat_update_time_count) > 5000 || _data.bat_update_time_count == 0) {
         auto bat_level               = GetHAL().getBatLevel();
         _data.system_state.bat_level = fmt::format("{}", bat_level);
         // mclog::tagInfo("system_bar", "get bat level: {}", bat_level);
