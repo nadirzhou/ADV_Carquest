@@ -28,6 +28,7 @@ extern "C" void app_main(void)
 
     // Install apps
     GetMooncake().installApp(std::make_unique<Launcher>());
+    GetMooncake().installApp(std::make_unique<AppStringIRToolKit>());
     GetMooncake().installApp(std::make_unique<AppWifiScan>());
     GetMooncake().installApp(std::make_unique<AppRecord>());
     GetMooncake().installApp(std::make_unique<AppChat>());
