@@ -36,22 +36,24 @@ public:
      * @return true if decoding successful, false if too many errors to correct.
      */
     static bool decode(const std::vector<uint8_t>& input, std::string& output);
-    
+
     /**
      * @brief Get the current RS mode name for logging/debugging.
-     * 
+     *
      * @return const char* RS mode name
      */
-    static const char* getModeName() {
+    static const char* getModeName()
+    {
         return RS_MODE_NAME;
     }
-    
+
     /**
      * @brief Get the maximum data size for current RS mode.
-     * 
+     *
      * @return size_t Maximum data bytes that can be decoded
      */
-    static size_t getMaxDataSize() {
+    static size_t getMaxDataSize()
+    {
         return RSEncoder::maxPayloadAcrossProfiles();
     }
 };

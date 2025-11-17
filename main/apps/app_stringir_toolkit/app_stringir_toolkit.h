@@ -23,19 +23,19 @@ public:
     void onClose() override;
 
 private:
-    uint32_t _cursor_update_time = 0;
-    uint32_t _sending_start_time = 0;
+    uint32_t _cursor_update_time                                                = 0;
+    uint32_t _sending_start_time                                                = 0;
     enum class ScreenState { Main, Sending, SendComplete, Error } _screen_state = ScreenState::Main;
-    enum class FocusLine { TextInput, Style } _focus_line = FocusLine::TextInput;
-    int _sending_dots = 0;
+    enum class FocusLine { TextInput, Style } _focus_line                       = FocusLine::TextInput;
+    int _sending_dots                                                           = 0;
 
     // Style options
     std::vector<std::string> _style_options = {"Normal", "Fade", "Stream"};
-    int _style_index = 0;
+    int _style_index                        = 0;
 
     // Text input
     std::string _input_text;
-    bool _cursor_state = false;
+    bool _cursor_state     = false;
     int _key_event_slot_id = -1;
 
     // Encoded data for sending
@@ -45,7 +45,7 @@ private:
     uint32_t _error_display_start_time = 0;
 
     static constexpr uint32_t CURSOR_BLINK_PERIOD = 500;
-    static constexpr size_t INPUT_BUFFER_SIZE = 64;
+    static constexpr size_t INPUT_BUFFER_SIZE     = 64;
 
     void render_main_interface();
     void render_text_input_line();

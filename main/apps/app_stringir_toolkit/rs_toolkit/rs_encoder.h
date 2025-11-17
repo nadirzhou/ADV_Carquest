@@ -12,13 +12,13 @@
 // RS Encoding Configuration
 // Using true Reed-Solomon error correction with 50% data loss tolerance
 inline constexpr size_t RS_LENGTH_FIELD_BYTES = 2;
-inline constexpr const char* RS_MODE_NAME = "RS True Correction";
+inline constexpr const char* RS_MODE_NAME     = "RS True Correction";
 
 /**
  * @brief Reed-Solomon encoder for StringIR payload delivery.
  *
- * Provides true Reed-Solomon error correction encoding for sharing text scenes 
- * over IR with StringIR-compatible receivers. Uses adaptive coding with 
+ * Provides true Reed-Solomon error correction encoding for sharing text scenes
+ * over IR with StringIR-compatible receivers. Uses adaptive coding with
  * configurable payload buckets.
  */
 class RSEncoder {
@@ -32,8 +32,14 @@ public:
         uint16_t codec_n;
         uint16_t codec_k;
 
-        size_t maxPayload() const { return static_cast<size_t>(data_bytes) - RS_LENGTH_FIELD_BYTES; }
-        bool usesExtendedParity() const { return codeword_length > codec_n; }
+        size_t maxPayload() const
+        {
+            return static_cast<size_t>(data_bytes) - RS_LENGTH_FIELD_BYTES;
+        }
+        bool usesExtendedParity() const
+        {
+            return codeword_length > codec_n;
+        }
     };
 
     static const Profile& selectProfile(size_t payload_length);
