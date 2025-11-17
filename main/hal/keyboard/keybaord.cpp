@@ -215,8 +215,7 @@ Keyboard::KeyEvent_t Keyboard::convertToKeyEvent(const KeyEventRaw_t& key)
         use_shifted_version = (_modifier_mask & KEY_MOD_LSHIFT) || _capslock_state || _is_capslock_locked;
     } else {
         // For non-letters (numbers, symbols), only use shift
-        // use_shifted_version = (_modifier_mask & KEY_MOD_LSHIFT);
-        use_shifted_version = _capslock_state;
+        use_shifted_version = (_modifier_mask & KEY_MOD_LSHIFT);
     }
 
     // mclog::tagDebug(_tag, "modifier mask: {:08b} {}", _modifier_mask, use_shifted_version);
