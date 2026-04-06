@@ -569,8 +569,8 @@ void Hal::handle_ble_keyboard_event(const Keyboard::KeyEvent_t& keyEvent)
         // Get current modifier state from keyboard
         uint8_t modifierMask = keyboard.getModifierMask();
 
-        // Set modifier byte
-        buffer[0] = modifierMask;
+        // Set modifier byte (physical modifiers + any firmware-injected ones, e.g. Fn+alpha -> LSHIFT)
+        buffer[0] = modifierMask | keyEvent.extraModifiers;
 
         // For modifier keys themselves, don't set keycode
         if (keyEvent.isModifier) {
@@ -641,8 +641,9 @@ void Hal::handle_usb_keyboard_event(const Keyboard::KeyEvent_t& keyEvent)
 
     // Handle key press/release
     if (keyEvent.state) {
+        uint8_t mod = GetHAL().keyboard.getModifierMask() | keyEvent.extraModifiers;
         uint8_t keycode[6] = {keyEvent.keyCode};
-        tusb_hid_device_helper_report(GetHAL().keyboard.getModifierMask(), keycode);
+        tusb_hid_device_helper_report(mod, keycode);
         mclog::tagDebug(_tag, "usb keyboard sent key: {} (code: {})", keyEvent.keyName ? keyEvent.keyName : "special",
                         (int)keyEvent.keyCode);
     } else {

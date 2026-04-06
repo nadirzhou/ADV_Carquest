@@ -17,10 +17,12 @@ public:
     };
 
     struct KeyEvent_t {
-        bool state           = false;
-        bool isModifier      = false;
-        KeScanCode_t keyCode = KEY_NONE;
-        const char* keyName  = "";
+        bool state              = false;
+        bool isModifier         = false;
+        KeScanCode_t keyCode    = KEY_NONE;
+        const char* keyName     = "";
+        uint8_t extraModifiers  = 0;  // HID modifier bits to OR into the report in addition to the
+                                      // physical modifier keys (used when Fn injects LSHIFT for A-Z)
     };
 
     mclog::Signal<const KeyEventRaw_t&> onKeyEventRaw;
