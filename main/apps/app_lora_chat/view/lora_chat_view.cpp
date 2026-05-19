@@ -9,6 +9,11 @@
 
 static const std::string _tag = "LoraChatView";
 
+void LoraChatView::setDeviceId(const std::string& id)
+{
+    _device_id = id;
+}
+
 void LoraChatView::update()
 {
     if (_is_gps_mode) {
@@ -30,20 +35,20 @@ void LoraChatView::render_lora_config_panel()
     std::string buffer;
 
     GetHAL().canvas.fillRect(2, 5, 3, 4, brick_color);
-    buffer = fmt::format("Freq:{:.0f}MHz", CapLoRa868::lora_config::ferq);
+    buffer = fmt::format("P2P {:.0f}MHz", CapLoRa868::lora_config::ferq);
     GetHAL().canvas.drawString(buffer.c_str(), 9, 7);
 
-    GetHAL().canvas.fillRect(81, 5, 3, 4, brick_color);
-    buffer = fmt::format("BW:{:.0f}", CapLoRa868::lora_config::bw);
-    GetHAL().canvas.drawString(buffer.c_str(), 88, 7);
+    GetHAL().canvas.fillRect(84, 5, 3, 4, brick_color);
+    buffer = fmt::format("SF{}", CapLoRa868::lora_config::sf);
+    GetHAL().canvas.drawString(buffer.c_str(), 91, 7);
 
-    GetHAL().canvas.fillRect(132, 5, 3, 4, brick_color);
-    buffer = fmt::format("SF:{}", CapLoRa868::lora_config::sf);
-    GetHAL().canvas.drawString(buffer.c_str(), 139, 7);
+    GetHAL().canvas.fillRect(120, 5, 3, 4, brick_color);
+    buffer = fmt::format("ID:{}", _device_id.empty() ? "------" : _device_id);
+    GetHAL().canvas.drawString(buffer.c_str(), 127, 7);
 
-    GetHAL().canvas.fillRect(170, 5, 3, 4, brick_color);
-    buffer = fmt::format("CR:{}", CapLoRa868::lora_config::cr);
-    GetHAL().canvas.drawString(buffer.c_str(), 177, 7);
+    GetHAL().canvas.fillRect(181, 5, 3, 4, brick_color);
+    buffer = fmt::format("{}dBm", CapLoRa868::lora_config::power);
+    GetHAL().canvas.drawString(buffer.c_str(), 188, 7);
 
     GetHAL().canvas.setTextDatum(textdatum_t::top_left);
     GetHAL().canvas.setFont(FONT_REPL);
@@ -159,9 +164,10 @@ void LoraChatView::send_message()
 
         _is_gps_mode = true;
 
-        // Get device id
-        auto mac   = GetHAL().getDeviceMac();
-        _device_id = fmt::format("{:02X}{:02X}{:02X}", mac[3], mac[4], mac[5]);
+        if (_device_id.empty()) {
+            auto mac   = GetHAL().getDeviceMac();
+            _device_id = fmt::format("{:02X}{:02X}{:02X}", mac[3], mac[4], mac[5]);
+        }
         mclog::tagDebug(_tag, "get device id: {}", _device_id);
 
         // Re render everything

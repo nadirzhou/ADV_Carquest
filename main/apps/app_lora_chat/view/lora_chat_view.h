@@ -8,6 +8,7 @@
 
 class LoraChatView : public ChatView {
 public:
+    void setDeviceId(const std::string& id);
     void update() override;
     inline bool isGpsMode() const
     {

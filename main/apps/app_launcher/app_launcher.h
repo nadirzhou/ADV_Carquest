@@ -39,9 +39,13 @@ private:
         // 1 ~ 5
         uint8_t wifi_state = 5;
         // 1 ~ 4
-        uint8_t bat_state     = 1;
-        std::string bat_level = "100%";
-        std::string time      = "12:34";
+        uint8_t bat_state       = 1;
+        bool bat_charging       = false;
+        bool bat_level_valid    = true;
+        bool bat_voltage_valid  = false;
+        int16_t bat_voltage_mv  = -1;
+        std::string bat_level   = "100";
+        std::string time        = "12:34";
     };
 
     struct Data_t {

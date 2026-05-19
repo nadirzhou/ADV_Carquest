@@ -8,10 +8,6 @@
 #include <apps/utils/theme.h>
 #include <apps/utils/common.h>
 
-#include "assets/bat1.h"
-#include "assets/bat2.h"
-#include "assets/bat3.h"
-#include "assets/bat4.h"
 #include "assets/wifi1.h"
 #include "assets/wifi2.h"
 #include "assets/wifi3.h"
@@ -45,16 +41,21 @@ void Launcher::render_system_bar()
 
     // Bat
     if ((GetHAL().millis() - _data.bat_update_time_count) > 5000 || _data.bat_update_time_count == 0) {
-        auto bat_level               = GetHAL().getBatLevel();
-        _data.system_state.bat_level = fmt::format("{}", bat_level);
-        // mclog::tagInfo("system_bar", "get bat level: {}", bat_level);
-        // printf("b:%d\n", bat_level);
+        auto power                         = GetHAL().getPowerStatus();
+        _data.system_state.bat_level_valid = power.batteryLevelValid;
+        _data.system_state.bat_charging    = power.chargeStateKnown && power.isCharging;
+        _data.system_state.bat_voltage_valid = power.batteryVoltageMv > 0;
+        _data.system_state.bat_voltage_mv    = power.batteryVoltageMv;
+        _data.system_state.bat_level =
+            power.batteryLevelValid ? fmt::format("{}", power.batteryLevel) : std::string("--");
 
-        if (bat_level >= 100) {
+        if (!power.batteryLevelValid) {
+            _data.system_state.bat_state = 4;
+        } else if (power.batteryLevel >= 100) {
             _data.system_state.bat_state = 1;
-        } else if (bat_level >= 75) {
+        } else if (power.batteryLevel >= 75) {
             _data.system_state.bat_state = 2;
-        } else if (bat_level >= 50) {
+        } else if (power.batteryLevel >= 50) {
             _data.system_state.bat_state = 3;
         } else {
             _data.system_state.bat_state = 4;
@@ -96,25 +97,18 @@ void Launcher::render_system_bar()
         GetHAL().canvasSystemBar.pushImage(x, y, 16, 16, image_data_wifi5);
     }
 
-    // Bat icon
-    x = GetHAL().canvasSystemBar.width() - 45;
-    y = 5;
-
-    if (_data.system_state.bat_state == 1) {
-        GetHAL().canvasSystemBar.pushImage(x, y, 32, 16, image_data_bat1);
-    } else if (_data.system_state.bat_state == 2) {
-        GetHAL().canvasSystemBar.pushImage(x, y, 32, 16, image_data_bat2);
-    } else if (_data.system_state.bat_state == 3) {
-        GetHAL().canvasSystemBar.pushImage(x, y, 32, 16, image_data_bat3);
-    } else if (_data.system_state.bat_state == 4) {
-        GetHAL().canvasSystemBar.pushImage(x, y, 32, 16, image_data_bat4);
-    }
-
-    // Bat level
+    // Battery level and voltage. Cardputer-Adv cannot report charge state reliably.
     GetHAL().canvasSystemBar.setFont(&fonts::Font0);
     GetHAL().canvasSystemBar.setTextColor((uint32_t)0x000000);
-    GetHAL().canvasSystemBar.drawCenterString(_data.system_state.bat_level.c_str(), 176,
-                                              GetHAL().canvasSystemBar.height() / 2 - 3);
+    std::string bat_label = _data.system_state.bat_level_valid ? fmt::format("{}%", _data.system_state.bat_level)
+                                                               : std::string("--%");
+    if (_data.system_state.bat_voltage_valid) {
+        bat_label += fmt::format(" {:.2f}V", _data.system_state.bat_voltage_mv / 1000.0f);
+    } else {
+        bat_label += " --V";
+    }
+    GetHAL().canvasSystemBar.drawRightString(bat_label.c_str(), GetHAL().canvasSystemBar.width() - 12,
+                                             GetHAL().canvasSystemBar.height() / 2 - 3);
 
     // Push
     GetHAL().pushCanvasSystemBar();

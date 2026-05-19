@@ -60,10 +60,22 @@ public:
     Keyboard keyboard;
 
     /* ---------------------------------- Power --------------------------------- */
-    inline uint8_t getBatLevel()
+    struct PowerStatus_t {
+        int32_t batteryLevel     = -1;
+        bool batteryLevelValid   = false;
+        bool chargeStateKnown    = false;
+        bool isCharging          = false;
+        int16_t batteryVoltageMv = -1;
+        int16_t vbusVoltageMv    = -1;
+        int32_t batteryCurrentMa = 0;
+        const char* pmicName     = "unknown";
+    };
+
+    inline int32_t getBatLevel()
     {
-        return M5.Power.getBatteryLevel();
+        return getPowerStatus().batteryLevel;
     }
+    PowerStatus_t getPowerStatus();
 
     /* ---------------------------------- WiFi ---------------------------------- */
     using ScanResult_t = std::pair<int, std::string>;
@@ -138,6 +150,7 @@ private:
     std::unique_ptr<CapLoRa868> _cap_lora868;
 
     void display_init();
+    void power_init();
     void i2c_scan();
     void keyboard_init();
     void start_sntp();

@@ -28,6 +28,7 @@ void Hal::init()
     mclog::tagInfo(_tag, "init");
 
     M5.begin();
+    power_init();
     M5.Display.setBrightness(0);
     M5.Speaker.begin();  // Codec takes some time to initialize
 
@@ -61,6 +62,61 @@ std::string Hal::getDeviceMacString()
 {
     auto mac = getDeviceMac();
     return fmt::format("{:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X}", mac[0], mac[1], mac[2], mac[3], mac[4], mac[5]);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                    Power                                   */
+/* -------------------------------------------------------------------------- */
+static const char* power_pmic_name(m5::Power_Class::pmic_t type)
+{
+    switch (type) {
+        case m5::Power_Class::pmic_t::pmic_adc:
+            return "adc";
+        case m5::Power_Class::pmic_t::pmic_axp192:
+            return "axp192";
+        case m5::Power_Class::pmic_t::pmic_ip5306:
+            return "ip5306";
+        case m5::Power_Class::pmic_t::pmic_axp2101:
+            return "axp2101";
+        case m5::Power_Class::pmic_t::pmic_aw32001:
+            return "aw32001";
+        case m5::Power_Class::pmic_t::pmic_unknown:
+        default:
+            return "unknown";
+    }
+}
+
+void Hal::power_init()
+{
+    M5.Power.setBatteryCharge(true);
+    auto status = getPowerStatus();
+    mclog::tagInfo(_tag, "power pmic={} bat={} valid={} chg={} vbus={}mV batt={}mV", status.pmicName,
+                   status.batteryLevel, status.batteryLevelValid, status.isCharging, status.vbusVoltageMv,
+                   status.batteryVoltageMv);
+}
+
+Hal::PowerStatus_t Hal::getPowerStatus()
+{
+    PowerStatus_t status;
+    status.pmicName = power_pmic_name(M5.Power.getType());
+
+    const auto rawLevel = M5.Power.getBatteryLevel();
+    if (rawLevel >= 0 && rawLevel <= 100) {
+        status.batteryLevel      = rawLevel;
+        status.batteryLevelValid = true;
+    }
+
+    const auto chargeState = M5.Power.isCharging();
+    if (chargeState != m5::Power_Class::is_charging_t::charge_unknown) {
+        status.chargeStateKnown = true;
+        status.isCharging       = (chargeState == m5::Power_Class::is_charging_t::is_charging);
+    }
+
+    status.batteryVoltageMv = M5.Power.getBatteryVoltage();
+    status.vbusVoltageMv    = M5.Power.getVBUSVoltage();
+    status.batteryCurrentMa = M5.Power.getBatteryCurrent();
+
+    return status;
 }
 
 /* -------------------------------------------------------------------------- */

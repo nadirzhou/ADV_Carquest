@@ -7,13 +7,18 @@
 #include "../hal_config.h"
 #include "uart/uart_helper.h"
 #include "radio_lib/EspHal.h"
+#include <utility/PI4IOE5V6408_Class.hpp>
 #include <driver/sdspi_host.h>
 #include <mooncake_log.h>
 #include <RadioLib.h>
+#include <algorithm>
+#include <charconv>
 #include <memory>
 #include <mutex>
+#include <sstream>
+#include <vector>
 
-static const std::string _tag = "Cap-LoRa868";
+static const std::string _tag = "Cap-LoRa1262";
 
 bool CapLoRa868::init()
 {
@@ -66,6 +71,7 @@ struct RadioLibData_t {
 static RadioLibData_t _radio_lib;
 static volatile bool _lora_rx_flag = false;
 static volatile bool _lora_tx_flag = false;
+static bool _lora_tx_active        = false;
 
 IRAM_ATTR void _lora_set_rx_flag(void)
 {
@@ -80,6 +86,8 @@ IRAM_ATTR void _lora_set_tx_flag(void)
 bool CapLoRa868::lora_init()
 {
     mclog::tagInfo(_tag, "lora init");
+
+    enable_rf_switch();
 
     // Create hal
     spi_host_device_t spi_host = SDSPI_DEFAULT_HOST;
@@ -122,6 +130,23 @@ HANDLE_ERROR:
     return false;
 }
 
+bool CapLoRa868::enable_rf_switch()
+{
+    mclog::tagInfo(_tag, "enable rf switch");
+
+    m5::PI4IOE5V6408_Class ioe(0x43, 400000, &m5::In_I2C);
+    if (!ioe.begin()) {
+        mclog::tagWarn(_tag, "PI4IOE5V6408 not found, continue without rf switch setup");
+        return false;
+    }
+
+    ioe.setDirection(0, true);
+    ioe.setHighImpedance(0, false);
+    ioe.digitalWrite(0, true);
+    mclog::tagInfo(_tag, "rf switch enabled on PI4IOE P0");
+    return true;
+}
+
 void CapLoRa868::lora_update()
 {
     // mclog::tagDebug(_tag, "{} {}", _lora_rx_flag, _lora_tx_flag);
@@ -140,11 +165,25 @@ void CapLoRa868::lora_update()
             mclog::tagError(_tag, "lora read data failed, code {}", state);
         }
 
-        onLoraMsg.emit(msg);
+        P2PMessage packet;
+        if (state == RADIOLIB_ERR_NONE && decode_p2p_packet(msg, packet)) {
+            packet.rssi = _radio_lib.sx1262->getRSSI();
+            packet.snr  = _radio_lib.sx1262->getSNR();
+            onP2PMsg.emit(packet);
+        } else if (state == RADIOLIB_ERR_NONE) {
+            onLoraMsg.emit(msg);
+        }
+
+        _radio_lib.sx1262->setPacketReceivedAction(_lora_set_rx_flag);
+        state = _radio_lib.sx1262->startReceive();
+        if (state != RADIOLIB_ERR_NONE) {
+            mclog::tagError(_tag, "sx1262 restart receive failed, code {}", state);
+        }
     }
 
     if (_lora_tx_flag) {
         _lora_tx_flag = false;
+        _lora_tx_active = false;
 
         mclog::tagDebug(_tag, "lora send msg success");
         _radio_lib.sx1262->setPacketReceivedAction(_lora_set_rx_flag);
@@ -158,6 +197,11 @@ bool CapLoRa868::loraSendMsg(const std::string& msg)
         return false;
     }
 
+    if (_lora_tx_active) {
+        mclog::tagWarn(_tag, "lora tx busy, drop message");
+        return false;
+    }
+
     mclog::tagDebug(_tag, "lora send msg: {}", msg);
 
     _radio_lib.sx1262->setPacketSentAction(_lora_set_tx_flag);
@@ -166,6 +210,109 @@ bool CapLoRa868::loraSendMsg(const std::string& msg)
         mclog::tagError(_tag, "lora send msg failed, code {}", state);
         return false;
     }
+    _lora_tx_active = true;
+    return true;
+}
+
+bool CapLoRa868::loraSendP2PText(const std::string& src, const std::string& dst, const std::string& text)
+{
+    P2PMessage packet;
+    packet.type    = 'M';
+    packet.src     = src;
+    packet.dst     = dst;
+    packet.id      = _next_msg_id++;
+    packet.flags   = 0;
+    packet.payload = text;
+
+    return loraSendMsg(encode_p2p_packet(packet));
+}
+
+static std::string _hex_encode(const std::string& input)
+{
+    static constexpr char hex[] = "0123456789ABCDEF";
+    std::string output;
+    output.reserve(input.size() * 2);
+    for (uint8_t c : input) {
+        output.push_back(hex[(c >> 4) & 0x0F]);
+        output.push_back(hex[c & 0x0F]);
+    }
+    return output;
+}
+
+static bool _hex_decode(const std::string& input, std::string& output)
+{
+    auto value_of = [](char c) -> int {
+        if (c >= '0' && c <= '9') return c - '0';
+        if (c >= 'a' && c <= 'f') return c - 'a' + 10;
+        if (c >= 'A' && c <= 'F') return c - 'A' + 10;
+        return -1;
+    };
+
+    if (input.size() % 2 != 0) {
+        return false;
+    }
+
+    output.clear();
+    output.reserve(input.size() / 2);
+    for (size_t i = 0; i < input.size(); i += 2) {
+        int hi = value_of(input[i]);
+        int lo = value_of(input[i + 1]);
+        if (hi < 0 || lo < 0) {
+            return false;
+        }
+        output.push_back(static_cast<char>((hi << 4) | lo));
+    }
+    return true;
+}
+
+static std::vector<std::string> _split_fields(const std::string& input, char delim)
+{
+    std::vector<std::string> fields;
+    size_t start = 0;
+    while (true) {
+        size_t end = input.find(delim, start);
+        if (end == std::string::npos) {
+            fields.push_back(input.substr(start));
+            break;
+        }
+        fields.push_back(input.substr(start, end - start));
+        start = end + 1;
+    }
+    return fields;
+}
+
+std::string CapLoRa868::encode_p2p_packet(const P2PMessage& packet)
+{
+    return fmt::format("CP2P1|{}|{}|{}|{:08X}|{:02X}|{}", packet.type, packet.src, packet.dst, packet.id,
+                       packet.flags, _hex_encode(packet.payload));
+}
+
+bool CapLoRa868::decode_p2p_packet(const std::string& raw, P2PMessage& packet)
+{
+    auto fields = _split_fields(raw, '|');
+    if (fields.size() != 7 || fields[0] != "CP2P1" || fields[1].size() != 1) {
+        return false;
+    }
+
+    uint32_t id = 0;
+    uint32_t flags = 0;
+    auto id_result = std::from_chars(fields[4].data(), fields[4].data() + fields[4].size(), id, 16);
+    auto flags_result = std::from_chars(fields[5].data(), fields[5].data() + fields[5].size(), flags, 16);
+    if (id_result.ec != std::errc() || flags_result.ec != std::errc() || flags > 0xFF) {
+        return false;
+    }
+
+    std::string payload;
+    if (!_hex_decode(fields[6], payload)) {
+        return false;
+    }
+
+    packet.type    = fields[1][0];
+    packet.src     = fields[2];
+    packet.dst     = fields[3];
+    packet.id      = id;
+    packet.flags   = static_cast<uint8_t>(flags);
+    packet.payload = payload;
     return true;
 }
 

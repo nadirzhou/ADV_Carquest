@@ -26,8 +26,11 @@ private:
     std::unique_ptr<LoraChatView> _chat_view;
     bool _is_cap_available    = false;
     int _lora_receive_slot_id = -1;
+    int _p2p_receive_slot_id  = -1;
     uint32_t _time_count      = 0;
+    std::string _device_id;
 
+    std::string device_id();
     void send_message(const std::string& message);
     void update_gps_broadcast();
 };
