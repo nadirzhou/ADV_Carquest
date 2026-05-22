@@ -32,6 +32,7 @@ constexpr int kExploreX              = 2;
 constexpr int kExploreTopY           = 2;
 constexpr int kExploreLineH          = 17;
 constexpr int kExploreLogRow         = 4;
+constexpr uint32_t kCampToastMs      = 2000;
 
 enum StatusFlag {
     STATUS_WOUNDED = 1 << 0,
@@ -40,6 +41,12 @@ enum StatusFlag {
     STATUS_INSPIRED = 1 << 3,
     STATUS_GUARDED = 1 << 4,
     STATUS_LUCKY   = 1 << 5,
+};
+
+enum QuestFlag {
+    QUEST_MILE_REWARD  = 1 << 0,
+    QUEST_CACHE_REWARD = 1 << 1,
+    QUEST_HUNT_REWARD  = 1 << 2,
 };
 
 constexpr MonsterTemplate kRoadWraiths[] = {
@@ -471,20 +478,23 @@ int AppSignalQuest::xp_to_next_level() const
 
 int AppSignalQuest::drive_bonus() const
 {
-    return std::clamp(static_cast<int>(_sensor.motionScore * 2.0f), 0, 8);
+    const int relic_bonus = _player.equippedRelic == 3 ? 1 : 0;
+    return std::clamp(static_cast<int>(_sensor.motionScore * 2.0f) + relic_bonus, 0, 9);
 }
 
 int AppSignalQuest::guard_value() const
 {
     const int guarded = (_player.statusFlags & STATUS_GUARDED) ? 2 : 0;
-    return _player.def + _player.armorTier + guarded;
+    const int relic_bonus = _player.equippedRelic == 2 ? 1 : 0;
+    return _player.def + _player.armorTier + guarded + relic_bonus;
 }
 
 int AppSignalQuest::loot_score(int tier)
 {
     const int lucky = (_player.statusFlags & STATUS_LUCKY) ? 10 : 0;
+    const int relic_bonus = _player.equippedRelic == 1 ? 4 : 0;
     _player.statusFlags &= ~STATUS_LUCKY;
-    return tier + _player.luck + lucky + roll(0, 100);
+    return tier + _player.luck + lucky + relic_bonus + roll(0, 100);
 }
 
 
@@ -492,13 +502,7 @@ void AppSignalQuest::handle_key(int key_code, const char* key_name)
 {
     if (_mode == Mode::Camp && (key_code == KEY_UP || key_code == KEY_DOWN || key_code == KEY_LEFT || key_code == KEY_RIGHT ||
                                 key_code == KEY_ENTER)) {
-        if (key_code == KEY_UP || key_code == KEY_LEFT) {
-            _selected_inventory_line = (_selected_inventory_line + 2) % 3;
-        } else if (key_code == KEY_DOWN || key_code == KEY_RIGHT) {
-            _selected_inventory_line = (_selected_inventory_line + 1) % 3;
-        } else {
-            handle_camp_selection();
-        }
+        handle_camp_key(key_code);
     } else if (key_code == KEY_I) {
         use_potion();
     } else if (key_code == KEY_R) {
@@ -686,32 +690,64 @@ void AppSignalQuest::render_camp_screen()
 {
     constexpr int title_y       = 2;
     constexpr int content_y     = title_y + kExploreLineH;
-    constexpr int inventory_y   = title_y + kExploreLineH * 2;
-    constexpr int first_action_y = title_y + kExploreLineH * 3;
+    constexpr int body_y        = title_y + kExploreLineH * 2;
+    const bool show_toast = _camp_page == CampPage::Actions && !_camp_toast.empty() &&
+                            GetHAL().millis() - _camp_toast_ms < kCampToastMs;
+    const bool toast_failure =
+        show_toast &&
+        (_camp_toast.find("No ") == 0 || _camp_toast.find("Need ") == 0 || _camp_toast.find("Rest only") == 0);
 
     GetHAL().canvas.setFont(FONT_REPL);
     GetHAL().canvas.setTextSize(1);
     GetHAL().canvas.setTextColor(TFT_ORANGE);
     GetHAL().canvas.drawString("CarQuest", kExploreX, title_y);
     GetHAL().canvas.setTextColor(TFT_CYAN);
-    GetHAL().canvas.drawRightString("CAMP", 202, title_y);
+    GetHAL().canvas.drawRightString(fmt::format("{}/{}", camp_page_index() + 1, camp_page_count()).c_str(), 202,
+                                    title_y);
 
-    GetHAL().canvas.setTextColor(TFT_WHITE);
-    GetHAL().canvas.drawString(fit_text(fmt::format("L{} HP {}/{} G{}", _player.level, _player.hp,
-                                                    _player.maxHp, _player.gold),
-                                        24)
-                                   .c_str(),
-                               kExploreX, content_y);
-    GetHAL().canvas.drawString(fit_text(fmt::format("W{} Ar{} P{} K{} S{} R{}", _player.weaponTier,
-                                                    _player.armorTier, _player.potions, _player.keys,
-                                                    _player.scrap, _player.relics),
-                                        24)
-                                   .c_str(),
-                               kExploreX, inventory_y);
+    GetHAL().canvas.setTextColor(show_toast ? (toast_failure ? TFT_ORANGE : TFT_GREEN) : TFT_WHITE);
+    GetHAL().canvas.drawString(
+        fit_text(show_toast ? _camp_toast
+                            : fmt::format("{} HP {}/{} G{}", camp_page_title(), _player.hp, _player.maxHp,
+                                          _player.gold),
+                 24)
+            .c_str(),
+        kExploreX, content_y);
 
-    const char* actions[] = {"Rest", "Open chest", "Upgrade gear"};
-    for (int i = 0; i < 3; ++i) {
-        const int row_y = first_action_y + i * kExploreLineH;
+    switch (_camp_page) {
+        case CampPage::Actions:
+            render_camp_actions(body_y);
+            break;
+        case CampPage::Inventory:
+            render_camp_inventory(body_y);
+            break;
+        case CampPage::Merchant:
+            render_camp_merchant(body_y);
+            break;
+        case CampPage::Relics:
+            render_camp_relics(body_y);
+            break;
+        case CampPage::Quests:
+            render_camp_quests(body_y);
+            break;
+        case CampPage::Log:
+            render_camp_event_log(body_y);
+            break;
+    }
+}
+
+void AppSignalQuest::render_camp_actions(int body_y)
+{
+    const int heal = 4 + _player.level;
+    const int upgrade_cost = 2 + _player.weaponTier + (_player.armorTier > _player.weaponTier ? 1 : 0);
+    const std::string actions[] = {
+        fmt::format("Rest +{}hp", heal),
+        fmt::format("Potion x{}", _player.potions),
+        fmt::format("Chest key x{}", _player.keys),
+        fmt::format("Upgrade S{}", upgrade_cost),
+    };
+    for (int i = 0; i < 4; ++i) {
+        const int row_y = body_y + i * kExploreLineH;
         if (i == _selected_inventory_line) {
             GetHAL().canvas.fillRoundRect(1, row_y - 1, 202, 16, 3, (uint32_t)0x334155);
             GetHAL().canvas.setTextColor(TFT_YELLOW);
@@ -719,36 +755,107 @@ void AppSignalQuest::render_camp_screen()
         } else {
             GetHAL().canvas.setTextColor(TFT_WHITE);
         }
-        GetHAL().canvas.drawString(actions[i], 20, row_y);
+        GetHAL().canvas.drawString(fit_text(actions[i], 22).c_str(), 20, row_y);
     }
 }
 
-void AppSignalQuest::render_camp_panel()
+void AppSignalQuest::render_camp_inventory(int body_y)
 {
-    constexpr int x = 122;
-    constexpr int y = 13;
-    constexpr int w = 80;
-    constexpr int h = 94;
-    GetHAL().canvas.fillRect(x, y, w, h, (uint32_t)0x101420);
-    GetHAL().canvas.drawRect(x, y, w, h, TFT_DARKGREY);
-    GetHAL().canvas.setTextColor(TFT_CYAN);
-    GetHAL().canvas.drawString("Camp", x + 4, y + 4);
-    GetHAL().canvas.setTextColor(TFT_WHITE);
-    GetHAL().canvas.drawString(fmt::format("Pot {}", _player.potions).c_str(), x + 4, y + 17);
-    GetHAL().canvas.drawString(fmt::format("Key {}", _player.keys).c_str(), x + 42, y + 17);
-    GetHAL().canvas.drawString(fmt::format("Scr {}", _player.scrap).c_str(), x + 4, y + 29);
-    GetHAL().canvas.drawString(fmt::format("Rel {}", _player.relics).c_str(), x + 42, y + 29);
+    const std::string lines[] = {
+        fmt::format("L{} XP {}/{}", _player.level, _player.xp, xp_to_next_level()),
+        fmt::format("ATK{} DEF{}", _player.atk, guard_value()),
+        fmt::format("Focus{} Luck{}", _player.focus, _player.luck),
+        fmt::format("Weapon{} Armor{}", _player.weaponTier, _player.armorTier),
+        fmt::format("Potion{} Key{}", _player.potions, _player.keys),
+        fmt::format("Scrap{} Relic{}", _player.scrap, _player.relics),
+        fmt::format("Distance {}m", _player.totalDistanceM),
+        fmt::format("Kills{} Chests{}", _player.defeatedMonsters, _player.openedChests),
+    };
+    constexpr int line_count   = sizeof(lines) / sizeof(lines[0]);
+    constexpr int visible_rows = 4;
+    _camp_scroll              = std::clamp(_camp_scroll, 0, std::max(0, line_count - visible_rows));
 
-    const char* actions[] = {"Rest +4hp", "Open chest", "Upgrade W"};
-    for (int i = 0; i < 3; ++i) {
-        const int row_y = y + 45 + i * 13;
+    GetHAL().canvas.setTextColor(TFT_WHITE);
+    for (int i = 0; i < visible_rows; ++i) {
+        GetHAL().canvas.drawString(fit_text(lines[_camp_scroll + i], 24).c_str(), 4, body_y + i * kExploreLineH);
+    }
+}
+
+void AppSignalQuest::render_camp_merchant(int body_y)
+{
+    const std::string actions[] = {
+        fmt::format("Buy potion {}g", 8 + _player.level),
+        fmt::format("Buy key {}g", 20 + _player.level * 2),
+        fmt::format("Repair {}g", 6 + _player.level),
+        "Leave merchant",
+    };
+    for (int i = 0; i < 4; ++i) {
+        const int row_y = body_y + i * kExploreLineH;
         if (i == _selected_inventory_line) {
-            GetHAL().canvas.fillRect(x + 3, row_y - 1, w - 6, 11, (uint32_t)0x334155);
+            GetHAL().canvas.fillRoundRect(1, row_y - 1, 202, 16, 3, (uint32_t)0x334155);
             GetHAL().canvas.setTextColor(TFT_YELLOW);
+            GetHAL().canvas.drawString(">", 4, row_y);
         } else {
-            GetHAL().canvas.setTextColor((uint32_t)0xB3B6DD);
+            GetHAL().canvas.setTextColor(TFT_WHITE);
         }
-        GetHAL().canvas.drawString(actions[i], x + 7, row_y);
+        GetHAL().canvas.drawString(fit_text(actions[i], 22).c_str(), 20, row_y);
+    }
+}
+
+void AppSignalQuest::render_camp_relics(int body_y)
+{
+    const std::string relics[] = {
+        fmt::format("{} Copper Compass", _player.equippedRelic == 1 ? "*" : " "),
+        fmt::format("{} Guardrail Crown", _player.equippedRelic == 2 ? "*" : " "),
+        fmt::format("{} Starwheel", _player.equippedRelic == 3 ? "*" : " "),
+        fmt::format("Fragments {}", _player.relics),
+    };
+    for (int i = 0; i < 4; ++i) {
+        const int row_y = body_y + i * kExploreLineH;
+        if (i < 3 && i == _selected_inventory_line) {
+            GetHAL().canvas.fillRoundRect(1, row_y - 1, 202, 16, 3, (uint32_t)0x334155);
+            GetHAL().canvas.setTextColor(TFT_YELLOW);
+            GetHAL().canvas.drawString(">", 4, row_y);
+        } else {
+            GetHAL().canvas.setTextColor(i == 3 ? TFT_CYAN : TFT_WHITE);
+        }
+        GetHAL().canvas.drawString(fit_text(relics[i], 22).c_str(), i < 3 ? 20 : 4, row_y);
+    }
+}
+
+void AppSignalQuest::render_camp_quests(int body_y)
+{
+    const int miles_progress = std::min(_player.totalDistanceM, 1000);
+    const int cache_progress = std::min(_player.openedChests, 3);
+    const int hunt_progress  = std::min(_player.defeatedMonsters, 5);
+    const std::string quests[] = {
+        fmt::format("{} Road Pilgrim {}/1000m", quest_reward_claimed(0) ? "*" : " ", miles_progress),
+        fmt::format("{} Cache Seeker {}/3", quest_reward_claimed(1) ? "*" : " ", cache_progress),
+        fmt::format("{} Wraith Hunt {}/5", quest_reward_claimed(2) ? "*" : " ", hunt_progress),
+        "Enter: claim ready",
+    };
+    for (int i = 0; i < 4; ++i) {
+        const int row_y = body_y + i * kExploreLineH;
+        if (i < 3 && i == _selected_inventory_line) {
+            GetHAL().canvas.fillRoundRect(1, row_y - 1, 202, 16, 3, (uint32_t)0x334155);
+            GetHAL().canvas.setTextColor(TFT_YELLOW);
+            GetHAL().canvas.drawString(">", 4, row_y);
+        } else {
+            GetHAL().canvas.setTextColor(i == 3 ? TFT_CYAN : TFT_WHITE);
+        }
+        GetHAL().canvas.drawString(fit_text(quests[i], 22).c_str(), i < 3 ? 20 : 4, row_y);
+    }
+}
+
+void AppSignalQuest::render_camp_event_log(int body_y)
+{
+    const int visible_rows = 3;
+    _camp_scroll = std::clamp(_camp_scroll, 0, std::max(0, static_cast<int>(_log.size()) - visible_rows));
+    GetHAL().canvas.setTextColor(TFT_YELLOW);
+    GetHAL().canvas.drawString(fit_text(_last_event, 24).c_str(), 4, body_y);
+    GetHAL().canvas.setTextColor(TFT_WHITE);
+    for (int i = 0; i < visible_rows && _camp_scroll + i < static_cast<int>(_log.size()); ++i) {
+        GetHAL().canvas.drawString(fit_text(_log[_camp_scroll + i], 24).c_str(), 4, body_y + (i + 1) * kExploreLineH);
     }
 }
 
@@ -760,7 +867,8 @@ void AppSignalQuest::render_help_page()
     static const char* help_lines[] = {
         "Drive: auto explore",
         "Stop: camp after 15s",
-        "Fn+arrows: select",
+        "Camp L/R: pages",
+        "Camp U/D: select",
         "Enter: do action",
         "I: potion",
         "R: rest",
@@ -802,15 +910,216 @@ void AppSignalQuest::handle_help_key(int key_code)
     }
 }
 
+void AppSignalQuest::handle_camp_key(int key_code)
+{
+    if (key_code == KEY_LEFT || key_code == KEY_RIGHT) {
+        int page = camp_page_index();
+        page += key_code == KEY_RIGHT ? 1 : -1;
+        page = (page + camp_page_count()) % camp_page_count();
+        _camp_page = static_cast<CampPage>(page);
+        _selected_inventory_line = 0;
+        _camp_scroll = 0;
+        return;
+    }
+
+    if (_camp_page == CampPage::Inventory || _camp_page == CampPage::Log) {
+        if (key_code == KEY_UP) {
+            _camp_scroll = std::max(0, _camp_scroll - 1);
+        } else if (key_code == KEY_DOWN) {
+            _camp_scroll++;
+        }
+        return;
+    }
+
+    const int selectable = camp_selectable_count();
+    if (selectable > 0 && key_code == KEY_UP) {
+        _selected_inventory_line = (_selected_inventory_line + selectable - 1) % selectable;
+    } else if (selectable > 0 && key_code == KEY_DOWN) {
+        _selected_inventory_line = (_selected_inventory_line + 1) % selectable;
+    } else if (key_code == KEY_ENTER) {
+        handle_camp_selection();
+    }
+}
+
 void AppSignalQuest::handle_camp_selection()
 {
-    if (_selected_inventory_line == 0) {
-        rest();
-    } else if (_selected_inventory_line == 1) {
-        open_cached_chest();
-    } else {
-        craft_upgrade();
+    switch (_camp_page) {
+        case CampPage::Actions:
+            if (_selected_inventory_line == 0) {
+                rest();
+            } else if (_selected_inventory_line == 1) {
+                use_potion();
+            } else if (_selected_inventory_line == 2) {
+                open_cached_chest();
+            } else {
+                craft_upgrade();
+            }
+            break;
+        case CampPage::Merchant:
+            if (_selected_inventory_line == 0) {
+                buy_potion();
+            } else if (_selected_inventory_line == 1) {
+                buy_key();
+            } else if (_selected_inventory_line == 2) {
+                merchant_repair();
+            } else {
+                add_log("Merchant packs up.");
+            }
+            break;
+        case CampPage::Relics:
+            equip_relic(_selected_inventory_line + 1);
+            break;
+        case CampPage::Quests:
+            claim_quest_reward(_selected_inventory_line);
+            break;
+        case CampPage::Inventory:
+        case CampPage::Log:
+            break;
     }
+}
+
+int AppSignalQuest::camp_page_index() const
+{
+    return static_cast<int>(_camp_page);
+}
+
+int AppSignalQuest::camp_page_count() const
+{
+    return 6;
+}
+
+int AppSignalQuest::camp_selectable_count() const
+{
+    switch (_camp_page) {
+        case CampPage::Actions:
+        case CampPage::Merchant:
+            return 4;
+        case CampPage::Relics:
+        case CampPage::Quests:
+            return 3;
+        case CampPage::Inventory:
+        case CampPage::Log:
+            return 0;
+    }
+    return 0;
+}
+
+const char* AppSignalQuest::camp_page_title() const
+{
+    switch (_camp_page) {
+        case CampPage::Actions:
+            return "Actions";
+        case CampPage::Inventory:
+            return "Inventory";
+        case CampPage::Merchant:
+            return "Merchant";
+        case CampPage::Relics:
+            return "Relics";
+        case CampPage::Quests:
+            return "Quests";
+        case CampPage::Log:
+            return "Event Log";
+    }
+    return "Camp";
+}
+
+void AppSignalQuest::buy_potion()
+{
+    const int cost = 8 + _player.level;
+    if (_player.gold < cost) {
+        add_log(fmt::format("Need {}g for potion", cost));
+        return;
+    }
+    _player.gold -= cost;
+    _player.potions++;
+    add_log(fmt::format("Bought potion -{}g", cost));
+    save_data();
+}
+
+void AppSignalQuest::buy_key()
+{
+    const int cost = 20 + _player.level * 2;
+    if (_player.gold < cost) {
+        add_log(fmt::format("Need {}g for key", cost));
+        return;
+    }
+    _player.gold -= cost;
+    _player.keys++;
+    add_log(fmt::format("Bought key -{}g", cost));
+    save_data();
+}
+
+void AppSignalQuest::merchant_repair()
+{
+    const int cost = 6 + _player.level;
+    if (_player.gold < cost) {
+        add_log(fmt::format("Need {}g repair", cost));
+        return;
+    }
+    _player.gold -= cost;
+    _player.statusFlags &= ~(STATUS_WOUNDED | STATUS_SHAKEN | STATUS_JAMMED);
+    add_log(fmt::format("Gear repaired -{}g", cost));
+    save_data();
+}
+
+void AppSignalQuest::equip_relic(int relic_id)
+{
+    if (_player.relics <= 0) {
+        add_log("No relic fragments.");
+        return;
+    }
+    _player.equippedRelic = relic_id;
+    if (relic_id == 1) {
+        add_log("Relic: Copper Compass");
+    } else if (relic_id == 2) {
+        add_log("Relic: Guardrail Crown");
+    } else {
+        add_log("Relic: Starwheel");
+    }
+    save_data();
+}
+
+bool AppSignalQuest::quest_reward_claimed(int quest_id) const
+{
+    return (_player.questFlags & (1 << quest_id)) != 0;
+}
+
+void AppSignalQuest::claim_quest_reward(int quest_id)
+{
+    if (quest_reward_claimed(quest_id)) {
+        add_log("Quest already claimed");
+        return;
+    }
+
+    bool ready = false;
+    if (quest_id == 0) {
+        ready = _player.totalDistanceM >= 1000;
+    } else if (quest_id == 1) {
+        ready = _player.openedChests >= 3;
+    } else {
+        ready = _player.defeatedMonsters >= 5;
+    }
+
+    if (!ready) {
+        add_log("Quest not ready");
+        return;
+    }
+
+    _player.questFlags |= (1 << quest_id);
+    if (quest_id == 0) {
+        _player.luck++;
+        _player.gold += 25;
+        add_log("Quest reward: +L +25g");
+    } else if (quest_id == 1) {
+        _player.keys++;
+        _player.relics++;
+        add_log("Quest reward: +key +relic");
+    } else {
+        _player.atk++;
+        _player.scrap += 3;
+        add_log("Quest reward: +A +3scrap");
+    }
+    save_data();
 }
 
 void AppSignalQuest::update_help_state()
@@ -856,6 +1165,8 @@ void AppSignalQuest::load_save_data()
     _player.weaponTier = std::clamp(get_int("cq_weapon", _player.weaponTier), 0, 5);
     _player.armorTier = std::clamp(get_int("cq_armor", _player.armorTier), 0, 5);
     _player.statusFlags = get_int("cq_status", 0);
+    _player.equippedRelic = std::clamp(get_int("cq_relic_eq", _player.equippedRelic), 0, 3);
+    _player.questFlags = get_int("cq_quests", _player.questFlags);
     _player.totalDistanceM = std::max(0, get_int("cq_total_m", _player.totalDistanceM));
     _player.defeatedMonsters = std::max(0, get_int("cq_kills", _player.defeatedMonsters));
     _player.openedChests = std::max(0, get_int("cq_chests", _player.openedChests));
@@ -881,6 +1192,8 @@ void AppSignalQuest::save_data()
     settings.SetInt("cq_weapon", _player.weaponTier);
     settings.SetInt("cq_armor", _player.armorTier);
     settings.SetInt("cq_status", _player.statusFlags);
+    settings.SetInt("cq_relic_eq", _player.equippedRelic);
+    settings.SetInt("cq_quests", _player.questFlags);
     settings.SetInt("cq_total_m", _player.totalDistanceM);
     settings.SetInt("cq_kills", _player.defeatedMonsters);
     settings.SetInt("cq_chests", _player.openedChests);
@@ -900,6 +1213,10 @@ std::string AppSignalQuest::fit_text(const std::string& text, std::size_t max_ch
 void AppSignalQuest::add_log(const std::string& line)
 {
     _log.insert(_log.begin(), line);
+    if (_mode == Mode::Camp) {
+        _camp_toast    = line;
+        _camp_toast_ms = GetHAL().millis();
+    }
     if (_log.size() > kMaxLogLines) {
         _log.pop_back();
     }

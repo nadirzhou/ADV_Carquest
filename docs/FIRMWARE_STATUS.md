@@ -9,7 +9,7 @@ The current firmware is past the initial CarQuest prototype and is now roughly a
 ```text
 Phase 1 complete
 Phase 2 mostly complete
-Phase 3 not yet started in depth
+Phase 3 initial implementation complete
 Phase 4 partially started
 Phase 5 not started
 ```
@@ -43,9 +43,9 @@ Remaining polish:
 
 ## Phase 3: Camp Depth
 
-Status: not yet implemented in depth
+Status: initial implementation complete
 
-Missing:
+Implemented:
 
 - Inventory detail page.
 - Merchant events.
@@ -53,11 +53,24 @@ Missing:
 - Quest log.
 - Longer event review.
 
-Current Camp mode only supports the compact action list:
+Camp mode now has multiple pages:
 
 - Rest
+- Use potion
 - Open chest
 - Upgrade gear
+- Inventory detail page
+- Merchant page with potion/key/repair
+- Relic attunement page
+- Quest reward page
+- Event log page
+
+Remaining polish:
+
+- Better quest variety and named quest chains.
+- More interesting merchant inventory rotation.
+- Relics are currently represented by three simple attunement choices plus fragment count.
+- Event log is still session-local, not a persistent journal.
 
 ## Phase 4: Sensor Fantasy
 
@@ -96,4 +109,3 @@ Camp entry is based on clear stopped detection:
 - stopped for 15 seconds
 
 Motion scoring uses a learned gravity vector, so holding the device at a different angle from boot should not prevent Camp mode.
-

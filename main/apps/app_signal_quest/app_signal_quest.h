@@ -34,6 +34,15 @@ private:
         Camp,
     };
 
+    enum class CampPage {
+        Actions,
+        Inventory,
+        Merchant,
+        Relics,
+        Quests,
+        Log,
+    };
+
     struct Player {
         int level      = 1;
         int hp         = 30;
@@ -54,6 +63,8 @@ private:
         int totalDistanceM = 0;
         int defeatedMonsters = 0;
         int openedChests = 0;
+        int equippedRelic = 0;
+        int questFlags = 0;
     };
 
     struct SensorState {
@@ -93,8 +104,12 @@ private:
     double _session_distance_m      = 0.0;
     uint32_t _rng                   = 0x5EED1234;
     int _selected_inventory_line    = 0;
+    CampPage _camp_page             = CampPage::Actions;
+    int _camp_scroll                = 0;
+    uint32_t _camp_toast_ms         = 0;
     std::vector<std::string> _log;
     std::string _last_event = "Awaiting signal...";
+    std::string _camp_toast;
 
     void update_sensors();
     void update_game();
@@ -102,11 +117,27 @@ private:
     void render_hud();
     void render_log(int y);
     void render_camp_screen();
-    void render_camp_panel();
+    void render_camp_actions(int body_y);
+    void render_camp_inventory(int body_y);
+    void render_camp_merchant(int body_y);
+    void render_camp_relics(int body_y);
+    void render_camp_quests(int body_y);
+    void render_camp_event_log(int body_y);
     void render_help_page();
     void handle_key(int key_code, const char* key_name);
     void handle_help_key(int key_code);
+    void handle_camp_key(int key_code);
     void handle_camp_selection();
+    int camp_page_index() const;
+    int camp_page_count() const;
+    int camp_selectable_count() const;
+    const char* camp_page_title() const;
+    void buy_potion();
+    void buy_key();
+    void merchant_repair();
+    void equip_relic(int relic_id);
+    void claim_quest_reward(int quest_id);
+    bool quest_reward_claimed(int quest_id) const;
     void update_help_state();
     void load_save_data();
     void save_data();

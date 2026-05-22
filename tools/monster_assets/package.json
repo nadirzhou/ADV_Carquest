@@ -1,0 +1,11 @@
+{
+  "private": true,
+  "type": "module",
+  "devDependencies": {
+    "potrace": "^2.1.8",
+    "sharp": "^0.34.5"
+  },
+  "scripts": {
+    "trace": "node dynamic_color_trace.js"
+  }
+}

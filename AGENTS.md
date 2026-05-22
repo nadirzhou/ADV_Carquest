@@ -57,11 +57,17 @@ CarQuest currently includes:
 - NVS save/load for player state
 - LoRa beacon prefix `CQ1`
 
+CarQuest display rule:
+
+- The usable game area should be treated as exactly six text rows.
+- Any screen with more than six rows must use paging or scrolling.
+- Temporary feedback should replace an existing row instead of adding a seventh row.
+
 The roadmap status is:
 
 - Phase 1: complete
 - Phase 2: mostly complete
-- Phase 3: next major focus
+- Phase 3: initial implementation complete
 - Phase 4: early partial work
 - Phase 5: not started
 
@@ -81,4 +87,3 @@ See `docs/CARQUEST_DESIGN.md` and `docs/FIRMWARE_STATUS.md`.
 Keep the repository focused on firmware and curated documentation. Temporary generated asset/vector experiments should not live at the repo root after review. If generated assets become part of firmware, copy only the final headers or source assets into the owning app folder and document the workflow in `docs/`.
 
 Do not revert unrelated user changes. This workspace may contain local firmware experiments that are not yet committed.
-
