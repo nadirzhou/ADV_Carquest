@@ -1,0 +1,30 @@
+{
+  "id": 22,
+  "name": "fearow",
+  "names": {
+    "en": "fearow",
+    "ko": "깨비드릴조",
+    "ja": "オニドリル"
+  },
+  "types": [
+    "normal",
+    "flying"
+  ],
+  "stats": {
+    "hp": 65,
+    "attack": 90,
+    "defense": 65,
+    "special-attack": 61,
+    "special-defense": 61,
+    "speed": 100
+  },
+  "height": 12,
+  "weight": 380,
+  "png": "22.png",
+  "gif": "22.gif",
+  "game": {
+    "catch_rate": 90,
+    "evolve_level": -1,
+    "evolve_to": -1
+  }
+}

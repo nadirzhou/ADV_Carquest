@@ -1,0 +1,29 @@
+{
+  "id": 96,
+  "name": "drowzee",
+  "names": {
+    "en": "drowzee",
+    "ko": "슬리프",
+    "ja": "スリープ"
+  },
+  "types": [
+    "psychic"
+  ],
+  "stats": {
+    "hp": 60,
+    "attack": 48,
+    "defense": 45,
+    "special-attack": 43,
+    "special-defense": 90,
+    "speed": 42
+  },
+  "height": 10,
+  "weight": 324,
+  "png": "96.png",
+  "gif": "96.gif",
+  "game": {
+    "catch_rate": 95,
+    "evolve_level": 26,
+    "evolve_to": 97
+  }
+}

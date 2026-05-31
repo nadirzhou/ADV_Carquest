@@ -1,0 +1,29 @@
+{
+  "id": 4,
+  "name": "charmander",
+  "names": {
+    "en": "charmander",
+    "ko": "파이리",
+    "ja": "ヒトカゲ"
+  },
+  "types": [
+    "fire"
+  ],
+  "stats": {
+    "hp": 39,
+    "attack": 52,
+    "defense": 43,
+    "special-attack": 60,
+    "special-defense": 50,
+    "speed": 65
+  },
+  "height": 6,
+  "weight": 85,
+  "png": "4.png",
+  "gif": "4.gif",
+  "game": {
+    "catch_rate": 45,
+    "evolve_level": 16,
+    "evolve_to": 5
+  }
+}

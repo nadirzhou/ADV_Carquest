@@ -1,0 +1,30 @@
+{
+  "id": 47,
+  "name": "parasect",
+  "names": {
+    "en": "parasect",
+    "ko": "파라섹트",
+    "ja": "パラセクト"
+  },
+  "types": [
+    "bug",
+    "grass"
+  ],
+  "stats": {
+    "hp": 60,
+    "attack": 95,
+    "defense": 80,
+    "special-attack": 60,
+    "special-defense": 80,
+    "speed": 30
+  },
+  "height": 10,
+  "weight": 295,
+  "png": "47.png",
+  "gif": "47.gif",
+  "game": {
+    "catch_rate": 75,
+    "evolve_level": -1,
+    "evolve_to": -1
+  }
+}

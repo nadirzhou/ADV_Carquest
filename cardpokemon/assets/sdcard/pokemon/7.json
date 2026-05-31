@@ -1,0 +1,29 @@
+{
+  "id": 7,
+  "name": "squirtle",
+  "names": {
+    "en": "squirtle",
+    "ko": "꼬부기",
+    "ja": "ゼニガメ"
+  },
+  "types": [
+    "water"
+  ],
+  "stats": {
+    "hp": 44,
+    "attack": 48,
+    "defense": 65,
+    "special-attack": 50,
+    "special-defense": 64,
+    "speed": 43
+  },
+  "height": 5,
+  "weight": 90,
+  "png": "7.png",
+  "gif": "7.gif",
+  "game": {
+    "catch_rate": 45,
+    "evolve_level": 16,
+    "evolve_to": 8
+  }
+}

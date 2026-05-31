@@ -1,0 +1,29 @@
+{
+  "id": 147,
+  "name": "dratini",
+  "names": {
+    "en": "dratini",
+    "ko": "미뇽",
+    "ja": "ミニリュウ"
+  },
+  "types": [
+    "dragon"
+  ],
+  "stats": {
+    "hp": 41,
+    "attack": 64,
+    "defense": 45,
+    "special-attack": 50,
+    "special-defense": 50,
+    "speed": 50
+  },
+  "height": 18,
+  "weight": 33,
+  "png": "147.png",
+  "gif": "147.gif",
+  "game": {
+    "catch_rate": 45,
+    "evolve_level": 30,
+    "evolve_to": 148
+  }
+}

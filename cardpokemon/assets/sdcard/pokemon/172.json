@@ -1,0 +1,29 @@
+{
+  "id": 172,
+  "name": "pichu",
+  "names": {
+    "en": "pichu",
+    "ko": "피츄",
+    "ja": "ピチュー"
+  },
+  "types": [
+    "electric"
+  ],
+  "stats": {
+    "hp": 20,
+    "attack": 40,
+    "defense": 15,
+    "special-attack": 35,
+    "special-defense": 35,
+    "speed": 60
+  },
+  "height": 3,
+  "weight": 20,
+  "png": "172.png",
+  "gif": "172.gif",
+  "game": {
+    "catch_rate": 95,
+    "evolve_level": -1,
+    "evolve_to": 25
+  }
+}

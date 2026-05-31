@@ -1,0 +1,30 @@
+{
+  "id": 103,
+  "name": "exeggutor",
+  "names": {
+    "en": "exeggutor",
+    "ko": "나시",
+    "ja": "ナッシー"
+  },
+  "types": [
+    "grass",
+    "psychic"
+  ],
+  "stats": {
+    "hp": 95,
+    "attack": 95,
+    "defense": 85,
+    "special-attack": 125,
+    "special-defense": 75,
+    "speed": 55
+  },
+  "height": 20,
+  "weight": 1200,
+  "png": "103.png",
+  "gif": "103.gif",
+  "game": {
+    "catch_rate": 45,
+    "evolve_level": -1,
+    "evolve_to": -1
+  }
+}

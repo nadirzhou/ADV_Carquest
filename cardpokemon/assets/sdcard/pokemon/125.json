@@ -1,0 +1,29 @@
+{
+  "id": 125,
+  "name": "electabuzz",
+  "names": {
+    "en": "electabuzz",
+    "ko": "에레브",
+    "ja": "エレブー"
+  },
+  "types": [
+    "electric"
+  ],
+  "stats": {
+    "hp": 65,
+    "attack": 83,
+    "defense": 57,
+    "special-attack": 95,
+    "special-defense": 85,
+    "speed": 105
+  },
+  "height": 11,
+  "weight": 300,
+  "png": "125.png",
+  "gif": "125.gif",
+  "game": {
+    "catch_rate": 45,
+    "evolve_level": -1,
+    "evolve_to": 466
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": 45,
+  "name": "vileplume",
+  "names": {
+    "en": "vileplume",
+    "ko": "라플레시아",
+    "ja": "ラフレシア"
+  },
+  "types": [
+    "grass",
+    "poison"
+  ],
+  "stats": {
+    "hp": 75,
+    "attack": 80,
+    "defense": 85,
+    "special-attack": 110,
+    "special-defense": 90,
+    "speed": 50
+  },
+  "height": 12,
+  "weight": 186,
+  "png": "45.png",
+  "gif": "45.gif",
+  "game": {
+    "catch_rate": 45,
+    "evolve_level": -1,
+    "evolve_to": -1
+  }
+}

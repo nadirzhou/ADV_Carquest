@@ -1,0 +1,29 @@
+{
+  "id": 20,
+  "name": "raticate",
+  "names": {
+    "en": "raticate",
+    "ko": "레트라",
+    "ja": "ラッタ"
+  },
+  "types": [
+    "normal"
+  ],
+  "stats": {
+    "hp": 55,
+    "attack": 81,
+    "defense": 60,
+    "special-attack": 50,
+    "special-defense": 70,
+    "speed": 97
+  },
+  "height": 7,
+  "weight": 185,
+  "png": "20.png",
+  "gif": "20.gif",
+  "game": {
+    "catch_rate": 95,
+    "evolve_level": -1,
+    "evolve_to": -1
+  }
+}

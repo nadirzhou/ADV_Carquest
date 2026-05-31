@@ -1,0 +1,29 @@
+{
+  "id": 5,
+  "name": "charmeleon",
+  "names": {
+    "en": "charmeleon",
+    "ko": "리자드",
+    "ja": "リザード"
+  },
+  "types": [
+    "fire"
+  ],
+  "stats": {
+    "hp": 58,
+    "attack": 64,
+    "defense": 58,
+    "special-attack": 80,
+    "special-defense": 65,
+    "speed": 80
+  },
+  "height": 11,
+  "weight": 190,
+  "png": "5.png",
+  "gif": "5.gif",
+  "game": {
+    "catch_rate": 45,
+    "evolve_level": 36,
+    "evolve_to": 6
+  }
+}

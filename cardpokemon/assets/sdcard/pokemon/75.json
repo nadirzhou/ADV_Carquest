@@ -1,0 +1,30 @@
+{
+  "id": 75,
+  "name": "graveler",
+  "names": {
+    "en": "graveler",
+    "ko": "데구리",
+    "ja": "ゴローン"
+  },
+  "types": [
+    "rock",
+    "ground"
+  ],
+  "stats": {
+    "hp": 55,
+    "attack": 95,
+    "defense": 115,
+    "special-attack": 45,
+    "special-defense": 45,
+    "speed": 35
+  },
+  "height": 10,
+  "weight": 1050,
+  "png": "75.png",
+  "gif": "75.gif",
+  "game": {
+    "catch_rate": 95,
+    "evolve_level": -1,
+    "evolve_to": 76
+  }
+}

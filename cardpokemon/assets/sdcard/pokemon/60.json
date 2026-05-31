@@ -1,0 +1,29 @@
+{
+  "id": 60,
+  "name": "poliwag",
+  "names": {
+    "en": "poliwag",
+    "ko": "발챙이",
+    "ja": "ニョロモ"
+  },
+  "types": [
+    "water"
+  ],
+  "stats": {
+    "hp": 40,
+    "attack": 50,
+    "defense": 40,
+    "special-attack": 40,
+    "special-defense": 40,
+    "speed": 90
+  },
+  "height": 6,
+  "weight": 124,
+  "png": "60.png",
+  "gif": "60.gif",
+  "game": {
+    "catch_rate": 95,
+    "evolve_level": 25,
+    "evolve_to": 61
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": 2,
+  "name": "ivysaur",
+  "names": {
+    "en": "ivysaur",
+    "ko": "이상해풀",
+    "ja": "フシギソウ"
+  },
+  "types": [
+    "grass",
+    "poison"
+  ],
+  "stats": {
+    "hp": 60,
+    "attack": 62,
+    "defense": 63,
+    "special-attack": 80,
+    "special-defense": 80,
+    "speed": 60
+  },
+  "height": 10,
+  "weight": 130,
+  "png": "2.png",
+  "gif": "2.gif",
+  "game": {
+    "catch_rate": 45,
+    "evolve_level": 32,
+    "evolve_to": 3
+  }
+}

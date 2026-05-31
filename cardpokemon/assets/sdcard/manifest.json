@@ -1,0 +1,5894 @@
+{
+  "pokemon": [
+    {
+      "id": 1,
+      "name": "bulbasaur",
+      "names": {
+        "en": "bulbasaur",
+        "ko": "이상해씨",
+        "ja": "フシギダネ"
+      },
+      "types": [
+        "grass",
+        "poison"
+      ],
+      "stats": {
+        "hp": 45,
+        "attack": 49,
+        "defense": 49,
+        "special-attack": 65,
+        "special-defense": 65,
+        "speed": 45
+      },
+      "height": 7,
+      "weight": 69,
+      "png": "1.png",
+      "gif": "1.gif",
+      "game": {
+        "catch_rate": 45,
+        "evolve_level": 16,
+        "evolve_to": 2
+      }
+    },
+    {
+      "id": 2,
+      "name": "ivysaur",
+      "names": {
+        "en": "ivysaur",
+        "ko": "이상해풀",
+        "ja": "フシギソウ"
+      },
+      "types": [
+        "grass",
+        "poison"
+      ],
+      "stats": {
+        "hp": 60,
+        "attack": 62,
+        "defense": 63,
+        "special-attack": 80,
+        "special-defense": 80,
+        "speed": 60
+      },
+      "height": 10,
+      "weight": 130,
+      "png": "2.png",
+      "gif": "2.gif",
+      "game": {
+        "catch_rate": 45,
+        "evolve_level": 32,
+        "evolve_to": 3
+      }
+    },
+    {
+      "id": 3,
+      "name": "venusaur",
+      "names": {
+        "en": "venusaur",
+        "ko": "이상해꽃",
+        "ja": "フシギバナ"
+      },
+      "types": [
+        "grass",
+        "poison"
+      ],
+      "stats": {
+        "hp": 80,
+        "attack": 82,
+        "defense": 83,
+        "special-attack": 100,
+        "special-defense": 100,
+        "speed": 80
+      },
+      "height": 20,
+      "weight": 1000,
+      "png": "3.png",
+      "gif": "3.gif",
+      "game": {
+        "catch_rate": 45,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 4,
+      "name": "charmander",
+      "names": {
+        "en": "charmander",
+        "ko": "파이리",
+        "ja": "ヒトカゲ"
+      },
+      "types": [
+        "fire"
+      ],
+      "stats": {
+        "hp": 39,
+        "attack": 52,
+        "defense": 43,
+        "special-attack": 60,
+        "special-defense": 50,
+        "speed": 65
+      },
+      "height": 6,
+      "weight": 85,
+      "png": "4.png",
+      "gif": "4.gif",
+      "game": {
+        "catch_rate": 45,
+        "evolve_level": 16,
+        "evolve_to": 5
+      }
+    },
+    {
+      "id": 5,
+      "name": "charmeleon",
+      "names": {
+        "en": "charmeleon",
+        "ko": "리자드",
+        "ja": "リザード"
+      },
+      "types": [
+        "fire"
+      ],
+      "stats": {
+        "hp": 58,
+        "attack": 64,
+        "defense": 58,
+        "special-attack": 80,
+        "special-defense": 65,
+        "speed": 80
+      },
+      "height": 11,
+      "weight": 190,
+      "png": "5.png",
+      "gif": "5.gif",
+      "game": {
+        "catch_rate": 45,
+        "evolve_level": 36,
+        "evolve_to": 6
+      }
+    },
+    {
+      "id": 6,
+      "name": "charizard",
+      "names": {
+        "en": "charizard",
+        "ko": "리자몽",
+        "ja": "リザードン"
+      },
+      "types": [
+        "fire",
+        "flying"
+      ],
+      "stats": {
+        "hp": 78,
+        "attack": 84,
+        "defense": 78,
+        "special-attack": 109,
+        "special-defense": 85,
+        "speed": 100
+      },
+      "height": 17,
+      "weight": 905,
+      "png": "6.png",
+      "gif": "6.gif",
+      "game": {
+        "catch_rate": 45,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 7,
+      "name": "squirtle",
+      "names": {
+        "en": "squirtle",
+        "ko": "꼬부기",
+        "ja": "ゼニガメ"
+      },
+      "types": [
+        "water"
+      ],
+      "stats": {
+        "hp": 44,
+        "attack": 48,
+        "defense": 65,
+        "special-attack": 50,
+        "special-defense": 64,
+        "speed": 43
+      },
+      "height": 5,
+      "weight": 90,
+      "png": "7.png",
+      "gif": "7.gif",
+      "game": {
+        "catch_rate": 45,
+        "evolve_level": 16,
+        "evolve_to": 8
+      }
+    },
+    {
+      "id": 8,
+      "name": "wartortle",
+      "names": {
+        "en": "wartortle",
+        "ko": "어니부기",
+        "ja": "カメール"
+      },
+      "types": [
+        "water"
+      ],
+      "stats": {
+        "hp": 59,
+        "attack": 63,
+        "defense": 80,
+        "special-attack": 65,
+        "special-defense": 80,
+        "speed": 58
+      },
+      "height": 10,
+      "weight": 225,
+      "png": "8.png",
+      "gif": "8.gif",
+      "game": {
+        "catch_rate": 45,
+        "evolve_level": 36,
+        "evolve_to": 9
+      }
+    },
+    {
+      "id": 9,
+      "name": "blastoise",
+      "names": {
+        "en": "blastoise",
+        "ko": "거북왕",
+        "ja": "カメックス"
+      },
+      "types": [
+        "water"
+      ],
+      "stats": {
+        "hp": 79,
+        "attack": 83,
+        "defense": 100,
+        "special-attack": 85,
+        "special-defense": 105,
+        "speed": 78
+      },
+      "height": 16,
+      "weight": 855,
+      "png": "9.png",
+      "gif": "9.gif",
+      "game": {
+        "catch_rate": 45,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 10,
+      "name": "caterpie",
+      "names": {
+        "en": "caterpie",
+        "ko": "캐터피",
+        "ja": "キャタピー"
+      },
+      "types": [
+        "bug"
+      ],
+      "stats": {
+        "hp": 45,
+        "attack": 30,
+        "defense": 35,
+        "special-attack": 20,
+        "special-defense": 20,
+        "speed": 45
+      },
+      "height": 3,
+      "weight": 29,
+      "png": "10.png",
+      "gif": "10.gif",
+      "game": {
+        "catch_rate": 95,
+        "evolve_level": 7,
+        "evolve_to": 11
+      }
+    },
+    {
+      "id": 11,
+      "name": "metapod",
+      "names": {
+        "en": "metapod",
+        "ko": "단데기",
+        "ja": "トランセル"
+      },
+      "types": [
+        "bug"
+      ],
+      "stats": {
+        "hp": 50,
+        "attack": 20,
+        "defense": 55,
+        "special-attack": 25,
+        "special-defense": 25,
+        "speed": 30
+      },
+      "height": 7,
+      "weight": 99,
+      "png": "11.png",
+      "gif": "11.gif",
+      "game": {
+        "catch_rate": 95,
+        "evolve_level": 10,
+        "evolve_to": 12
+      }
+    },
+    {
+      "id": 12,
+      "name": "butterfree",
+      "names": {
+        "en": "butterfree",
+        "ko": "버터플",
+        "ja": "バタフリー"
+      },
+      "types": [
+        "bug",
+        "flying"
+      ],
+      "stats": {
+        "hp": 60,
+        "attack": 45,
+        "defense": 50,
+        "special-attack": 90,
+        "special-defense": 80,
+        "speed": 70
+      },
+      "height": 11,
+      "weight": 320,
+      "png": "12.png",
+      "gif": "12.gif",
+      "game": {
+        "catch_rate": 45,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 13,
+      "name": "weedle",
+      "names": {
+        "en": "weedle",
+        "ko": "뿔충이",
+        "ja": "ビードル"
+      },
+      "types": [
+        "bug",
+        "poison"
+      ],
+      "stats": {
+        "hp": 40,
+        "attack": 35,
+        "defense": 30,
+        "special-attack": 20,
+        "special-defense": 20,
+        "speed": 50
+      },
+      "height": 3,
+      "weight": 32,
+      "png": "13.png",
+      "gif": "13.gif",
+      "game": {
+        "catch_rate": 95,
+        "evolve_level": 7,
+        "evolve_to": 14
+      }
+    },
+    {
+      "id": 14,
+      "name": "kakuna",
+      "names": {
+        "en": "kakuna",
+        "ko": "딱충이",
+        "ja": "コクーン"
+      },
+      "types": [
+        "bug",
+        "poison"
+      ],
+      "stats": {
+        "hp": 45,
+        "attack": 25,
+        "defense": 50,
+        "special-attack": 25,
+        "special-defense": 25,
+        "speed": 35
+      },
+      "height": 6,
+      "weight": 100,
+      "png": "14.png",
+      "gif": "14.gif",
+      "game": {
+        "catch_rate": 95,
+        "evolve_level": 10,
+        "evolve_to": 15
+      }
+    },
+    {
+      "id": 15,
+      "name": "beedrill",
+      "names": {
+        "en": "beedrill",
+        "ko": "독침붕",
+        "ja": "スピアー"
+      },
+      "types": [
+        "bug",
+        "poison"
+      ],
+      "stats": {
+        "hp": 65,
+        "attack": 90,
+        "defense": 40,
+        "special-attack": 45,
+        "special-defense": 80,
+        "speed": 75
+      },
+      "height": 10,
+      "weight": 295,
+      "png": "15.png",
+      "gif": "15.gif",
+      "game": {
+        "catch_rate": 45,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 16,
+      "name": "pidgey",
+      "names": {
+        "en": "pidgey",
+        "ko": "구구",
+        "ja": "ポッポ"
+      },
+      "types": [
+        "normal",
+        "flying"
+      ],
+      "stats": {
+        "hp": 40,
+        "attack": 45,
+        "defense": 40,
+        "special-attack": 35,
+        "special-defense": 35,
+        "speed": 56
+      },
+      "height": 3,
+      "weight": 18,
+      "png": "16.png",
+      "gif": "16.gif",
+      "game": {
+        "catch_rate": 95,
+        "evolve_level": 18,
+        "evolve_to": 17
+      }
+    },
+    {
+      "id": 17,
+      "name": "pidgeotto",
+      "names": {
+        "en": "pidgeotto",
+        "ko": "피죤",
+        "ja": "ピジョン"
+      },
+      "types": [
+        "normal",
+        "flying"
+      ],
+      "stats": {
+        "hp": 63,
+        "attack": 60,
+        "defense": 55,
+        "special-attack": 50,
+        "special-defense": 50,
+        "speed": 71
+      },
+      "height": 11,
+      "weight": 300,
+      "png": "17.png",
+      "gif": "17.gif",
+      "game": {
+        "catch_rate": 95,
+        "evolve_level": 36,
+        "evolve_to": 18
+      }
+    },
+    {
+      "id": 18,
+      "name": "pidgeot",
+      "names": {
+        "en": "pidgeot",
+        "ko": "피죤투",
+        "ja": "ピジョット"
+      },
+      "types": [
+        "normal",
+        "flying"
+      ],
+      "stats": {
+        "hp": 83,
+        "attack": 80,
+        "defense": 75,
+        "special-attack": 70,
+        "special-defense": 70,
+        "speed": 101
+      },
+      "height": 15,
+      "weight": 395,
+      "png": "18.png",
+      "gif": "18.gif",
+      "game": {
+        "catch_rate": 45,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 19,
+      "name": "rattata",
+      "names": {
+        "en": "rattata",
+        "ko": "꼬렛",
+        "ja": "コラッタ"
+      },
+      "types": [
+        "normal"
+      ],
+      "stats": {
+        "hp": 30,
+        "attack": 56,
+        "defense": 35,
+        "special-attack": 25,
+        "special-defense": 35,
+        "speed": 72
+      },
+      "height": 3,
+      "weight": 35,
+      "png": "19.png",
+      "gif": "19.gif",
+      "game": {
+        "catch_rate": 95,
+        "evolve_level": 20,
+        "evolve_to": 20
+      }
+    },
+    {
+      "id": 20,
+      "name": "raticate",
+      "names": {
+        "en": "raticate",
+        "ko": "레트라",
+        "ja": "ラッタ"
+      },
+      "types": [
+        "normal"
+      ],
+      "stats": {
+        "hp": 55,
+        "attack": 81,
+        "defense": 60,
+        "special-attack": 50,
+        "special-defense": 70,
+        "speed": 97
+      },
+      "height": 7,
+      "weight": 185,
+      "png": "20.png",
+      "gif": "20.gif",
+      "game": {
+        "catch_rate": 95,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 21,
+      "name": "spearow",
+      "names": {
+        "en": "spearow",
+        "ko": "깨비참",
+        "ja": "オニスズメ"
+      },
+      "types": [
+        "normal",
+        "flying"
+      ],
+      "stats": {
+        "hp": 40,
+        "attack": 60,
+        "defense": 30,
+        "special-attack": 31,
+        "special-defense": 31,
+        "speed": 70
+      },
+      "height": 3,
+      "weight": 20,
+      "png": "21.png",
+      "gif": "21.gif",
+      "game": {
+        "catch_rate": 95,
+        "evolve_level": 20,
+        "evolve_to": 22
+      }
+    },
+    {
+      "id": 22,
+      "name": "fearow",
+      "names": {
+        "en": "fearow",
+        "ko": "깨비드릴조",
+        "ja": "オニドリル"
+      },
+      "types": [
+        "normal",
+        "flying"
+      ],
+      "stats": {
+        "hp": 65,
+        "attack": 90,
+        "defense": 65,
+        "special-attack": 61,
+        "special-defense": 61,
+        "speed": 100
+      },
+      "height": 12,
+      "weight": 380,
+      "png": "22.png",
+      "gif": "22.gif",
+      "game": {
+        "catch_rate": 90,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 23,
+      "name": "ekans",
+      "names": {
+        "en": "ekans",
+        "ko": "아보",
+        "ja": "アーボ"
+      },
+      "types": [
+        "poison"
+      ],
+      "stats": {
+        "hp": 35,
+        "attack": 60,
+        "defense": 44,
+        "special-attack": 40,
+        "special-defense": 54,
+        "speed": 55
+      },
+      "height": 20,
+      "weight": 69,
+      "png": "23.png",
+      "gif": "23.gif",
+      "game": {
+        "catch_rate": 95,
+        "evolve_level": 22,
+        "evolve_to": 24
+      }
+    },
+    {
+      "id": 24,
+      "name": "arbok",
+      "names": {
+        "en": "arbok",
+        "ko": "아보크",
+        "ja": "アーボック"
+      },
+      "types": [
+        "poison"
+      ],
+      "stats": {
+        "hp": 60,
+        "attack": 95,
+        "defense": 69,
+        "special-attack": 65,
+        "special-defense": 79,
+        "speed": 80
+      },
+      "height": 35,
+      "weight": 650,
+      "png": "24.png",
+      "gif": "24.gif",
+      "game": {
+        "catch_rate": 90,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 25,
+      "name": "pikachu",
+      "names": {
+        "en": "pikachu",
+        "ko": "피카츄",
+        "ja": "ピカチュウ"
+      },
+      "types": [
+        "electric"
+      ],
+      "stats": {
+        "hp": 35,
+        "attack": 55,
+        "defense": 40,
+        "special-attack": 50,
+        "special-defense": 50,
+        "speed": 90
+      },
+      "height": 4,
+      "weight": 60,
+      "png": "25.png",
+      "gif": "25.gif",
+      "game": {
+        "catch_rate": 95,
+        "evolve_level": -1,
+        "evolve_to": 26
+      }
+    },
+    {
+      "id": 26,
+      "name": "raichu",
+      "names": {
+        "en": "raichu",
+        "ko": "라이츄",
+        "ja": "ライチュウ"
+      },
+      "types": [
+        "electric"
+      ],
+      "stats": {
+        "hp": 60,
+        "attack": 90,
+        "defense": 55,
+        "special-attack": 90,
+        "special-defense": 80,
+        "speed": 110
+      },
+      "height": 8,
+      "weight": 300,
+      "png": "26.png",
+      "gif": "26.gif",
+      "game": {
+        "catch_rate": 75,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 27,
+      "name": "sandshrew",
+      "names": {
+        "en": "sandshrew",
+        "ko": "모래두지",
+        "ja": "サンド"
+      },
+      "types": [
+        "ground"
+      ],
+      "stats": {
+        "hp": 50,
+        "attack": 75,
+        "defense": 85,
+        "special-attack": 20,
+        "special-defense": 30,
+        "speed": 40
+      },
+      "height": 6,
+      "weight": 120,
+      "png": "27.png",
+      "gif": "27.gif",
+      "game": {
+        "catch_rate": 95,
+        "evolve_level": 22,
+        "evolve_to": 28
+      }
+    },
+    {
+      "id": 28,
+      "name": "sandslash",
+      "names": {
+        "en": "sandslash",
+        "ko": "고지",
+        "ja": "サンドパン"
+      },
+      "types": [
+        "ground"
+      ],
+      "stats": {
+        "hp": 75,
+        "attack": 100,
+        "defense": 110,
+        "special-attack": 45,
+        "special-defense": 55,
+        "speed": 65
+      },
+      "height": 10,
+      "weight": 295,
+      "png": "28.png",
+      "gif": "28.gif",
+      "game": {
+        "catch_rate": 90,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 29,
+      "name": "nidoran-f",
+      "names": {
+        "en": "nidoran-f",
+        "ko": "니드런♀",
+        "ja": "ニドラン♀"
+      },
+      "types": [
+        "poison"
+      ],
+      "stats": {
+        "hp": 55,
+        "attack": 47,
+        "defense": 52,
+        "special-attack": 40,
+        "special-defense": 40,
+        "speed": 41
+      },
+      "height": 4,
+      "weight": 70,
+      "png": "29.png",
+      "gif": "29.gif",
+      "game": {
+        "catch_rate": 95,
+        "evolve_level": 16,
+        "evolve_to": 30
+      }
+    },
+    {
+      "id": 30,
+      "name": "nidorina",
+      "names": {
+        "en": "nidorina",
+        "ko": "니드리나",
+        "ja": "ニドリーナ"
+      },
+      "types": [
+        "poison"
+      ],
+      "stats": {
+        "hp": 70,
+        "attack": 62,
+        "defense": 67,
+        "special-attack": 55,
+        "special-defense": 55,
+        "speed": 56
+      },
+      "height": 8,
+      "weight": 200,
+      "png": "30.png",
+      "gif": "30.gif",
+      "game": {
+        "catch_rate": 95,
+        "evolve_level": -1,
+        "evolve_to": 31
+      }
+    },
+    {
+      "id": 31,
+      "name": "nidoqueen",
+      "names": {
+        "en": "nidoqueen",
+        "ko": "니드퀸",
+        "ja": "ニドクイン"
+      },
+      "types": [
+        "poison",
+        "ground"
+      ],
+      "stats": {
+        "hp": 90,
+        "attack": 92,
+        "defense": 87,
+        "special-attack": 75,
+        "special-defense": 85,
+        "speed": 76
+      },
+      "height": 13,
+      "weight": 600,
+      "png": "31.png",
+      "gif": "31.gif",
+      "game": {
+        "catch_rate": 45,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 32,
+      "name": "nidoran-m",
+      "names": {
+        "en": "nidoran-m",
+        "ko": "니드런♂",
+        "ja": "ニドラン♂"
+      },
+      "types": [
+        "poison"
+      ],
+      "stats": {
+        "hp": 46,
+        "attack": 57,
+        "defense": 40,
+        "special-attack": 40,
+        "special-defense": 40,
+        "speed": 50
+      },
+      "height": 5,
+      "weight": 90,
+      "png": "32.png",
+      "gif": "32.gif",
+      "game": {
+        "catch_rate": 95,
+        "evolve_level": 16,
+        "evolve_to": 33
+      }
+    },
+    {
+      "id": 33,
+      "name": "nidorino",
+      "names": {
+        "en": "nidorino",
+        "ko": "니드리노",
+        "ja": "ニドリーノ"
+      },
+      "types": [
+        "poison"
+      ],
+      "stats": {
+        "hp": 61,
+        "attack": 72,
+        "defense": 57,
+        "special-attack": 55,
+        "special-defense": 55,
+        "speed": 65
+      },
+      "height": 9,
+      "weight": 195,
+      "png": "33.png",
+      "gif": "33.gif",
+      "game": {
+        "catch_rate": 95,
+        "evolve_level": -1,
+        "evolve_to": 34
+      }
+    },
+    {
+      "id": 34,
+      "name": "nidoking",
+      "names": {
+        "en": "nidoking",
+        "ko": "니드킹",
+        "ja": "ニドキング"
+      },
+      "types": [
+        "poison",
+        "ground"
+      ],
+      "stats": {
+        "hp": 81,
+        "attack": 102,
+        "defense": 77,
+        "special-attack": 85,
+        "special-defense": 75,
+        "speed": 85
+      },
+      "height": 14,
+      "weight": 620,
+      "png": "34.png",
+      "gif": "34.gif",
+      "game": {
+        "catch_rate": 45,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 35,
+      "name": "clefairy",
+      "names": {
+        "en": "clefairy",
+        "ko": "삐삐",
+        "ja": "ピッピ"
+      },
+      "types": [
+        "fairy"
+      ],
+      "stats": {
+        "hp": 70,
+        "attack": 45,
+        "defense": 48,
+        "special-attack": 60,
+        "special-defense": 65,
+        "speed": 35
+      },
+      "height": 6,
+      "weight": 75,
+      "png": "35.png",
+      "gif": "35.gif",
+      "game": {
+        "catch_rate": 95,
+        "evolve_level": -1,
+        "evolve_to": 36
+      }
+    },
+    {
+      "id": 36,
+      "name": "clefable",
+      "names": {
+        "en": "clefable",
+        "ko": "픽시",
+        "ja": "ピクシー"
+      },
+      "types": [
+        "fairy"
+      ],
+      "stats": {
+        "hp": 95,
+        "attack": 70,
+        "defense": 73,
+        "special-attack": 95,
+        "special-defense": 90,
+        "speed": 60
+      },
+      "height": 13,
+      "weight": 400,
+      "png": "36.png",
+      "gif": "36.gif",
+      "game": {
+        "catch_rate": 25,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 37,
+      "name": "vulpix",
+      "names": {
+        "en": "vulpix",
+        "ko": "식스테일",
+        "ja": "ロコン"
+      },
+      "types": [
+        "fire"
+      ],
+      "stats": {
+        "hp": 38,
+        "attack": 41,
+        "defense": 40,
+        "special-attack": 50,
+        "special-defense": 65,
+        "speed": 65
+      },
+      "height": 6,
+      "weight": 99,
+      "png": "37.png",
+      "gif": "37.gif",
+      "game": {
+        "catch_rate": 95,
+        "evolve_level": -1,
+        "evolve_to": 38
+      }
+    },
+    {
+      "id": 38,
+      "name": "ninetales",
+      "names": {
+        "en": "ninetales",
+        "ko": "나인테일",
+        "ja": "キュウコン"
+      },
+      "types": [
+        "fire"
+      ],
+      "stats": {
+        "hp": 73,
+        "attack": 76,
+        "defense": 75,
+        "special-attack": 81,
+        "special-defense": 100,
+        "speed": 100
+      },
+      "height": 11,
+      "weight": 199,
+      "png": "38.png",
+      "gif": "38.gif",
+      "game": {
+        "catch_rate": 75,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 39,
+      "name": "jigglypuff",
+      "names": {
+        "en": "jigglypuff",
+        "ko": "푸린",
+        "ja": "プリン"
+      },
+      "types": [
+        "normal",
+        "fairy"
+      ],
+      "stats": {
+        "hp": 115,
+        "attack": 45,
+        "defense": 20,
+        "special-attack": 45,
+        "special-defense": 25,
+        "speed": 20
+      },
+      "height": 5,
+      "weight": 55,
+      "png": "39.png",
+      "gif": "39.gif",
+      "game": {
+        "catch_rate": 95,
+        "evolve_level": -1,
+        "evolve_to": 40
+      }
+    },
+    {
+      "id": 40,
+      "name": "wigglytuff",
+      "names": {
+        "en": "wigglytuff",
+        "ko": "푸크린",
+        "ja": "プクリン"
+      },
+      "types": [
+        "normal",
+        "fairy"
+      ],
+      "stats": {
+        "hp": 140,
+        "attack": 70,
+        "defense": 45,
+        "special-attack": 85,
+        "special-defense": 50,
+        "speed": 45
+      },
+      "height": 10,
+      "weight": 120,
+      "png": "40.png",
+      "gif": "40.gif",
+      "game": {
+        "catch_rate": 50,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 41,
+      "name": "zubat",
+      "names": {
+        "en": "zubat",
+        "ko": "주뱃",
+        "ja": "ズバット"
+      },
+      "types": [
+        "poison",
+        "flying"
+      ],
+      "stats": {
+        "hp": 40,
+        "attack": 45,
+        "defense": 35,
+        "special-attack": 30,
+        "special-defense": 40,
+        "speed": 55
+      },
+      "height": 8,
+      "weight": 75,
+      "png": "41.png",
+      "gif": "41.gif",
+      "game": {
+        "catch_rate": 95,
+        "evolve_level": 22,
+        "evolve_to": 42
+      }
+    },
+    {
+      "id": 42,
+      "name": "golbat",
+      "names": {
+        "en": "golbat",
+        "ko": "골뱃",
+        "ja": "ゴルバット"
+      },
+      "types": [
+        "poison",
+        "flying"
+      ],
+      "stats": {
+        "hp": 75,
+        "attack": 80,
+        "defense": 70,
+        "special-attack": 65,
+        "special-defense": 75,
+        "speed": 90
+      },
+      "height": 16,
+      "weight": 550,
+      "png": "42.png",
+      "gif": "42.gif",
+      "game": {
+        "catch_rate": 90,
+        "evolve_level": -1,
+        "evolve_to": 169
+      }
+    },
+    {
+      "id": 43,
+      "name": "oddish",
+      "names": {
+        "en": "oddish",
+        "ko": "뚜벅쵸",
+        "ja": "ナゾノクサ"
+      },
+      "types": [
+        "grass",
+        "poison"
+      ],
+      "stats": {
+        "hp": 45,
+        "attack": 50,
+        "defense": 55,
+        "special-attack": 75,
+        "special-defense": 65,
+        "speed": 30
+      },
+      "height": 5,
+      "weight": 54,
+      "png": "43.png",
+      "gif": "43.gif",
+      "game": {
+        "catch_rate": 95,
+        "evolve_level": 21,
+        "evolve_to": 44
+      }
+    },
+    {
+      "id": 44,
+      "name": "gloom",
+      "names": {
+        "en": "gloom",
+        "ko": "냄새꼬",
+        "ja": "クサイハナ"
+      },
+      "types": [
+        "grass",
+        "poison"
+      ],
+      "stats": {
+        "hp": 60,
+        "attack": 65,
+        "defense": 70,
+        "special-attack": 85,
+        "special-defense": 75,
+        "speed": 40
+      },
+      "height": 8,
+      "weight": 86,
+      "png": "44.png",
+      "gif": "44.gif",
+      "game": {
+        "catch_rate": 95,
+        "evolve_level": -1,
+        "evolve_to": 45
+      }
+    },
+    {
+      "id": 45,
+      "name": "vileplume",
+      "names": {
+        "en": "vileplume",
+        "ko": "라플레시아",
+        "ja": "ラフレシア"
+      },
+      "types": [
+        "grass",
+        "poison"
+      ],
+      "stats": {
+        "hp": 75,
+        "attack": 80,
+        "defense": 85,
+        "special-attack": 110,
+        "special-defense": 90,
+        "speed": 50
+      },
+      "height": 12,
+      "weight": 186,
+      "png": "45.png",
+      "gif": "45.gif",
+      "game": {
+        "catch_rate": 45,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 46,
+      "name": "paras",
+      "names": {
+        "en": "paras",
+        "ko": "파라스",
+        "ja": "パラス"
+      },
+      "types": [
+        "bug",
+        "grass"
+      ],
+      "stats": {
+        "hp": 35,
+        "attack": 70,
+        "defense": 55,
+        "special-attack": 45,
+        "special-defense": 55,
+        "speed": 25
+      },
+      "height": 3,
+      "weight": 54,
+      "png": "46.png",
+      "gif": "46.gif",
+      "game": {
+        "catch_rate": 95,
+        "evolve_level": 24,
+        "evolve_to": 47
+      }
+    },
+    {
+      "id": 47,
+      "name": "parasect",
+      "names": {
+        "en": "parasect",
+        "ko": "파라섹트",
+        "ja": "パラセクト"
+      },
+      "types": [
+        "bug",
+        "grass"
+      ],
+      "stats": {
+        "hp": 60,
+        "attack": 95,
+        "defense": 80,
+        "special-attack": 60,
+        "special-defense": 80,
+        "speed": 30
+      },
+      "height": 10,
+      "weight": 295,
+      "png": "47.png",
+      "gif": "47.gif",
+      "game": {
+        "catch_rate": 75,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 48,
+      "name": "venonat",
+      "names": {
+        "en": "venonat",
+        "ko": "콘팡",
+        "ja": "コンパン"
+      },
+      "types": [
+        "bug",
+        "poison"
+      ],
+      "stats": {
+        "hp": 60,
+        "attack": 55,
+        "defense": 50,
+        "special-attack": 40,
+        "special-defense": 55,
+        "speed": 45
+      },
+      "height": 10,
+      "weight": 300,
+      "png": "48.png",
+      "gif": "48.gif",
+      "game": {
+        "catch_rate": 95,
+        "evolve_level": 31,
+        "evolve_to": 49
+      }
+    },
+    {
+      "id": 49,
+      "name": "venomoth",
+      "names": {
+        "en": "venomoth",
+        "ko": "도나리",
+        "ja": "モルフォン"
+      },
+      "types": [
+        "bug",
+        "poison"
+      ],
+      "stats": {
+        "hp": 70,
+        "attack": 65,
+        "defense": 60,
+        "special-attack": 90,
+        "special-defense": 75,
+        "speed": 90
+      },
+      "height": 15,
+      "weight": 125,
+      "png": "49.png",
+      "gif": "49.gif",
+      "game": {
+        "catch_rate": 75,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 50,
+      "name": "diglett",
+      "names": {
+        "en": "diglett",
+        "ko": "디그다",
+        "ja": "ディグダ"
+      },
+      "types": [
+        "ground"
+      ],
+      "stats": {
+        "hp": 10,
+        "attack": 55,
+        "defense": 25,
+        "special-attack": 35,
+        "special-defense": 45,
+        "speed": 95
+      },
+      "height": 2,
+      "weight": 8,
+      "png": "50.png",
+      "gif": "50.gif",
+      "game": {
+        "catch_rate": 95,
+        "evolve_level": 26,
+        "evolve_to": 51
+      }
+    },
+    {
+      "id": 51,
+      "name": "dugtrio",
+      "names": {
+        "en": "dugtrio",
+        "ko": "닥트리오",
+        "ja": "ダグトリオ"
+      },
+      "types": [
+        "ground"
+      ],
+      "stats": {
+        "hp": 35,
+        "attack": 100,
+        "defense": 50,
+        "special-attack": 50,
+        "special-defense": 70,
+        "speed": 120
+      },
+      "height": 7,
+      "weight": 333,
+      "png": "51.png",
+      "gif": "51.gif",
+      "game": {
+        "catch_rate": 50,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 52,
+      "name": "meowth",
+      "names": {
+        "en": "meowth",
+        "ko": "나옹",
+        "ja": "ニャース"
+      },
+      "types": [
+        "normal"
+      ],
+      "stats": {
+        "hp": 40,
+        "attack": 45,
+        "defense": 35,
+        "special-attack": 40,
+        "special-defense": 40,
+        "speed": 90
+      },
+      "height": 4,
+      "weight": 42,
+      "png": "52.png",
+      "gif": "52.gif",
+      "game": {
+        "catch_rate": 95,
+        "evolve_level": 28,
+        "evolve_to": 53
+      }
+    },
+    {
+      "id": 53,
+      "name": "persian",
+      "names": {
+        "en": "persian",
+        "ko": "페르시온",
+        "ja": "ペルシアン"
+      },
+      "types": [
+        "normal"
+      ],
+      "stats": {
+        "hp": 65,
+        "attack": 70,
+        "defense": 60,
+        "special-attack": 65,
+        "special-defense": 65,
+        "speed": 115
+      },
+      "height": 10,
+      "weight": 320,
+      "png": "53.png",
+      "gif": "53.gif",
+      "game": {
+        "catch_rate": 90,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 54,
+      "name": "psyduck",
+      "names": {
+        "en": "psyduck",
+        "ko": "고라파덕",
+        "ja": "コダック"
+      },
+      "types": [
+        "water"
+      ],
+      "stats": {
+        "hp": 50,
+        "attack": 52,
+        "defense": 48,
+        "special-attack": 65,
+        "special-defense": 50,
+        "speed": 55
+      },
+      "height": 8,
+      "weight": 196,
+      "png": "54.png",
+      "gif": "54.gif",
+      "game": {
+        "catch_rate": 95,
+        "evolve_level": 33,
+        "evolve_to": 55
+      }
+    },
+    {
+      "id": 55,
+      "name": "golduck",
+      "names": {
+        "en": "golduck",
+        "ko": "골덕",
+        "ja": "ゴルダック"
+      },
+      "types": [
+        "water"
+      ],
+      "stats": {
+        "hp": 80,
+        "attack": 82,
+        "defense": 78,
+        "special-attack": 95,
+        "special-defense": 80,
+        "speed": 85
+      },
+      "height": 17,
+      "weight": 766,
+      "png": "55.png",
+      "gif": "55.gif",
+      "game": {
+        "catch_rate": 75,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 56,
+      "name": "mankey",
+      "names": {
+        "en": "mankey",
+        "ko": "망키",
+        "ja": "マンキー"
+      },
+      "types": [
+        "fighting"
+      ],
+      "stats": {
+        "hp": 40,
+        "attack": 80,
+        "defense": 35,
+        "special-attack": 35,
+        "special-defense": 45,
+        "speed": 70
+      },
+      "height": 5,
+      "weight": 280,
+      "png": "56.png",
+      "gif": "56.gif",
+      "game": {
+        "catch_rate": 95,
+        "evolve_level": 28,
+        "evolve_to": 57
+      }
+    },
+    {
+      "id": 57,
+      "name": "primeape",
+      "names": {
+        "en": "primeape",
+        "ko": "성원숭",
+        "ja": "オコリザル"
+      },
+      "types": [
+        "fighting"
+      ],
+      "stats": {
+        "hp": 65,
+        "attack": 105,
+        "defense": 60,
+        "special-attack": 60,
+        "special-defense": 70,
+        "speed": 95
+      },
+      "height": 10,
+      "weight": 320,
+      "png": "57.png",
+      "gif": "57.gif",
+      "game": {
+        "catch_rate": 75,
+        "evolve_level": -1,
+        "evolve_to": 979
+      }
+    },
+    {
+      "id": 58,
+      "name": "growlithe",
+      "names": {
+        "en": "growlithe",
+        "ko": "가디",
+        "ja": "ガーディ"
+      },
+      "types": [
+        "fire"
+      ],
+      "stats": {
+        "hp": 55,
+        "attack": 70,
+        "defense": 45,
+        "special-attack": 70,
+        "special-defense": 50,
+        "speed": 60
+      },
+      "height": 7,
+      "weight": 190,
+      "png": "58.png",
+      "gif": "58.gif",
+      "game": {
+        "catch_rate": 95,
+        "evolve_level": -1,
+        "evolve_to": 59
+      }
+    },
+    {
+      "id": 59,
+      "name": "arcanine",
+      "names": {
+        "en": "arcanine",
+        "ko": "윈디",
+        "ja": "ウインディ"
+      },
+      "types": [
+        "fire"
+      ],
+      "stats": {
+        "hp": 90,
+        "attack": 110,
+        "defense": 80,
+        "special-attack": 100,
+        "special-defense": 80,
+        "speed": 95
+      },
+      "height": 19,
+      "weight": 1550,
+      "png": "59.png",
+      "gif": "59.gif",
+      "game": {
+        "catch_rate": 75,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 60,
+      "name": "poliwag",
+      "names": {
+        "en": "poliwag",
+        "ko": "발챙이",
+        "ja": "ニョロモ"
+      },
+      "types": [
+        "water"
+      ],
+      "stats": {
+        "hp": 40,
+        "attack": 50,
+        "defense": 40,
+        "special-attack": 40,
+        "special-defense": 40,
+        "speed": 90
+      },
+      "height": 6,
+      "weight": 124,
+      "png": "60.png",
+      "gif": "60.gif",
+      "game": {
+        "catch_rate": 95,
+        "evolve_level": 25,
+        "evolve_to": 61
+      }
+    },
+    {
+      "id": 61,
+      "name": "poliwhirl",
+      "names": {
+        "en": "poliwhirl",
+        "ko": "슈륙챙이",
+        "ja": "ニョロゾ"
+      },
+      "types": [
+        "water"
+      ],
+      "stats": {
+        "hp": 65,
+        "attack": 65,
+        "defense": 65,
+        "special-attack": 50,
+        "special-defense": 50,
+        "speed": 90
+      },
+      "height": 10,
+      "weight": 200,
+      "png": "61.png",
+      "gif": "61.gif",
+      "game": {
+        "catch_rate": 95,
+        "evolve_level": -1,
+        "evolve_to": 62
+      }
+    },
+    {
+      "id": 62,
+      "name": "poliwrath",
+      "names": {
+        "en": "poliwrath",
+        "ko": "강챙이",
+        "ja": "ニョロボン"
+      },
+      "types": [
+        "water",
+        "fighting"
+      ],
+      "stats": {
+        "hp": 90,
+        "attack": 95,
+        "defense": 95,
+        "special-attack": 70,
+        "special-defense": 90,
+        "speed": 70
+      },
+      "height": 13,
+      "weight": 540,
+      "png": "62.png",
+      "gif": "62.gif",
+      "game": {
+        "catch_rate": 45,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 63,
+      "name": "abra",
+      "names": {
+        "en": "abra",
+        "ko": "캐이시",
+        "ja": "ケーシィ"
+      },
+      "types": [
+        "psychic"
+      ],
+      "stats": {
+        "hp": 25,
+        "attack": 20,
+        "defense": 15,
+        "special-attack": 105,
+        "special-defense": 55,
+        "speed": 90
+      },
+      "height": 9,
+      "weight": 195,
+      "png": "63.png",
+      "gif": "63.gif",
+      "game": {
+        "catch_rate": 95,
+        "evolve_level": 16,
+        "evolve_to": 64
+      }
+    },
+    {
+      "id": 64,
+      "name": "kadabra",
+      "names": {
+        "en": "kadabra",
+        "ko": "윤겔라",
+        "ja": "ユンゲラー"
+      },
+      "types": [
+        "psychic"
+      ],
+      "stats": {
+        "hp": 40,
+        "attack": 35,
+        "defense": 30,
+        "special-attack": 120,
+        "special-defense": 70,
+        "speed": 105
+      },
+      "height": 13,
+      "weight": 565,
+      "png": "64.png",
+      "gif": "64.gif",
+      "game": {
+        "catch_rate": 95,
+        "evolve_level": -1,
+        "evolve_to": 65
+      }
+    },
+    {
+      "id": 65,
+      "name": "alakazam",
+      "names": {
+        "en": "alakazam",
+        "ko": "후딘",
+        "ja": "フーディン"
+      },
+      "types": [
+        "psychic"
+      ],
+      "stats": {
+        "hp": 55,
+        "attack": 50,
+        "defense": 45,
+        "special-attack": 135,
+        "special-defense": 95,
+        "speed": 120
+      },
+      "height": 15,
+      "weight": 480,
+      "png": "65.png",
+      "gif": "65.gif",
+      "game": {
+        "catch_rate": 50,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 66,
+      "name": "machop",
+      "names": {
+        "en": "machop",
+        "ko": "알통몬",
+        "ja": "ワンリキー"
+      },
+      "types": [
+        "fighting"
+      ],
+      "stats": {
+        "hp": 70,
+        "attack": 80,
+        "defense": 50,
+        "special-attack": 35,
+        "special-defense": 35,
+        "speed": 35
+      },
+      "height": 8,
+      "weight": 195,
+      "png": "66.png",
+      "gif": "66.gif",
+      "game": {
+        "catch_rate": 95,
+        "evolve_level": 28,
+        "evolve_to": 67
+      }
+    },
+    {
+      "id": 67,
+      "name": "machoke",
+      "names": {
+        "en": "machoke",
+        "ko": "근육몬",
+        "ja": "ゴーリキー"
+      },
+      "types": [
+        "fighting"
+      ],
+      "stats": {
+        "hp": 80,
+        "attack": 100,
+        "defense": 70,
+        "special-attack": 50,
+        "special-defense": 60,
+        "speed": 45
+      },
+      "height": 15,
+      "weight": 705,
+      "png": "67.png",
+      "gif": "67.gif",
+      "game": {
+        "catch_rate": 90,
+        "evolve_level": -1,
+        "evolve_to": 68
+      }
+    },
+    {
+      "id": 68,
+      "name": "machamp",
+      "names": {
+        "en": "machamp",
+        "ko": "괴력몬",
+        "ja": "カイリキー"
+      },
+      "types": [
+        "fighting"
+      ],
+      "stats": {
+        "hp": 90,
+        "attack": 130,
+        "defense": 80,
+        "special-attack": 65,
+        "special-defense": 85,
+        "speed": 55
+      },
+      "height": 16,
+      "weight": 1300,
+      "png": "68.png",
+      "gif": "68.gif",
+      "game": {
+        "catch_rate": 45,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 69,
+      "name": "bellsprout",
+      "names": {
+        "en": "bellsprout",
+        "ko": "모다피",
+        "ja": "マダツボミ"
+      },
+      "types": [
+        "grass",
+        "poison"
+      ],
+      "stats": {
+        "hp": 50,
+        "attack": 75,
+        "defense": 35,
+        "special-attack": 70,
+        "special-defense": 30,
+        "speed": 40
+      },
+      "height": 7,
+      "weight": 40,
+      "png": "69.png",
+      "gif": "69.gif",
+      "game": {
+        "catch_rate": 95,
+        "evolve_level": 21,
+        "evolve_to": 70
+      }
+    },
+    {
+      "id": 70,
+      "name": "weepinbell",
+      "names": {
+        "en": "weepinbell",
+        "ko": "우츠동",
+        "ja": "ウツドン"
+      },
+      "types": [
+        "grass",
+        "poison"
+      ],
+      "stats": {
+        "hp": 65,
+        "attack": 90,
+        "defense": 50,
+        "special-attack": 85,
+        "special-defense": 45,
+        "speed": 55
+      },
+      "height": 10,
+      "weight": 64,
+      "png": "70.png",
+      "gif": "70.gif",
+      "game": {
+        "catch_rate": 95,
+        "evolve_level": -1,
+        "evolve_to": 71
+      }
+    },
+    {
+      "id": 71,
+      "name": "victreebel",
+      "names": {
+        "en": "victreebel",
+        "ko": "우츠보트",
+        "ja": "ウツボット"
+      },
+      "types": [
+        "grass",
+        "poison"
+      ],
+      "stats": {
+        "hp": 80,
+        "attack": 105,
+        "defense": 65,
+        "special-attack": 100,
+        "special-defense": 70,
+        "speed": 70
+      },
+      "height": 17,
+      "weight": 155,
+      "png": "71.png",
+      "gif": "71.gif",
+      "game": {
+        "catch_rate": 45,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 72,
+      "name": "tentacool",
+      "names": {
+        "en": "tentacool",
+        "ko": "왕눈해",
+        "ja": "メノクラゲ"
+      },
+      "types": [
+        "water",
+        "poison"
+      ],
+      "stats": {
+        "hp": 40,
+        "attack": 40,
+        "defense": 35,
+        "special-attack": 50,
+        "special-defense": 100,
+        "speed": 70
+      },
+      "height": 9,
+      "weight": 455,
+      "png": "72.png",
+      "gif": "72.gif",
+      "game": {
+        "catch_rate": 95,
+        "evolve_level": 30,
+        "evolve_to": 73
+      }
+    },
+    {
+      "id": 73,
+      "name": "tentacruel",
+      "names": {
+        "en": "tentacruel",
+        "ko": "독파리",
+        "ja": "ドククラゲ"
+      },
+      "types": [
+        "water",
+        "poison"
+      ],
+      "stats": {
+        "hp": 80,
+        "attack": 70,
+        "defense": 65,
+        "special-attack": 80,
+        "special-defense": 120,
+        "speed": 100
+      },
+      "height": 16,
+      "weight": 550,
+      "png": "73.png",
+      "gif": "73.gif",
+      "game": {
+        "catch_rate": 60,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 74,
+      "name": "geodude",
+      "names": {
+        "en": "geodude",
+        "ko": "꼬마돌",
+        "ja": "イシツブテ"
+      },
+      "types": [
+        "rock",
+        "ground"
+      ],
+      "stats": {
+        "hp": 40,
+        "attack": 80,
+        "defense": 100,
+        "special-attack": 30,
+        "special-defense": 30,
+        "speed": 20
+      },
+      "height": 4,
+      "weight": 200,
+      "png": "74.png",
+      "gif": "74.gif",
+      "game": {
+        "catch_rate": 95,
+        "evolve_level": 25,
+        "evolve_to": 75
+      }
+    },
+    {
+      "id": 75,
+      "name": "graveler",
+      "names": {
+        "en": "graveler",
+        "ko": "데구리",
+        "ja": "ゴローン"
+      },
+      "types": [
+        "rock",
+        "ground"
+      ],
+      "stats": {
+        "hp": 55,
+        "attack": 95,
+        "defense": 115,
+        "special-attack": 45,
+        "special-defense": 45,
+        "speed": 35
+      },
+      "height": 10,
+      "weight": 1050,
+      "png": "75.png",
+      "gif": "75.gif",
+      "game": {
+        "catch_rate": 95,
+        "evolve_level": -1,
+        "evolve_to": 76
+      }
+    },
+    {
+      "id": 76,
+      "name": "golem",
+      "names": {
+        "en": "golem",
+        "ko": "딱구리",
+        "ja": "ゴローニャ"
+      },
+      "types": [
+        "rock",
+        "ground"
+      ],
+      "stats": {
+        "hp": 80,
+        "attack": 120,
+        "defense": 130,
+        "special-attack": 55,
+        "special-defense": 65,
+        "speed": 45
+      },
+      "height": 14,
+      "weight": 3000,
+      "png": "76.png",
+      "gif": "76.gif",
+      "game": {
+        "catch_rate": 45,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 77,
+      "name": "ponyta",
+      "names": {
+        "en": "ponyta",
+        "ko": "포니타",
+        "ja": "ポニータ"
+      },
+      "types": [
+        "fire"
+      ],
+      "stats": {
+        "hp": 50,
+        "attack": 85,
+        "defense": 55,
+        "special-attack": 65,
+        "special-defense": 65,
+        "speed": 90
+      },
+      "height": 10,
+      "weight": 300,
+      "png": "77.png",
+      "gif": "77.gif",
+      "game": {
+        "catch_rate": 95,
+        "evolve_level": 40,
+        "evolve_to": 78
+      }
+    },
+    {
+      "id": 78,
+      "name": "rapidash",
+      "names": {
+        "en": "rapidash",
+        "ko": "날쌩마",
+        "ja": "ギャロップ"
+      },
+      "types": [
+        "fire"
+      ],
+      "stats": {
+        "hp": 65,
+        "attack": 100,
+        "defense": 70,
+        "special-attack": 80,
+        "special-defense": 80,
+        "speed": 105
+      },
+      "height": 17,
+      "weight": 950,
+      "png": "78.png",
+      "gif": "78.gif",
+      "game": {
+        "catch_rate": 60,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 79,
+      "name": "slowpoke",
+      "names": {
+        "en": "slowpoke",
+        "ko": "야돈",
+        "ja": "ヤドン"
+      },
+      "types": [
+        "water",
+        "psychic"
+      ],
+      "stats": {
+        "hp": 90,
+        "attack": 65,
+        "defense": 65,
+        "special-attack": 40,
+        "special-defense": 40,
+        "speed": 15
+      },
+      "height": 12,
+      "weight": 360,
+      "png": "79.png",
+      "gif": "79.gif",
+      "game": {
+        "catch_rate": 95,
+        "evolve_level": 37,
+        "evolve_to": 80
+      }
+    },
+    {
+      "id": 80,
+      "name": "slowbro",
+      "names": {
+        "en": "slowbro",
+        "ko": "야도란",
+        "ja": "ヤドラン"
+      },
+      "types": [
+        "water",
+        "psychic"
+      ],
+      "stats": {
+        "hp": 95,
+        "attack": 75,
+        "defense": 110,
+        "special-attack": 100,
+        "special-defense": 80,
+        "speed": 30
+      },
+      "height": 16,
+      "weight": 785,
+      "png": "80.png",
+      "gif": "80.gif",
+      "game": {
+        "catch_rate": 75,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 81,
+      "name": "magnemite",
+      "names": {
+        "en": "magnemite",
+        "ko": "코일",
+        "ja": "コイル"
+      },
+      "types": [
+        "electric",
+        "steel"
+      ],
+      "stats": {
+        "hp": 25,
+        "attack": 35,
+        "defense": 70,
+        "special-attack": 95,
+        "special-defense": 55,
+        "speed": 45
+      },
+      "height": 3,
+      "weight": 60,
+      "png": "81.png",
+      "gif": "81.gif",
+      "game": {
+        "catch_rate": 95,
+        "evolve_level": 30,
+        "evolve_to": 82
+      }
+    },
+    {
+      "id": 82,
+      "name": "magneton",
+      "names": {
+        "en": "magneton",
+        "ko": "레어코일",
+        "ja": "レアコイル"
+      },
+      "types": [
+        "electric",
+        "steel"
+      ],
+      "stats": {
+        "hp": 50,
+        "attack": 60,
+        "defense": 95,
+        "special-attack": 120,
+        "special-defense": 70,
+        "speed": 70
+      },
+      "height": 10,
+      "weight": 600,
+      "png": "82.png",
+      "gif": "82.gif",
+      "game": {
+        "catch_rate": 60,
+        "evolve_level": -1,
+        "evolve_to": 462
+      }
+    },
+    {
+      "id": 83,
+      "name": "farfetchd",
+      "names": {
+        "en": "farfetchd",
+        "ko": "파오리",
+        "ja": "カモネギ"
+      },
+      "types": [
+        "normal",
+        "flying"
+      ],
+      "stats": {
+        "hp": 52,
+        "attack": 90,
+        "defense": 55,
+        "special-attack": 58,
+        "special-defense": 62,
+        "speed": 60
+      },
+      "height": 8,
+      "weight": 150,
+      "png": "83.png",
+      "gif": "83.gif",
+      "game": {
+        "catch_rate": 45,
+        "evolve_level": -1,
+        "evolve_to": 865
+      }
+    },
+    {
+      "id": 84,
+      "name": "doduo",
+      "names": {
+        "en": "doduo",
+        "ko": "두두",
+        "ja": "ドードー"
+      },
+      "types": [
+        "normal",
+        "flying"
+      ],
+      "stats": {
+        "hp": 35,
+        "attack": 85,
+        "defense": 45,
+        "special-attack": 35,
+        "special-defense": 35,
+        "speed": 75
+      },
+      "height": 14,
+      "weight": 392,
+      "png": "84.png",
+      "gif": "84.gif",
+      "game": {
+        "catch_rate": 95,
+        "evolve_level": 31,
+        "evolve_to": 85
+      }
+    },
+    {
+      "id": 85,
+      "name": "dodrio",
+      "names": {
+        "en": "dodrio",
+        "ko": "두트리오",
+        "ja": "ドードリオ"
+      },
+      "types": [
+        "normal",
+        "flying"
+      ],
+      "stats": {
+        "hp": 60,
+        "attack": 110,
+        "defense": 70,
+        "special-attack": 60,
+        "special-defense": 60,
+        "speed": 110
+      },
+      "height": 18,
+      "weight": 852,
+      "png": "85.png",
+      "gif": "85.gif",
+      "game": {
+        "catch_rate": 45,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 86,
+      "name": "seel",
+      "names": {
+        "en": "seel",
+        "ko": "쥬쥬",
+        "ja": "パウワウ"
+      },
+      "types": [
+        "water"
+      ],
+      "stats": {
+        "hp": 65,
+        "attack": 45,
+        "defense": 55,
+        "special-attack": 45,
+        "special-defense": 70,
+        "speed": 45
+      },
+      "height": 11,
+      "weight": 900,
+      "png": "86.png",
+      "gif": "86.gif",
+      "game": {
+        "catch_rate": 95,
+        "evolve_level": 34,
+        "evolve_to": 87
+      }
+    },
+    {
+      "id": 87,
+      "name": "dewgong",
+      "names": {
+        "en": "dewgong",
+        "ko": "쥬레곤",
+        "ja": "ジュゴン"
+      },
+      "types": [
+        "water",
+        "ice"
+      ],
+      "stats": {
+        "hp": 90,
+        "attack": 70,
+        "defense": 80,
+        "special-attack": 70,
+        "special-defense": 95,
+        "speed": 70
+      },
+      "height": 17,
+      "weight": 1200,
+      "png": "87.png",
+      "gif": "87.gif",
+      "game": {
+        "catch_rate": 75,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 88,
+      "name": "grimer",
+      "names": {
+        "en": "grimer",
+        "ko": "질퍽이",
+        "ja": "ベトベター"
+      },
+      "types": [
+        "poison"
+      ],
+      "stats": {
+        "hp": 80,
+        "attack": 80,
+        "defense": 50,
+        "special-attack": 40,
+        "special-defense": 50,
+        "speed": 25
+      },
+      "height": 9,
+      "weight": 300,
+      "png": "88.png",
+      "gif": "88.gif",
+      "game": {
+        "catch_rate": 95,
+        "evolve_level": 38,
+        "evolve_to": 89
+      }
+    },
+    {
+      "id": 89,
+      "name": "muk",
+      "names": {
+        "en": "muk",
+        "ko": "질뻐기",
+        "ja": "ベトベトン"
+      },
+      "types": [
+        "poison"
+      ],
+      "stats": {
+        "hp": 105,
+        "attack": 105,
+        "defense": 75,
+        "special-attack": 65,
+        "special-defense": 100,
+        "speed": 50
+      },
+      "height": 12,
+      "weight": 300,
+      "png": "89.png",
+      "gif": "89.gif",
+      "game": {
+        "catch_rate": 75,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 90,
+      "name": "shellder",
+      "names": {
+        "en": "shellder",
+        "ko": "셀러",
+        "ja": "シェルダー"
+      },
+      "types": [
+        "water"
+      ],
+      "stats": {
+        "hp": 30,
+        "attack": 65,
+        "defense": 100,
+        "special-attack": 45,
+        "special-defense": 25,
+        "speed": 40
+      },
+      "height": 3,
+      "weight": 40,
+      "png": "90.png",
+      "gif": "90.gif",
+      "game": {
+        "catch_rate": 95,
+        "evolve_level": -1,
+        "evolve_to": 91
+      }
+    },
+    {
+      "id": 91,
+      "name": "cloyster",
+      "names": {
+        "en": "cloyster",
+        "ko": "파르셀",
+        "ja": "パルシェン"
+      },
+      "types": [
+        "water",
+        "ice"
+      ],
+      "stats": {
+        "hp": 50,
+        "attack": 95,
+        "defense": 180,
+        "special-attack": 85,
+        "special-defense": 45,
+        "speed": 70
+      },
+      "height": 15,
+      "weight": 1325,
+      "png": "91.png",
+      "gif": "91.gif",
+      "game": {
+        "catch_rate": 60,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 92,
+      "name": "gastly",
+      "names": {
+        "en": "gastly",
+        "ko": "고오스",
+        "ja": "ゴース"
+      },
+      "types": [
+        "ghost",
+        "poison"
+      ],
+      "stats": {
+        "hp": 30,
+        "attack": 35,
+        "defense": 30,
+        "special-attack": 100,
+        "special-defense": 35,
+        "speed": 80
+      },
+      "height": 13,
+      "weight": 1,
+      "png": "92.png",
+      "gif": "92.gif",
+      "game": {
+        "catch_rate": 95,
+        "evolve_level": 25,
+        "evolve_to": 93
+      }
+    },
+    {
+      "id": 93,
+      "name": "haunter",
+      "names": {
+        "en": "haunter",
+        "ko": "고우스트",
+        "ja": "ゴースト"
+      },
+      "types": [
+        "ghost",
+        "poison"
+      ],
+      "stats": {
+        "hp": 45,
+        "attack": 50,
+        "defense": 45,
+        "special-attack": 115,
+        "special-defense": 55,
+        "speed": 95
+      },
+      "height": 16,
+      "weight": 1,
+      "png": "93.png",
+      "gif": "93.gif",
+      "game": {
+        "catch_rate": 90,
+        "evolve_level": -1,
+        "evolve_to": 94
+      }
+    },
+    {
+      "id": 94,
+      "name": "gengar",
+      "names": {
+        "en": "gengar",
+        "ko": "팬텀",
+        "ja": "ゲンガー"
+      },
+      "types": [
+        "ghost",
+        "poison"
+      ],
+      "stats": {
+        "hp": 60,
+        "attack": 65,
+        "defense": 60,
+        "special-attack": 130,
+        "special-defense": 75,
+        "speed": 110
+      },
+      "height": 15,
+      "weight": 405,
+      "png": "94.png",
+      "gif": "94.gif",
+      "game": {
+        "catch_rate": 45,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 95,
+      "name": "onix",
+      "names": {
+        "en": "onix",
+        "ko": "롱스톤",
+        "ja": "イワーク"
+      },
+      "types": [
+        "rock",
+        "ground"
+      ],
+      "stats": {
+        "hp": 35,
+        "attack": 45,
+        "defense": 160,
+        "special-attack": 30,
+        "special-defense": 45,
+        "speed": 70
+      },
+      "height": 88,
+      "weight": 2100,
+      "png": "95.png",
+      "gif": "95.gif",
+      "game": {
+        "catch_rate": 45,
+        "evolve_level": -1,
+        "evolve_to": 208
+      }
+    },
+    {
+      "id": 96,
+      "name": "drowzee",
+      "names": {
+        "en": "drowzee",
+        "ko": "슬리프",
+        "ja": "スリープ"
+      },
+      "types": [
+        "psychic"
+      ],
+      "stats": {
+        "hp": 60,
+        "attack": 48,
+        "defense": 45,
+        "special-attack": 43,
+        "special-defense": 90,
+        "speed": 42
+      },
+      "height": 10,
+      "weight": 324,
+      "png": "96.png",
+      "gif": "96.gif",
+      "game": {
+        "catch_rate": 95,
+        "evolve_level": 26,
+        "evolve_to": 97
+      }
+    },
+    {
+      "id": 97,
+      "name": "hypno",
+      "names": {
+        "en": "hypno",
+        "ko": "슬리퍼",
+        "ja": "スリーパー"
+      },
+      "types": [
+        "psychic"
+      ],
+      "stats": {
+        "hp": 85,
+        "attack": 73,
+        "defense": 70,
+        "special-attack": 73,
+        "special-defense": 115,
+        "speed": 67
+      },
+      "height": 16,
+      "weight": 756,
+      "png": "97.png",
+      "gif": "97.gif",
+      "game": {
+        "catch_rate": 75,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 98,
+      "name": "krabby",
+      "names": {
+        "en": "krabby",
+        "ko": "크랩",
+        "ja": "クラブ"
+      },
+      "types": [
+        "water"
+      ],
+      "stats": {
+        "hp": 30,
+        "attack": 105,
+        "defense": 90,
+        "special-attack": 25,
+        "special-defense": 25,
+        "speed": 50
+      },
+      "height": 4,
+      "weight": 65,
+      "png": "98.png",
+      "gif": "98.gif",
+      "game": {
+        "catch_rate": 95,
+        "evolve_level": 28,
+        "evolve_to": 99
+      }
+    },
+    {
+      "id": 99,
+      "name": "kingler",
+      "names": {
+        "en": "kingler",
+        "ko": "킹크랩",
+        "ja": "キングラー"
+      },
+      "types": [
+        "water"
+      ],
+      "stats": {
+        "hp": 55,
+        "attack": 130,
+        "defense": 115,
+        "special-attack": 50,
+        "special-defense": 50,
+        "speed": 75
+      },
+      "height": 13,
+      "weight": 600,
+      "png": "99.png",
+      "gif": "99.gif",
+      "game": {
+        "catch_rate": 60,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 100,
+      "name": "voltorb",
+      "names": {
+        "en": "voltorb",
+        "ko": "찌리리공",
+        "ja": "ビリリダマ"
+      },
+      "types": [
+        "electric"
+      ],
+      "stats": {
+        "hp": 40,
+        "attack": 30,
+        "defense": 50,
+        "special-attack": 55,
+        "special-defense": 55,
+        "speed": 100
+      },
+      "height": 5,
+      "weight": 104,
+      "png": "100.png",
+      "gif": "100.gif",
+      "game": {
+        "catch_rate": 95,
+        "evolve_level": 30,
+        "evolve_to": 101
+      }
+    },
+    {
+      "id": 101,
+      "name": "electrode",
+      "names": {
+        "en": "electrode",
+        "ko": "붐볼",
+        "ja": "マルマイン"
+      },
+      "types": [
+        "electric"
+      ],
+      "stats": {
+        "hp": 60,
+        "attack": 50,
+        "defense": 70,
+        "special-attack": 80,
+        "special-defense": 80,
+        "speed": 150
+      },
+      "height": 12,
+      "weight": 666,
+      "png": "101.png",
+      "gif": "101.gif",
+      "game": {
+        "catch_rate": 60,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 102,
+      "name": "exeggcute",
+      "names": {
+        "en": "exeggcute",
+        "ko": "아라리",
+        "ja": "タマタマ"
+      },
+      "types": [
+        "grass",
+        "psychic"
+      ],
+      "stats": {
+        "hp": 60,
+        "attack": 40,
+        "defense": 80,
+        "special-attack": 60,
+        "special-defense": 45,
+        "speed": 40
+      },
+      "height": 4,
+      "weight": 25,
+      "png": "102.png",
+      "gif": "102.gif",
+      "game": {
+        "catch_rate": 90,
+        "evolve_level": -1,
+        "evolve_to": 103
+      }
+    },
+    {
+      "id": 103,
+      "name": "exeggutor",
+      "names": {
+        "en": "exeggutor",
+        "ko": "나시",
+        "ja": "ナッシー"
+      },
+      "types": [
+        "grass",
+        "psychic"
+      ],
+      "stats": {
+        "hp": 95,
+        "attack": 95,
+        "defense": 85,
+        "special-attack": 125,
+        "special-defense": 75,
+        "speed": 55
+      },
+      "height": 20,
+      "weight": 1200,
+      "png": "103.png",
+      "gif": "103.gif",
+      "game": {
+        "catch_rate": 45,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 104,
+      "name": "cubone",
+      "names": {
+        "en": "cubone",
+        "ko": "탕구리",
+        "ja": "カラカラ"
+      },
+      "types": [
+        "ground"
+      ],
+      "stats": {
+        "hp": 50,
+        "attack": 50,
+        "defense": 95,
+        "special-attack": 40,
+        "special-defense": 50,
+        "speed": 35
+      },
+      "height": 4,
+      "weight": 65,
+      "png": "104.png",
+      "gif": "104.gif",
+      "game": {
+        "catch_rate": 95,
+        "evolve_level": 28,
+        "evolve_to": 105
+      }
+    },
+    {
+      "id": 105,
+      "name": "marowak",
+      "names": {
+        "en": "marowak",
+        "ko": "텅구리",
+        "ja": "ガラガラ"
+      },
+      "types": [
+        "ground"
+      ],
+      "stats": {
+        "hp": 60,
+        "attack": 80,
+        "defense": 110,
+        "special-attack": 50,
+        "special-defense": 80,
+        "speed": 45
+      },
+      "height": 10,
+      "weight": 450,
+      "png": "105.png",
+      "gif": "105.gif",
+      "game": {
+        "catch_rate": 75,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 106,
+      "name": "hitmonlee",
+      "names": {
+        "en": "hitmonlee",
+        "ko": "시라소몬",
+        "ja": "サワムラー"
+      },
+      "types": [
+        "fighting"
+      ],
+      "stats": {
+        "hp": 50,
+        "attack": 120,
+        "defense": 53,
+        "special-attack": 35,
+        "special-defense": 110,
+        "speed": 87
+      },
+      "height": 15,
+      "weight": 498,
+      "png": "106.png",
+      "gif": "106.gif",
+      "game": {
+        "catch_rate": 45,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 107,
+      "name": "hitmonchan",
+      "names": {
+        "en": "hitmonchan",
+        "ko": "홍수몬",
+        "ja": "エビワラー"
+      },
+      "types": [
+        "fighting"
+      ],
+      "stats": {
+        "hp": 50,
+        "attack": 105,
+        "defense": 79,
+        "special-attack": 35,
+        "special-defense": 110,
+        "speed": 76
+      },
+      "height": 14,
+      "weight": 502,
+      "png": "107.png",
+      "gif": "107.gif",
+      "game": {
+        "catch_rate": 45,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 108,
+      "name": "lickitung",
+      "names": {
+        "en": "lickitung",
+        "ko": "내루미",
+        "ja": "ベロリンガ"
+      },
+      "types": [
+        "normal"
+      ],
+      "stats": {
+        "hp": 90,
+        "attack": 55,
+        "defense": 75,
+        "special-attack": 60,
+        "special-defense": 75,
+        "speed": 30
+      },
+      "height": 12,
+      "weight": 655,
+      "png": "108.png",
+      "gif": "108.gif",
+      "game": {
+        "catch_rate": 45,
+        "evolve_level": -1,
+        "evolve_to": 463
+      }
+    },
+    {
+      "id": 109,
+      "name": "koffing",
+      "names": {
+        "en": "koffing",
+        "ko": "또가스",
+        "ja": "ドガース"
+      },
+      "types": [
+        "poison"
+      ],
+      "stats": {
+        "hp": 40,
+        "attack": 65,
+        "defense": 95,
+        "special-attack": 60,
+        "special-defense": 45,
+        "speed": 35
+      },
+      "height": 6,
+      "weight": 10,
+      "png": "109.png",
+      "gif": "109.gif",
+      "game": {
+        "catch_rate": 95,
+        "evolve_level": 35,
+        "evolve_to": 110
+      }
+    },
+    {
+      "id": 110,
+      "name": "weezing",
+      "names": {
+        "en": "weezing",
+        "ko": "또도가스",
+        "ja": "マタドガス"
+      },
+      "types": [
+        "poison"
+      ],
+      "stats": {
+        "hp": 65,
+        "attack": 90,
+        "defense": 120,
+        "special-attack": 85,
+        "special-defense": 70,
+        "speed": 60
+      },
+      "height": 12,
+      "weight": 95,
+      "png": "110.png",
+      "gif": "110.gif",
+      "game": {
+        "catch_rate": 60,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 111,
+      "name": "rhyhorn",
+      "names": {
+        "en": "rhyhorn",
+        "ko": "뿔카노",
+        "ja": "サイホーン"
+      },
+      "types": [
+        "ground",
+        "rock"
+      ],
+      "stats": {
+        "hp": 80,
+        "attack": 85,
+        "defense": 95,
+        "special-attack": 30,
+        "special-defense": 30,
+        "speed": 25
+      },
+      "height": 10,
+      "weight": 1150,
+      "png": "111.png",
+      "gif": "111.gif",
+      "game": {
+        "catch_rate": 95,
+        "evolve_level": 42,
+        "evolve_to": 112
+      }
+    },
+    {
+      "id": 112,
+      "name": "rhydon",
+      "names": {
+        "en": "rhydon",
+        "ko": "코뿌리",
+        "ja": "サイドン"
+      },
+      "types": [
+        "ground",
+        "rock"
+      ],
+      "stats": {
+        "hp": 105,
+        "attack": 130,
+        "defense": 120,
+        "special-attack": 45,
+        "special-defense": 45,
+        "speed": 40
+      },
+      "height": 19,
+      "weight": 1200,
+      "png": "112.png",
+      "gif": "112.gif",
+      "game": {
+        "catch_rate": 60,
+        "evolve_level": -1,
+        "evolve_to": 464
+      }
+    },
+    {
+      "id": 113,
+      "name": "chansey",
+      "names": {
+        "en": "chansey",
+        "ko": "럭키",
+        "ja": "ラッキー"
+      },
+      "types": [
+        "normal"
+      ],
+      "stats": {
+        "hp": 250,
+        "attack": 5,
+        "defense": 5,
+        "special-attack": 35,
+        "special-defense": 105,
+        "speed": 50
+      },
+      "height": 11,
+      "weight": 346,
+      "png": "113.png",
+      "gif": "113.gif",
+      "game": {
+        "catch_rate": 30,
+        "evolve_level": -1,
+        "evolve_to": 242
+      }
+    },
+    {
+      "id": 114,
+      "name": "tangela",
+      "names": {
+        "en": "tangela",
+        "ko": "덩쿠리",
+        "ja": "モンジャラ"
+      },
+      "types": [
+        "grass"
+      ],
+      "stats": {
+        "hp": 65,
+        "attack": 55,
+        "defense": 115,
+        "special-attack": 100,
+        "special-defense": 40,
+        "speed": 60
+      },
+      "height": 10,
+      "weight": 350,
+      "png": "114.png",
+      "gif": "114.gif",
+      "game": {
+        "catch_rate": 45,
+        "evolve_level": -1,
+        "evolve_to": 465
+      }
+    },
+    {
+      "id": 115,
+      "name": "kangaskhan",
+      "names": {
+        "en": "kangaskhan",
+        "ko": "캥카",
+        "ja": "ガルーラ"
+      },
+      "types": [
+        "normal"
+      ],
+      "stats": {
+        "hp": 105,
+        "attack": 95,
+        "defense": 80,
+        "special-attack": 40,
+        "special-defense": 80,
+        "speed": 90
+      },
+      "height": 22,
+      "weight": 800,
+      "png": "115.png",
+      "gif": "115.gif",
+      "game": {
+        "catch_rate": 45,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 116,
+      "name": "horsea",
+      "names": {
+        "en": "horsea",
+        "ko": "쏘드라",
+        "ja": "タッツー"
+      },
+      "types": [
+        "water"
+      ],
+      "stats": {
+        "hp": 30,
+        "attack": 40,
+        "defense": 70,
+        "special-attack": 70,
+        "special-defense": 25,
+        "speed": 60
+      },
+      "height": 4,
+      "weight": 80,
+      "png": "116.png",
+      "gif": "116.gif",
+      "game": {
+        "catch_rate": 95,
+        "evolve_level": 32,
+        "evolve_to": 117
+      }
+    },
+    {
+      "id": 117,
+      "name": "seadra",
+      "names": {
+        "en": "seadra",
+        "ko": "시드라",
+        "ja": "シードラ"
+      },
+      "types": [
+        "water"
+      ],
+      "stats": {
+        "hp": 55,
+        "attack": 65,
+        "defense": 95,
+        "special-attack": 95,
+        "special-defense": 45,
+        "speed": 85
+      },
+      "height": 12,
+      "weight": 250,
+      "png": "117.png",
+      "gif": "117.gif",
+      "game": {
+        "catch_rate": 75,
+        "evolve_level": -1,
+        "evolve_to": 230
+      }
+    },
+    {
+      "id": 118,
+      "name": "goldeen",
+      "names": {
+        "en": "goldeen",
+        "ko": "콘치",
+        "ja": "トサキント"
+      },
+      "types": [
+        "water"
+      ],
+      "stats": {
+        "hp": 45,
+        "attack": 67,
+        "defense": 60,
+        "special-attack": 35,
+        "special-defense": 50,
+        "speed": 63
+      },
+      "height": 6,
+      "weight": 150,
+      "png": "118.png",
+      "gif": "118.gif",
+      "game": {
+        "catch_rate": 95,
+        "evolve_level": 33,
+        "evolve_to": 119
+      }
+    },
+    {
+      "id": 119,
+      "name": "seaking",
+      "names": {
+        "en": "seaking",
+        "ko": "왕콘치",
+        "ja": "アズマオウ"
+      },
+      "types": [
+        "water"
+      ],
+      "stats": {
+        "hp": 80,
+        "attack": 92,
+        "defense": 65,
+        "special-attack": 65,
+        "special-defense": 80,
+        "speed": 68
+      },
+      "height": 13,
+      "weight": 390,
+      "png": "119.png",
+      "gif": "119.gif",
+      "game": {
+        "catch_rate": 60,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 120,
+      "name": "staryu",
+      "names": {
+        "en": "staryu",
+        "ko": "별가사리",
+        "ja": "ヒトデマン"
+      },
+      "types": [
+        "water"
+      ],
+      "stats": {
+        "hp": 30,
+        "attack": 45,
+        "defense": 55,
+        "special-attack": 70,
+        "special-defense": 55,
+        "speed": 85
+      },
+      "height": 8,
+      "weight": 345,
+      "png": "120.png",
+      "gif": "120.gif",
+      "game": {
+        "catch_rate": 95,
+        "evolve_level": -1,
+        "evolve_to": 121
+      }
+    },
+    {
+      "id": 121,
+      "name": "starmie",
+      "names": {
+        "en": "starmie",
+        "ko": "아쿠스타",
+        "ja": "スターミー"
+      },
+      "types": [
+        "water",
+        "psychic"
+      ],
+      "stats": {
+        "hp": 60,
+        "attack": 75,
+        "defense": 85,
+        "special-attack": 100,
+        "special-defense": 85,
+        "speed": 115
+      },
+      "height": 11,
+      "weight": 800,
+      "png": "121.png",
+      "gif": "121.gif",
+      "game": {
+        "catch_rate": 60,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 122,
+      "name": "mr-mime",
+      "names": {
+        "en": "mr-mime",
+        "ko": "마임맨",
+        "ja": "バリヤード"
+      },
+      "types": [
+        "psychic",
+        "fairy"
+      ],
+      "stats": {
+        "hp": 40,
+        "attack": 45,
+        "defense": 65,
+        "special-attack": 100,
+        "special-defense": 120,
+        "speed": 90
+      },
+      "height": 13,
+      "weight": 545,
+      "png": "122.png",
+      "gif": "122.gif",
+      "game": {
+        "catch_rate": 45,
+        "evolve_level": 42,
+        "evolve_to": 866
+      }
+    },
+    {
+      "id": 123,
+      "name": "scyther",
+      "names": {
+        "en": "scyther",
+        "ko": "스라크",
+        "ja": "ストライク"
+      },
+      "types": [
+        "bug",
+        "flying"
+      ],
+      "stats": {
+        "hp": 70,
+        "attack": 110,
+        "defense": 80,
+        "special-attack": 55,
+        "special-defense": 80,
+        "speed": 105
+      },
+      "height": 15,
+      "weight": 560,
+      "png": "123.png",
+      "gif": "123.gif",
+      "game": {
+        "catch_rate": 45,
+        "evolve_level": -1,
+        "evolve_to": 212
+      }
+    },
+    {
+      "id": 124,
+      "name": "jynx",
+      "names": {
+        "en": "jynx",
+        "ko": "루주라",
+        "ja": "ルージュラ"
+      },
+      "types": [
+        "ice",
+        "psychic"
+      ],
+      "stats": {
+        "hp": 65,
+        "attack": 50,
+        "defense": 35,
+        "special-attack": 115,
+        "special-defense": 95,
+        "speed": 95
+      },
+      "height": 14,
+      "weight": 406,
+      "png": "124.png",
+      "gif": "124.gif",
+      "game": {
+        "catch_rate": 45,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 125,
+      "name": "electabuzz",
+      "names": {
+        "en": "electabuzz",
+        "ko": "에레브",
+        "ja": "エレブー"
+      },
+      "types": [
+        "electric"
+      ],
+      "stats": {
+        "hp": 65,
+        "attack": 83,
+        "defense": 57,
+        "special-attack": 95,
+        "special-defense": 85,
+        "speed": 105
+      },
+      "height": 11,
+      "weight": 300,
+      "png": "125.png",
+      "gif": "125.gif",
+      "game": {
+        "catch_rate": 45,
+        "evolve_level": -1,
+        "evolve_to": 466
+      }
+    },
+    {
+      "id": 126,
+      "name": "magmar",
+      "names": {
+        "en": "magmar",
+        "ko": "마그마",
+        "ja": "ブーバー"
+      },
+      "types": [
+        "fire"
+      ],
+      "stats": {
+        "hp": 65,
+        "attack": 95,
+        "defense": 57,
+        "special-attack": 100,
+        "special-defense": 85,
+        "speed": 93
+      },
+      "height": 13,
+      "weight": 445,
+      "png": "126.png",
+      "gif": "126.gif",
+      "game": {
+        "catch_rate": 45,
+        "evolve_level": -1,
+        "evolve_to": 467
+      }
+    },
+    {
+      "id": 127,
+      "name": "pinsir",
+      "names": {
+        "en": "pinsir",
+        "ko": "쁘사이저",
+        "ja": "カイロス"
+      },
+      "types": [
+        "bug"
+      ],
+      "stats": {
+        "hp": 65,
+        "attack": 125,
+        "defense": 100,
+        "special-attack": 55,
+        "special-defense": 70,
+        "speed": 85
+      },
+      "height": 15,
+      "weight": 550,
+      "png": "127.png",
+      "gif": "127.gif",
+      "game": {
+        "catch_rate": 45,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 128,
+      "name": "tauros",
+      "names": {
+        "en": "tauros",
+        "ko": "켄타로스",
+        "ja": "ケンタロス"
+      },
+      "types": [
+        "normal"
+      ],
+      "stats": {
+        "hp": 75,
+        "attack": 100,
+        "defense": 95,
+        "special-attack": 40,
+        "special-defense": 70,
+        "speed": 110
+      },
+      "height": 14,
+      "weight": 884,
+      "png": "128.png",
+      "gif": "128.gif",
+      "game": {
+        "catch_rate": 45,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 129,
+      "name": "magikarp",
+      "names": {
+        "en": "magikarp",
+        "ko": "잉어킹",
+        "ja": "コイキング"
+      },
+      "types": [
+        "water"
+      ],
+      "stats": {
+        "hp": 20,
+        "attack": 10,
+        "defense": 55,
+        "special-attack": 15,
+        "special-defense": 20,
+        "speed": 80
+      },
+      "height": 9,
+      "weight": 100,
+      "png": "129.png",
+      "gif": "129.gif",
+      "game": {
+        "catch_rate": 95,
+        "evolve_level": 20,
+        "evolve_to": 130
+      }
+    },
+    {
+      "id": 130,
+      "name": "gyarados",
+      "names": {
+        "en": "gyarados",
+        "ko": "갸라도스",
+        "ja": "ギャラドス"
+      },
+      "types": [
+        "water",
+        "flying"
+      ],
+      "stats": {
+        "hp": 95,
+        "attack": 125,
+        "defense": 79,
+        "special-attack": 60,
+        "special-defense": 100,
+        "speed": 81
+      },
+      "height": 65,
+      "weight": 2350,
+      "png": "130.png",
+      "gif": "130.gif",
+      "game": {
+        "catch_rate": 45,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 131,
+      "name": "lapras",
+      "names": {
+        "en": "lapras",
+        "ko": "라프라스",
+        "ja": "ラプラス"
+      },
+      "types": [
+        "water",
+        "ice"
+      ],
+      "stats": {
+        "hp": 130,
+        "attack": 85,
+        "defense": 80,
+        "special-attack": 85,
+        "special-defense": 95,
+        "speed": 60
+      },
+      "height": 25,
+      "weight": 2200,
+      "png": "131.png",
+      "gif": "131.gif",
+      "game": {
+        "catch_rate": 45,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 132,
+      "name": "ditto",
+      "names": {
+        "en": "ditto",
+        "ko": "메타몽",
+        "ja": "メタモン"
+      },
+      "types": [
+        "normal"
+      ],
+      "stats": {
+        "hp": 48,
+        "attack": 48,
+        "defense": 48,
+        "special-attack": 48,
+        "special-defense": 48,
+        "speed": 48
+      },
+      "height": 3,
+      "weight": 40,
+      "png": "132.png",
+      "gif": "132.gif",
+      "game": {
+        "catch_rate": 35,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 133,
+      "name": "eevee",
+      "names": {
+        "en": "eevee",
+        "ko": "이브이",
+        "ja": "イーブイ"
+      },
+      "types": [
+        "normal"
+      ],
+      "stats": {
+        "hp": 55,
+        "attack": 55,
+        "defense": 50,
+        "special-attack": 45,
+        "special-defense": 65,
+        "speed": 55
+      },
+      "height": 3,
+      "weight": 65,
+      "png": "133.png",
+      "gif": "133.gif",
+      "game": {
+        "catch_rate": 45,
+        "evolve_level": -1,
+        "evolve_to": 134
+      }
+    },
+    {
+      "id": 134,
+      "name": "vaporeon",
+      "names": {
+        "en": "vaporeon",
+        "ko": "샤미드",
+        "ja": "シャワーズ"
+      },
+      "types": [
+        "water"
+      ],
+      "stats": {
+        "hp": 130,
+        "attack": 65,
+        "defense": 60,
+        "special-attack": 110,
+        "special-defense": 95,
+        "speed": 65
+      },
+      "height": 10,
+      "weight": 290,
+      "png": "134.png",
+      "gif": "134.gif",
+      "game": {
+        "catch_rate": 45,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 135,
+      "name": "jolteon",
+      "names": {
+        "en": "jolteon",
+        "ko": "쥬피썬더",
+        "ja": "サンダース"
+      },
+      "types": [
+        "electric"
+      ],
+      "stats": {
+        "hp": 65,
+        "attack": 65,
+        "defense": 60,
+        "special-attack": 110,
+        "special-defense": 95,
+        "speed": 130
+      },
+      "height": 8,
+      "weight": 245,
+      "png": "135.png",
+      "gif": "135.gif",
+      "game": {
+        "catch_rate": 45,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 136,
+      "name": "flareon",
+      "names": {
+        "en": "flareon",
+        "ko": "부스터",
+        "ja": "ブースター"
+      },
+      "types": [
+        "fire"
+      ],
+      "stats": {
+        "hp": 65,
+        "attack": 130,
+        "defense": 60,
+        "special-attack": 95,
+        "special-defense": 110,
+        "speed": 65
+      },
+      "height": 9,
+      "weight": 250,
+      "png": "136.png",
+      "gif": "136.gif",
+      "game": {
+        "catch_rate": 45,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 137,
+      "name": "porygon",
+      "names": {
+        "en": "porygon",
+        "ko": "폴리곤",
+        "ja": "ポリゴン"
+      },
+      "types": [
+        "normal"
+      ],
+      "stats": {
+        "hp": 65,
+        "attack": 60,
+        "defense": 70,
+        "special-attack": 85,
+        "special-defense": 75,
+        "speed": 40
+      },
+      "height": 8,
+      "weight": 365,
+      "png": "137.png",
+      "gif": "137.gif",
+      "game": {
+        "catch_rate": 45,
+        "evolve_level": -1,
+        "evolve_to": 233
+      }
+    },
+    {
+      "id": 138,
+      "name": "omanyte",
+      "names": {
+        "en": "omanyte",
+        "ko": "암나이트",
+        "ja": "オムナイト"
+      },
+      "types": [
+        "rock",
+        "water"
+      ],
+      "stats": {
+        "hp": 35,
+        "attack": 40,
+        "defense": 100,
+        "special-attack": 90,
+        "special-defense": 55,
+        "speed": 35
+      },
+      "height": 4,
+      "weight": 75,
+      "png": "138.png",
+      "gif": "138.gif",
+      "game": {
+        "catch_rate": 45,
+        "evolve_level": 40,
+        "evolve_to": 139
+      }
+    },
+    {
+      "id": 139,
+      "name": "omastar",
+      "names": {
+        "en": "omastar",
+        "ko": "암스타",
+        "ja": "オムスター"
+      },
+      "types": [
+        "rock",
+        "water"
+      ],
+      "stats": {
+        "hp": 70,
+        "attack": 60,
+        "defense": 125,
+        "special-attack": 115,
+        "special-defense": 70,
+        "speed": 55
+      },
+      "height": 10,
+      "weight": 350,
+      "png": "139.png",
+      "gif": "139.gif",
+      "game": {
+        "catch_rate": 45,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 140,
+      "name": "kabuto",
+      "names": {
+        "en": "kabuto",
+        "ko": "투구",
+        "ja": "カブト"
+      },
+      "types": [
+        "rock",
+        "water"
+      ],
+      "stats": {
+        "hp": 30,
+        "attack": 80,
+        "defense": 90,
+        "special-attack": 55,
+        "special-defense": 45,
+        "speed": 55
+      },
+      "height": 5,
+      "weight": 115,
+      "png": "140.png",
+      "gif": "140.gif",
+      "game": {
+        "catch_rate": 45,
+        "evolve_level": 40,
+        "evolve_to": 141
+      }
+    },
+    {
+      "id": 141,
+      "name": "kabutops",
+      "names": {
+        "en": "kabutops",
+        "ko": "투구푸스",
+        "ja": "カブトプス"
+      },
+      "types": [
+        "rock",
+        "water"
+      ],
+      "stats": {
+        "hp": 60,
+        "attack": 115,
+        "defense": 105,
+        "special-attack": 65,
+        "special-defense": 70,
+        "speed": 80
+      },
+      "height": 13,
+      "weight": 405,
+      "png": "141.png",
+      "gif": "141.gif",
+      "game": {
+        "catch_rate": 45,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 142,
+      "name": "aerodactyl",
+      "names": {
+        "en": "aerodactyl",
+        "ko": "프테라",
+        "ja": "プテラ"
+      },
+      "types": [
+        "rock",
+        "flying"
+      ],
+      "stats": {
+        "hp": 80,
+        "attack": 105,
+        "defense": 65,
+        "special-attack": 60,
+        "special-defense": 75,
+        "speed": 130
+      },
+      "height": 18,
+      "weight": 590,
+      "png": "142.png",
+      "gif": "142.gif",
+      "game": {
+        "catch_rate": 45,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 143,
+      "name": "snorlax",
+      "names": {
+        "en": "snorlax",
+        "ko": "잠만보",
+        "ja": "カビゴン"
+      },
+      "types": [
+        "normal"
+      ],
+      "stats": {
+        "hp": 160,
+        "attack": 110,
+        "defense": 65,
+        "special-attack": 65,
+        "special-defense": 110,
+        "speed": 30
+      },
+      "height": 21,
+      "weight": 4600,
+      "png": "143.png",
+      "gif": "143.gif",
+      "game": {
+        "catch_rate": 25,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 144,
+      "name": "articuno",
+      "names": {
+        "en": "articuno",
+        "ko": "프리져",
+        "ja": "フリーザー"
+      },
+      "types": [
+        "ice",
+        "flying"
+      ],
+      "stats": {
+        "hp": 90,
+        "attack": 85,
+        "defense": 100,
+        "special-attack": 95,
+        "special-defense": 125,
+        "speed": 85
+      },
+      "height": 17,
+      "weight": 554,
+      "png": "144.png",
+      "gif": "144.gif",
+      "game": {
+        "catch_rate": 3,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 145,
+      "name": "zapdos",
+      "names": {
+        "en": "zapdos",
+        "ko": "썬더",
+        "ja": "サンダー"
+      },
+      "types": [
+        "electric",
+        "flying"
+      ],
+      "stats": {
+        "hp": 90,
+        "attack": 90,
+        "defense": 85,
+        "special-attack": 125,
+        "special-defense": 90,
+        "speed": 100
+      },
+      "height": 16,
+      "weight": 526,
+      "png": "145.png",
+      "gif": "145.gif",
+      "game": {
+        "catch_rate": 3,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 146,
+      "name": "moltres",
+      "names": {
+        "en": "moltres",
+        "ko": "파이어",
+        "ja": "ファイヤー"
+      },
+      "types": [
+        "fire",
+        "flying"
+      ],
+      "stats": {
+        "hp": 90,
+        "attack": 100,
+        "defense": 90,
+        "special-attack": 125,
+        "special-defense": 85,
+        "speed": 90
+      },
+      "height": 20,
+      "weight": 600,
+      "png": "146.png",
+      "gif": "146.gif",
+      "game": {
+        "catch_rate": 3,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 147,
+      "name": "dratini",
+      "names": {
+        "en": "dratini",
+        "ko": "미뇽",
+        "ja": "ミニリュウ"
+      },
+      "types": [
+        "dragon"
+      ],
+      "stats": {
+        "hp": 41,
+        "attack": 64,
+        "defense": 45,
+        "special-attack": 50,
+        "special-defense": 50,
+        "speed": 50
+      },
+      "height": 18,
+      "weight": 33,
+      "png": "147.png",
+      "gif": "147.gif",
+      "game": {
+        "catch_rate": 45,
+        "evolve_level": 30,
+        "evolve_to": 148
+      }
+    },
+    {
+      "id": 148,
+      "name": "dragonair",
+      "names": {
+        "en": "dragonair",
+        "ko": "신뇽",
+        "ja": "ハクリュー"
+      },
+      "types": [
+        "dragon"
+      ],
+      "stats": {
+        "hp": 61,
+        "attack": 84,
+        "defense": 65,
+        "special-attack": 70,
+        "special-defense": 70,
+        "speed": 70
+      },
+      "height": 40,
+      "weight": 165,
+      "png": "148.png",
+      "gif": "148.gif",
+      "game": {
+        "catch_rate": 45,
+        "evolve_level": 55,
+        "evolve_to": 149
+      }
+    },
+    {
+      "id": 149,
+      "name": "dragonite",
+      "names": {
+        "en": "dragonite",
+        "ko": "망나뇽",
+        "ja": "カイリュー"
+      },
+      "types": [
+        "dragon",
+        "flying"
+      ],
+      "stats": {
+        "hp": 91,
+        "attack": 134,
+        "defense": 95,
+        "special-attack": 100,
+        "special-defense": 100,
+        "speed": 80
+      },
+      "height": 22,
+      "weight": 2100,
+      "png": "149.png",
+      "gif": "149.gif",
+      "game": {
+        "catch_rate": 45,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 150,
+      "name": "mewtwo",
+      "names": {
+        "en": "mewtwo",
+        "ko": "뮤츠",
+        "ja": "ミュウツー"
+      },
+      "types": [
+        "psychic"
+      ],
+      "stats": {
+        "hp": 106,
+        "attack": 110,
+        "defense": 90,
+        "special-attack": 154,
+        "special-defense": 90,
+        "speed": 130
+      },
+      "height": 20,
+      "weight": 1220,
+      "png": "150.png",
+      "gif": "150.gif",
+      "game": {
+        "catch_rate": 3,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 151,
+      "name": "mew",
+      "names": {
+        "en": "mew",
+        "ko": "뮤",
+        "ja": "ミュウ"
+      },
+      "types": [
+        "psychic"
+      ],
+      "stats": {
+        "hp": 100,
+        "attack": 100,
+        "defense": 100,
+        "special-attack": 100,
+        "special-defense": 100,
+        "speed": 100
+      },
+      "height": 4,
+      "weight": 40,
+      "png": "151.png",
+      "gif": "151.gif",
+      "game": {
+        "catch_rate": 45,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 152,
+      "name": "chikorita",
+      "names": {
+        "en": "chikorita",
+        "ko": "치코리타",
+        "ja": "チコリータ"
+      },
+      "types": [
+        "grass"
+      ],
+      "stats": {
+        "hp": 45,
+        "attack": 49,
+        "defense": 65,
+        "special-attack": 49,
+        "special-defense": 65,
+        "speed": 45
+      },
+      "height": 9,
+      "weight": 64,
+      "png": "152.png",
+      "gif": "152.gif",
+      "game": {
+        "catch_rate": 45,
+        "evolve_level": 16,
+        "evolve_to": 153
+      }
+    },
+    {
+      "id": 153,
+      "name": "bayleef",
+      "names": {
+        "en": "bayleef",
+        "ko": "베이리프",
+        "ja": "ベイリーフ"
+      },
+      "types": [
+        "grass"
+      ],
+      "stats": {
+        "hp": 60,
+        "attack": 62,
+        "defense": 80,
+        "special-attack": 63,
+        "special-defense": 80,
+        "speed": 60
+      },
+      "height": 12,
+      "weight": 158,
+      "png": "153.png",
+      "gif": "153.gif",
+      "game": {
+        "catch_rate": 45,
+        "evolve_level": 32,
+        "evolve_to": 154
+      }
+    },
+    {
+      "id": 154,
+      "name": "meganium",
+      "names": {
+        "en": "meganium",
+        "ko": "메가니움",
+        "ja": "メガニウム"
+      },
+      "types": [
+        "grass"
+      ],
+      "stats": {
+        "hp": 80,
+        "attack": 82,
+        "defense": 100,
+        "special-attack": 83,
+        "special-defense": 100,
+        "speed": 80
+      },
+      "height": 18,
+      "weight": 1005,
+      "png": "154.png",
+      "gif": "154.gif",
+      "game": {
+        "catch_rate": 45,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 155,
+      "name": "cyndaquil",
+      "names": {
+        "en": "cyndaquil",
+        "ko": "브케인",
+        "ja": "ヒノアラシ"
+      },
+      "types": [
+        "fire"
+      ],
+      "stats": {
+        "hp": 39,
+        "attack": 52,
+        "defense": 43,
+        "special-attack": 60,
+        "special-defense": 50,
+        "speed": 65
+      },
+      "height": 5,
+      "weight": 79,
+      "png": "155.png",
+      "gif": "155.gif",
+      "game": {
+        "catch_rate": 45,
+        "evolve_level": 14,
+        "evolve_to": 156
+      }
+    },
+    {
+      "id": 156,
+      "name": "quilava",
+      "names": {
+        "en": "quilava",
+        "ko": "마그케인",
+        "ja": "マグマラシ"
+      },
+      "types": [
+        "fire"
+      ],
+      "stats": {
+        "hp": 58,
+        "attack": 64,
+        "defense": 58,
+        "special-attack": 80,
+        "special-defense": 65,
+        "speed": 80
+      },
+      "height": 9,
+      "weight": 190,
+      "png": "156.png",
+      "gif": "156.gif",
+      "game": {
+        "catch_rate": 45,
+        "evolve_level": 36,
+        "evolve_to": 157
+      }
+    },
+    {
+      "id": 157,
+      "name": "typhlosion",
+      "names": {
+        "en": "typhlosion",
+        "ko": "블레이범",
+        "ja": "バクフーン"
+      },
+      "types": [
+        "fire"
+      ],
+      "stats": {
+        "hp": 78,
+        "attack": 84,
+        "defense": 78,
+        "special-attack": 109,
+        "special-defense": 85,
+        "speed": 100
+      },
+      "height": 17,
+      "weight": 795,
+      "png": "157.png",
+      "gif": "157.gif",
+      "game": {
+        "catch_rate": 45,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 158,
+      "name": "totodile",
+      "names": {
+        "en": "totodile",
+        "ko": "리아코",
+        "ja": "ワニノコ"
+      },
+      "types": [
+        "water"
+      ],
+      "stats": {
+        "hp": 50,
+        "attack": 65,
+        "defense": 64,
+        "special-attack": 44,
+        "special-defense": 48,
+        "speed": 43
+      },
+      "height": 6,
+      "weight": 95,
+      "png": "158.png",
+      "gif": "158.gif",
+      "game": {
+        "catch_rate": 45,
+        "evolve_level": 18,
+        "evolve_to": 159
+      }
+    },
+    {
+      "id": 159,
+      "name": "croconaw",
+      "names": {
+        "en": "croconaw",
+        "ko": "엘리게이",
+        "ja": "アリゲイツ"
+      },
+      "types": [
+        "water"
+      ],
+      "stats": {
+        "hp": 65,
+        "attack": 80,
+        "defense": 80,
+        "special-attack": 59,
+        "special-defense": 63,
+        "speed": 58
+      },
+      "height": 11,
+      "weight": 250,
+      "png": "159.png",
+      "gif": "159.gif",
+      "game": {
+        "catch_rate": 45,
+        "evolve_level": 30,
+        "evolve_to": 160
+      }
+    },
+    {
+      "id": 160,
+      "name": "feraligatr",
+      "names": {
+        "en": "feraligatr",
+        "ko": "장크로다일",
+        "ja": "オーダイル"
+      },
+      "types": [
+        "water"
+      ],
+      "stats": {
+        "hp": 85,
+        "attack": 105,
+        "defense": 100,
+        "special-attack": 79,
+        "special-defense": 83,
+        "speed": 78
+      },
+      "height": 23,
+      "weight": 888,
+      "png": "160.png",
+      "gif": "160.gif",
+      "game": {
+        "catch_rate": 45,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 161,
+      "name": "sentret",
+      "names": {
+        "en": "sentret",
+        "ko": "꼬리선",
+        "ja": "オタチ"
+      },
+      "types": [
+        "normal"
+      ],
+      "stats": {
+        "hp": 35,
+        "attack": 46,
+        "defense": 34,
+        "special-attack": 35,
+        "special-defense": 45,
+        "speed": 20
+      },
+      "height": 8,
+      "weight": 60,
+      "png": "161.png",
+      "gif": "161.gif",
+      "game": {
+        "catch_rate": 95,
+        "evolve_level": 15,
+        "evolve_to": 162
+      }
+    },
+    {
+      "id": 162,
+      "name": "furret",
+      "names": {
+        "en": "furret",
+        "ko": "다꼬리",
+        "ja": "オオタチ"
+      },
+      "types": [
+        "normal"
+      ],
+      "stats": {
+        "hp": 85,
+        "attack": 76,
+        "defense": 64,
+        "special-attack": 45,
+        "special-defense": 55,
+        "speed": 90
+      },
+      "height": 18,
+      "weight": 325,
+      "png": "162.png",
+      "gif": "162.gif",
+      "game": {
+        "catch_rate": 90,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 163,
+      "name": "hoothoot",
+      "names": {
+        "en": "hoothoot",
+        "ko": "부우부",
+        "ja": "ホーホー"
+      },
+      "types": [
+        "normal",
+        "flying"
+      ],
+      "stats": {
+        "hp": 60,
+        "attack": 30,
+        "defense": 30,
+        "special-attack": 36,
+        "special-defense": 56,
+        "speed": 50
+      },
+      "height": 7,
+      "weight": 212,
+      "png": "163.png",
+      "gif": "163.gif",
+      "game": {
+        "catch_rate": 95,
+        "evolve_level": 20,
+        "evolve_to": 164
+      }
+    },
+    {
+      "id": 164,
+      "name": "noctowl",
+      "names": {
+        "en": "noctowl",
+        "ko": "야부엉",
+        "ja": "ヨルノズク"
+      },
+      "types": [
+        "normal",
+        "flying"
+      ],
+      "stats": {
+        "hp": 100,
+        "attack": 50,
+        "defense": 50,
+        "special-attack": 86,
+        "special-defense": 96,
+        "speed": 70
+      },
+      "height": 16,
+      "weight": 408,
+      "png": "164.png",
+      "gif": "164.gif",
+      "game": {
+        "catch_rate": 90,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 165,
+      "name": "ledyba",
+      "names": {
+        "en": "ledyba",
+        "ko": "레디바",
+        "ja": "レディバ"
+      },
+      "types": [
+        "bug",
+        "flying"
+      ],
+      "stats": {
+        "hp": 40,
+        "attack": 20,
+        "defense": 30,
+        "special-attack": 40,
+        "special-defense": 80,
+        "speed": 55
+      },
+      "height": 10,
+      "weight": 108,
+      "png": "165.png",
+      "gif": "165.gif",
+      "game": {
+        "catch_rate": 95,
+        "evolve_level": 18,
+        "evolve_to": 166
+      }
+    },
+    {
+      "id": 166,
+      "name": "ledian",
+      "names": {
+        "en": "ledian",
+        "ko": "레디안",
+        "ja": "レディアン"
+      },
+      "types": [
+        "bug",
+        "flying"
+      ],
+      "stats": {
+        "hp": 55,
+        "attack": 35,
+        "defense": 50,
+        "special-attack": 55,
+        "special-defense": 110,
+        "speed": 85
+      },
+      "height": 14,
+      "weight": 356,
+      "png": "166.png",
+      "gif": "166.gif",
+      "game": {
+        "catch_rate": 90,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 167,
+      "name": "spinarak",
+      "names": {
+        "en": "spinarak",
+        "ko": "페이검",
+        "ja": "イトマル"
+      },
+      "types": [
+        "bug",
+        "poison"
+      ],
+      "stats": {
+        "hp": 40,
+        "attack": 60,
+        "defense": 40,
+        "special-attack": 40,
+        "special-defense": 40,
+        "speed": 30
+      },
+      "height": 5,
+      "weight": 85,
+      "png": "167.png",
+      "gif": "167.gif",
+      "game": {
+        "catch_rate": 95,
+        "evolve_level": 22,
+        "evolve_to": 168
+      }
+    },
+    {
+      "id": 168,
+      "name": "ariados",
+      "names": {
+        "en": "ariados",
+        "ko": "아리아도스",
+        "ja": "アリアドス"
+      },
+      "types": [
+        "bug",
+        "poison"
+      ],
+      "stats": {
+        "hp": 70,
+        "attack": 90,
+        "defense": 70,
+        "special-attack": 60,
+        "special-defense": 70,
+        "speed": 40
+      },
+      "height": 11,
+      "weight": 335,
+      "png": "168.png",
+      "gif": "168.gif",
+      "game": {
+        "catch_rate": 90,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 169,
+      "name": "crobat",
+      "names": {
+        "en": "crobat",
+        "ko": "크로뱃",
+        "ja": "クロバット"
+      },
+      "types": [
+        "poison",
+        "flying"
+      ],
+      "stats": {
+        "hp": 85,
+        "attack": 90,
+        "defense": 80,
+        "special-attack": 70,
+        "special-defense": 80,
+        "speed": 130
+      },
+      "height": 18,
+      "weight": 750,
+      "png": "169.png",
+      "gif": "169.gif",
+      "game": {
+        "catch_rate": 90,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 170,
+      "name": "chinchou",
+      "names": {
+        "en": "chinchou",
+        "ko": "초라기",
+        "ja": "チョンチー"
+      },
+      "types": [
+        "water",
+        "electric"
+      ],
+      "stats": {
+        "hp": 75,
+        "attack": 38,
+        "defense": 38,
+        "special-attack": 56,
+        "special-defense": 56,
+        "speed": 67
+      },
+      "height": 5,
+      "weight": 120,
+      "png": "170.png",
+      "gif": "170.gif",
+      "game": {
+        "catch_rate": 95,
+        "evolve_level": 27,
+        "evolve_to": 171
+      }
+    },
+    {
+      "id": 171,
+      "name": "lanturn",
+      "names": {
+        "en": "lanturn",
+        "ko": "랜턴",
+        "ja": "ランターン"
+      },
+      "types": [
+        "water",
+        "electric"
+      ],
+      "stats": {
+        "hp": 125,
+        "attack": 58,
+        "defense": 58,
+        "special-attack": 76,
+        "special-defense": 76,
+        "speed": 67
+      },
+      "height": 12,
+      "weight": 225,
+      "png": "171.png",
+      "gif": "171.gif",
+      "game": {
+        "catch_rate": 75,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 172,
+      "name": "pichu",
+      "names": {
+        "en": "pichu",
+        "ko": "피츄",
+        "ja": "ピチュー"
+      },
+      "types": [
+        "electric"
+      ],
+      "stats": {
+        "hp": 20,
+        "attack": 40,
+        "defense": 15,
+        "special-attack": 35,
+        "special-defense": 35,
+        "speed": 60
+      },
+      "height": 3,
+      "weight": 20,
+      "png": "172.png",
+      "gif": "172.gif",
+      "game": {
+        "catch_rate": 95,
+        "evolve_level": -1,
+        "evolve_to": 25
+      }
+    },
+    {
+      "id": 173,
+      "name": "cleffa",
+      "names": {
+        "en": "cleffa",
+        "ko": "삐",
+        "ja": "ピィ"
+      },
+      "types": [
+        "fairy"
+      ],
+      "stats": {
+        "hp": 50,
+        "attack": 25,
+        "defense": 28,
+        "special-attack": 45,
+        "special-defense": 55,
+        "speed": 15
+      },
+      "height": 3,
+      "weight": 30,
+      "png": "173.png",
+      "gif": "173.gif",
+      "game": {
+        "catch_rate": 95,
+        "evolve_level": -1,
+        "evolve_to": 35
+      }
+    },
+    {
+      "id": 174,
+      "name": "igglybuff",
+      "names": {
+        "en": "igglybuff",
+        "ko": "푸푸린",
+        "ja": "ププリン"
+      },
+      "types": [
+        "normal",
+        "fairy"
+      ],
+      "stats": {
+        "hp": 90,
+        "attack": 30,
+        "defense": 15,
+        "special-attack": 40,
+        "special-defense": 20,
+        "speed": 15
+      },
+      "height": 3,
+      "weight": 10,
+      "png": "174.png",
+      "gif": "174.gif",
+      "game": {
+        "catch_rate": 95,
+        "evolve_level": -1,
+        "evolve_to": 39
+      }
+    },
+    {
+      "id": 175,
+      "name": "togepi",
+      "names": {
+        "en": "togepi",
+        "ko": "토게피",
+        "ja": "トゲピー"
+      },
+      "types": [
+        "fairy"
+      ],
+      "stats": {
+        "hp": 35,
+        "attack": 20,
+        "defense": 65,
+        "special-attack": 40,
+        "special-defense": 65,
+        "speed": 20
+      },
+      "height": 3,
+      "weight": 15,
+      "png": "175.png",
+      "gif": "175.gif",
+      "game": {
+        "catch_rate": 95,
+        "evolve_level": -1,
+        "evolve_to": 176
+      }
+    },
+    {
+      "id": 176,
+      "name": "togetic",
+      "names": {
+        "en": "togetic",
+        "ko": "토게틱",
+        "ja": "トゲチック"
+      },
+      "types": [
+        "fairy",
+        "flying"
+      ],
+      "stats": {
+        "hp": 55,
+        "attack": 40,
+        "defense": 85,
+        "special-attack": 80,
+        "special-defense": 105,
+        "speed": 40
+      },
+      "height": 6,
+      "weight": 32,
+      "png": "176.png",
+      "gif": "176.gif",
+      "game": {
+        "catch_rate": 75,
+        "evolve_level": -1,
+        "evolve_to": 468
+      }
+    },
+    {
+      "id": 177,
+      "name": "natu",
+      "names": {
+        "en": "natu",
+        "ko": "네이티",
+        "ja": "ネイティ"
+      },
+      "types": [
+        "psychic",
+        "flying"
+      ],
+      "stats": {
+        "hp": 40,
+        "attack": 50,
+        "defense": 45,
+        "special-attack": 70,
+        "special-defense": 45,
+        "speed": 70
+      },
+      "height": 2,
+      "weight": 20,
+      "png": "177.png",
+      "gif": "177.gif",
+      "game": {
+        "catch_rate": 95,
+        "evolve_level": 25,
+        "evolve_to": 178
+      }
+    },
+    {
+      "id": 178,
+      "name": "xatu",
+      "names": {
+        "en": "xatu",
+        "ko": "네이티오",
+        "ja": "ネイティオ"
+      },
+      "types": [
+        "psychic",
+        "flying"
+      ],
+      "stats": {
+        "hp": 65,
+        "attack": 75,
+        "defense": 70,
+        "special-attack": 95,
+        "special-defense": 70,
+        "speed": 95
+      },
+      "height": 15,
+      "weight": 150,
+      "png": "178.png",
+      "gif": "178.gif",
+      "game": {
+        "catch_rate": 75,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 179,
+      "name": "mareep",
+      "names": {
+        "en": "mareep",
+        "ko": "메리프",
+        "ja": "メリープ"
+      },
+      "types": [
+        "electric"
+      ],
+      "stats": {
+        "hp": 55,
+        "attack": 40,
+        "defense": 40,
+        "special-attack": 65,
+        "special-defense": 45,
+        "speed": 35
+      },
+      "height": 6,
+      "weight": 78,
+      "png": "179.png",
+      "gif": "179.gif",
+      "game": {
+        "catch_rate": 95,
+        "evolve_level": 15,
+        "evolve_to": 180
+      }
+    },
+    {
+      "id": 180,
+      "name": "flaaffy",
+      "names": {
+        "en": "flaaffy",
+        "ko": "보송송",
+        "ja": "モココ"
+      },
+      "types": [
+        "electric"
+      ],
+      "stats": {
+        "hp": 70,
+        "attack": 55,
+        "defense": 55,
+        "special-attack": 80,
+        "special-defense": 60,
+        "speed": 45
+      },
+      "height": 8,
+      "weight": 133,
+      "png": "180.png",
+      "gif": "180.gif",
+      "game": {
+        "catch_rate": 95,
+        "evolve_level": 30,
+        "evolve_to": 181
+      }
+    },
+    {
+      "id": 181,
+      "name": "ampharos",
+      "names": {
+        "en": "ampharos",
+        "ko": "전룡",
+        "ja": "デンリュウ"
+      },
+      "types": [
+        "electric"
+      ],
+      "stats": {
+        "hp": 90,
+        "attack": 75,
+        "defense": 85,
+        "special-attack": 115,
+        "special-defense": 90,
+        "speed": 55
+      },
+      "height": 14,
+      "weight": 615,
+      "png": "181.png",
+      "gif": "181.gif",
+      "game": {
+        "catch_rate": 45,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 182,
+      "name": "bellossom",
+      "names": {
+        "en": "bellossom",
+        "ko": "아르코",
+        "ja": "キレイハナ"
+      },
+      "types": [
+        "grass"
+      ],
+      "stats": {
+        "hp": 75,
+        "attack": 80,
+        "defense": 95,
+        "special-attack": 90,
+        "special-defense": 100,
+        "speed": 50
+      },
+      "height": 4,
+      "weight": 58,
+      "png": "182.png",
+      "gif": "182.gif",
+      "game": {
+        "catch_rate": 45,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 183,
+      "name": "marill",
+      "names": {
+        "en": "marill",
+        "ko": "마릴",
+        "ja": "マリル"
+      },
+      "types": [
+        "water",
+        "fairy"
+      ],
+      "stats": {
+        "hp": 70,
+        "attack": 20,
+        "defense": 50,
+        "special-attack": 20,
+        "special-defense": 50,
+        "speed": 40
+      },
+      "height": 4,
+      "weight": 85,
+      "png": "183.png",
+      "gif": "183.gif",
+      "game": {
+        "catch_rate": 95,
+        "evolve_level": 18,
+        "evolve_to": 184
+      }
+    },
+    {
+      "id": 184,
+      "name": "azumarill",
+      "names": {
+        "en": "azumarill",
+        "ko": "마릴리",
+        "ja": "マリルリ"
+      },
+      "types": [
+        "water",
+        "fairy"
+      ],
+      "stats": {
+        "hp": 100,
+        "attack": 50,
+        "defense": 80,
+        "special-attack": 60,
+        "special-defense": 80,
+        "speed": 50
+      },
+      "height": 8,
+      "weight": 285,
+      "png": "184.png",
+      "gif": "184.gif",
+      "game": {
+        "catch_rate": 75,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 185,
+      "name": "sudowoodo",
+      "names": {
+        "en": "sudowoodo",
+        "ko": "꼬지모",
+        "ja": "ウソッキー"
+      },
+      "types": [
+        "rock"
+      ],
+      "stats": {
+        "hp": 70,
+        "attack": 100,
+        "defense": 115,
+        "special-attack": 30,
+        "special-defense": 65,
+        "speed": 30
+      },
+      "height": 12,
+      "weight": 380,
+      "png": "185.png",
+      "gif": "185.gif",
+      "game": {
+        "catch_rate": 65,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 186,
+      "name": "politoed",
+      "names": {
+        "en": "politoed",
+        "ko": "왕구리",
+        "ja": "ニョロトノ"
+      },
+      "types": [
+        "water"
+      ],
+      "stats": {
+        "hp": 90,
+        "attack": 75,
+        "defense": 75,
+        "special-attack": 90,
+        "special-defense": 100,
+        "speed": 70
+      },
+      "height": 11,
+      "weight": 339,
+      "png": "186.png",
+      "gif": "186.gif",
+      "game": {
+        "catch_rate": 45,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 187,
+      "name": "hoppip",
+      "names": {
+        "en": "hoppip",
+        "ko": "통통코",
+        "ja": "ハネッコ"
+      },
+      "types": [
+        "grass",
+        "flying"
+      ],
+      "stats": {
+        "hp": 35,
+        "attack": 35,
+        "defense": 40,
+        "special-attack": 35,
+        "special-defense": 55,
+        "speed": 50
+      },
+      "height": 4,
+      "weight": 5,
+      "png": "187.png",
+      "gif": "187.gif",
+      "game": {
+        "catch_rate": 95,
+        "evolve_level": 18,
+        "evolve_to": 188
+      }
+    },
+    {
+      "id": 188,
+      "name": "skiploom",
+      "names": {
+        "en": "skiploom",
+        "ko": "두코",
+        "ja": "ポポッコ"
+      },
+      "types": [
+        "grass",
+        "flying"
+      ],
+      "stats": {
+        "hp": 55,
+        "attack": 45,
+        "defense": 50,
+        "special-attack": 45,
+        "special-defense": 65,
+        "speed": 80
+      },
+      "height": 6,
+      "weight": 10,
+      "png": "188.png",
+      "gif": "188.gif",
+      "game": {
+        "catch_rate": 95,
+        "evolve_level": 27,
+        "evolve_to": 189
+      }
+    },
+    {
+      "id": 189,
+      "name": "jumpluff",
+      "names": {
+        "en": "jumpluff",
+        "ko": "솜솜코",
+        "ja": "ワタッコ"
+      },
+      "types": [
+        "grass",
+        "flying"
+      ],
+      "stats": {
+        "hp": 75,
+        "attack": 55,
+        "defense": 70,
+        "special-attack": 55,
+        "special-defense": 95,
+        "speed": 110
+      },
+      "height": 8,
+      "weight": 30,
+      "png": "189.png",
+      "gif": "189.gif",
+      "game": {
+        "catch_rate": 45,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 190,
+      "name": "aipom",
+      "names": {
+        "en": "aipom",
+        "ko": "에이팜",
+        "ja": "エイパム"
+      },
+      "types": [
+        "normal"
+      ],
+      "stats": {
+        "hp": 55,
+        "attack": 70,
+        "defense": 55,
+        "special-attack": 40,
+        "special-defense": 55,
+        "speed": 85
+      },
+      "height": 8,
+      "weight": 115,
+      "png": "190.png",
+      "gif": "190.gif",
+      "game": {
+        "catch_rate": 45,
+        "evolve_level": -1,
+        "evolve_to": 424
+      }
+    },
+    {
+      "id": 191,
+      "name": "sunkern",
+      "names": {
+        "en": "sunkern",
+        "ko": "해너츠",
+        "ja": "ヒマナッツ"
+      },
+      "types": [
+        "grass"
+      ],
+      "stats": {
+        "hp": 30,
+        "attack": 30,
+        "defense": 30,
+        "special-attack": 30,
+        "special-defense": 30,
+        "speed": 30
+      },
+      "height": 3,
+      "weight": 18,
+      "png": "191.png",
+      "gif": "191.gif",
+      "game": {
+        "catch_rate": 95,
+        "evolve_level": -1,
+        "evolve_to": 192
+      }
+    },
+    {
+      "id": 192,
+      "name": "sunflora",
+      "names": {
+        "en": "sunflora",
+        "ko": "해루미",
+        "ja": "キマワリ"
+      },
+      "types": [
+        "grass"
+      ],
+      "stats": {
+        "hp": 75,
+        "attack": 75,
+        "defense": 55,
+        "special-attack": 105,
+        "special-defense": 85,
+        "speed": 30
+      },
+      "height": 8,
+      "weight": 85,
+      "png": "192.png",
+      "gif": "192.gif",
+      "game": {
+        "catch_rate": 95,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 193,
+      "name": "yanma",
+      "names": {
+        "en": "yanma",
+        "ko": "왕자리",
+        "ja": "ヤンヤンマ"
+      },
+      "types": [
+        "bug",
+        "flying"
+      ],
+      "stats": {
+        "hp": 65,
+        "attack": 65,
+        "defense": 45,
+        "special-attack": 75,
+        "special-defense": 45,
+        "speed": 95
+      },
+      "height": 12,
+      "weight": 380,
+      "png": "193.png",
+      "gif": "193.gif",
+      "game": {
+        "catch_rate": 75,
+        "evolve_level": -1,
+        "evolve_to": 469
+      }
+    },
+    {
+      "id": 194,
+      "name": "wooper",
+      "names": {
+        "en": "wooper",
+        "ko": "우파",
+        "ja": "ウパー"
+      },
+      "types": [
+        "water",
+        "ground"
+      ],
+      "stats": {
+        "hp": 55,
+        "attack": 45,
+        "defense": 45,
+        "special-attack": 25,
+        "special-defense": 25,
+        "speed": 15
+      },
+      "height": 4,
+      "weight": 85,
+      "png": "194.png",
+      "gif": "194.gif",
+      "game": {
+        "catch_rate": 95,
+        "evolve_level": 20,
+        "evolve_to": 195
+      }
+    },
+    {
+      "id": 195,
+      "name": "quagsire",
+      "names": {
+        "en": "quagsire",
+        "ko": "누오",
+        "ja": "ヌオー"
+      },
+      "types": [
+        "water",
+        "ground"
+      ],
+      "stats": {
+        "hp": 95,
+        "attack": 85,
+        "defense": 85,
+        "special-attack": 65,
+        "special-defense": 65,
+        "speed": 35
+      },
+      "height": 14,
+      "weight": 750,
+      "png": "195.png",
+      "gif": "195.gif",
+      "game": {
+        "catch_rate": 90,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 196,
+      "name": "espeon",
+      "names": {
+        "en": "espeon",
+        "ko": "에브이",
+        "ja": "エーフィ"
+      },
+      "types": [
+        "psychic"
+      ],
+      "stats": {
+        "hp": 65,
+        "attack": 65,
+        "defense": 60,
+        "special-attack": 130,
+        "special-defense": 95,
+        "speed": 110
+      },
+      "height": 9,
+      "weight": 265,
+      "png": "196.png",
+      "gif": "196.gif",
+      "game": {
+        "catch_rate": 45,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 197,
+      "name": "umbreon",
+      "names": {
+        "en": "umbreon",
+        "ko": "블래키",
+        "ja": "ブラッキー"
+      },
+      "types": [
+        "dark"
+      ],
+      "stats": {
+        "hp": 95,
+        "attack": 65,
+        "defense": 110,
+        "special-attack": 60,
+        "special-defense": 130,
+        "speed": 65
+      },
+      "height": 10,
+      "weight": 270,
+      "png": "197.png",
+      "gif": "197.gif",
+      "game": {
+        "catch_rate": 45,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 198,
+      "name": "murkrow",
+      "names": {
+        "en": "murkrow",
+        "ko": "니로우",
+        "ja": "ヤミカラス"
+      },
+      "types": [
+        "dark",
+        "flying"
+      ],
+      "stats": {
+        "hp": 60,
+        "attack": 85,
+        "defense": 42,
+        "special-attack": 85,
+        "special-defense": 42,
+        "speed": 91
+      },
+      "height": 5,
+      "weight": 21,
+      "png": "198.png",
+      "gif": "198.gif",
+      "game": {
+        "catch_rate": 30,
+        "evolve_level": -1,
+        "evolve_to": 430
+      }
+    },
+    {
+      "id": 199,
+      "name": "slowking",
+      "names": {
+        "en": "slowking",
+        "ko": "야도킹",
+        "ja": "ヤドキング"
+      },
+      "types": [
+        "water",
+        "psychic"
+      ],
+      "stats": {
+        "hp": 95,
+        "attack": 75,
+        "defense": 80,
+        "special-attack": 100,
+        "special-defense": 110,
+        "speed": 30
+      },
+      "height": 20,
+      "weight": 795,
+      "png": "199.png",
+      "gif": "199.gif",
+      "game": {
+        "catch_rate": 70,
+        "evolve_level": -1,
+        "evolve_to": -1
+      }
+    },
+    {
+      "id": 200,
+      "name": "misdreavus",
+      "names": {
+        "en": "misdreavus",
+        "ko": "무우마",
+        "ja": "ムウマ"
+      },
+      "types": [
+        "ghost"
+      ],
+      "stats": {
+        "hp": 60,
+        "attack": 60,
+        "defense": 60,
+        "special-attack": 85,
+        "special-defense": 85,
+        "speed": 85
+      },
+      "height": 7,
+      "weight": 10,
+      "png": "200.png",
+      "gif": "200.gif",
+      "game": {
+        "catch_rate": 45,
+        "evolve_level": -1,
+        "evolve_to": 429
+      }
+    }
+  ]
+}

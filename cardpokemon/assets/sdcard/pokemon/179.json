@@ -1,0 +1,29 @@
+{
+  "id": 179,
+  "name": "mareep",
+  "names": {
+    "en": "mareep",
+    "ko": "메리프",
+    "ja": "メリープ"
+  },
+  "types": [
+    "electric"
+  ],
+  "stats": {
+    "hp": 55,
+    "attack": 40,
+    "defense": 40,
+    "special-attack": 65,
+    "special-defense": 45,
+    "speed": 35
+  },
+  "height": 6,
+  "weight": 78,
+  "png": "179.png",
+  "gif": "179.gif",
+  "game": {
+    "catch_rate": 95,
+    "evolve_level": 15,
+    "evolve_to": 180
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": 70,
+  "name": "weepinbell",
+  "names": {
+    "en": "weepinbell",
+    "ko": "우츠동",
+    "ja": "ウツドン"
+  },
+  "types": [
+    "grass",
+    "poison"
+  ],
+  "stats": {
+    "hp": 65,
+    "attack": 90,
+    "defense": 50,
+    "special-attack": 85,
+    "special-defense": 45,
+    "speed": 55
+  },
+  "height": 10,
+  "weight": 64,
+  "png": "70.png",
+  "gif": "70.gif",
+  "game": {
+    "catch_rate": 95,
+    "evolve_level": -1,
+    "evolve_to": 71
+  }
+}

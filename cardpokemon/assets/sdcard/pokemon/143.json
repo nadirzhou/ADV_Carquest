@@ -1,0 +1,29 @@
+{
+  "id": 143,
+  "name": "snorlax",
+  "names": {
+    "en": "snorlax",
+    "ko": "잠만보",
+    "ja": "カビゴン"
+  },
+  "types": [
+    "normal"
+  ],
+  "stats": {
+    "hp": 160,
+    "attack": 110,
+    "defense": 65,
+    "special-attack": 65,
+    "special-defense": 110,
+    "speed": 30
+  },
+  "height": 21,
+  "weight": 4600,
+  "png": "143.png",
+  "gif": "143.gif",
+  "game": {
+    "catch_rate": 25,
+    "evolve_level": -1,
+    "evolve_to": -1
+  }
+}

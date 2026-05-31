@@ -1,0 +1,29 @@
+{
+  "id": 128,
+  "name": "tauros",
+  "names": {
+    "en": "tauros",
+    "ko": "켄타로스",
+    "ja": "ケンタロス"
+  },
+  "types": [
+    "normal"
+  ],
+  "stats": {
+    "hp": 75,
+    "attack": 100,
+    "defense": 95,
+    "special-attack": 40,
+    "special-defense": 70,
+    "speed": 110
+  },
+  "height": 14,
+  "weight": 884,
+  "png": "128.png",
+  "gif": "128.gif",
+  "game": {
+    "catch_rate": 45,
+    "evolve_level": -1,
+    "evolve_to": -1
+  }
+}

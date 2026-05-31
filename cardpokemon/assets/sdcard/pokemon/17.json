@@ -1,0 +1,30 @@
+{
+  "id": 17,
+  "name": "pidgeotto",
+  "names": {
+    "en": "pidgeotto",
+    "ko": "피죤",
+    "ja": "ピジョン"
+  },
+  "types": [
+    "normal",
+    "flying"
+  ],
+  "stats": {
+    "hp": 63,
+    "attack": 60,
+    "defense": 55,
+    "special-attack": 50,
+    "special-defense": 50,
+    "speed": 71
+  },
+  "height": 11,
+  "weight": 300,
+  "png": "17.png",
+  "gif": "17.gif",
+  "game": {
+    "catch_rate": 95,
+    "evolve_level": 36,
+    "evolve_to": 18
+  }
+}

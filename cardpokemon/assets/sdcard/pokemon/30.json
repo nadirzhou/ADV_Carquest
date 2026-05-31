@@ -1,0 +1,29 @@
+{
+  "id": 30,
+  "name": "nidorina",
+  "names": {
+    "en": "nidorina",
+    "ko": "니드리나",
+    "ja": "ニドリーナ"
+  },
+  "types": [
+    "poison"
+  ],
+  "stats": {
+    "hp": 70,
+    "attack": 62,
+    "defense": 67,
+    "special-attack": 55,
+    "special-defense": 55,
+    "speed": 56
+  },
+  "height": 8,
+  "weight": 200,
+  "png": "30.png",
+  "gif": "30.gif",
+  "game": {
+    "catch_rate": 95,
+    "evolve_level": -1,
+    "evolve_to": 31
+  }
+}

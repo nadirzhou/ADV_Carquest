@@ -1,0 +1,30 @@
+{
+  "id": 122,
+  "name": "mr-mime",
+  "names": {
+    "en": "mr-mime",
+    "ko": "마임맨",
+    "ja": "バリヤード"
+  },
+  "types": [
+    "psychic",
+    "fairy"
+  ],
+  "stats": {
+    "hp": 40,
+    "attack": 45,
+    "defense": 65,
+    "special-attack": 100,
+    "special-defense": 120,
+    "speed": 90
+  },
+  "height": 13,
+  "weight": 545,
+  "png": "122.png",
+  "gif": "122.gif",
+  "game": {
+    "catch_rate": 45,
+    "evolve_level": 42,
+    "evolve_to": 866
+  }
+}

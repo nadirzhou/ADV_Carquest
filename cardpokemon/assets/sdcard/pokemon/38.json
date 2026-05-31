@@ -1,0 +1,29 @@
+{
+  "id": 38,
+  "name": "ninetales",
+  "names": {
+    "en": "ninetales",
+    "ko": "나인테일",
+    "ja": "キュウコン"
+  },
+  "types": [
+    "fire"
+  ],
+  "stats": {
+    "hp": 73,
+    "attack": 76,
+    "defense": 75,
+    "special-attack": 81,
+    "special-defense": 100,
+    "speed": 100
+  },
+  "height": 11,
+  "weight": 199,
+  "png": "38.png",
+  "gif": "38.gif",
+  "game": {
+    "catch_rate": 75,
+    "evolve_level": -1,
+    "evolve_to": -1
+  }
+}

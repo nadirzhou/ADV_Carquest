@@ -1,0 +1,30 @@
+{
+  "id": 40,
+  "name": "wigglytuff",
+  "names": {
+    "en": "wigglytuff",
+    "ko": "푸크린",
+    "ja": "プクリン"
+  },
+  "types": [
+    "normal",
+    "fairy"
+  ],
+  "stats": {
+    "hp": 140,
+    "attack": 70,
+    "defense": 45,
+    "special-attack": 85,
+    "special-defense": 50,
+    "speed": 45
+  },
+  "height": 10,
+  "weight": 120,
+  "png": "40.png",
+  "gif": "40.gif",
+  "game": {
+    "catch_rate": 50,
+    "evolve_level": -1,
+    "evolve_to": -1
+  }
+}

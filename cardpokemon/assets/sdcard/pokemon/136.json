@@ -1,0 +1,29 @@
+{
+  "id": 136,
+  "name": "flareon",
+  "names": {
+    "en": "flareon",
+    "ko": "부스터",
+    "ja": "ブースター"
+  },
+  "types": [
+    "fire"
+  ],
+  "stats": {
+    "hp": 65,
+    "attack": 130,
+    "defense": 60,
+    "special-attack": 95,
+    "special-defense": 110,
+    "speed": 65
+  },
+  "height": 9,
+  "weight": 250,
+  "png": "136.png",
+  "gif": "136.gif",
+  "game": {
+    "catch_rate": 45,
+    "evolve_level": -1,
+    "evolve_to": -1
+  }
+}

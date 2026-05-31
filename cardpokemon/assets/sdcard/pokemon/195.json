@@ -1,0 +1,30 @@
+{
+  "id": 195,
+  "name": "quagsire",
+  "names": {
+    "en": "quagsire",
+    "ko": "누오",
+    "ja": "ヌオー"
+  },
+  "types": [
+    "water",
+    "ground"
+  ],
+  "stats": {
+    "hp": 95,
+    "attack": 85,
+    "defense": 85,
+    "special-attack": 65,
+    "special-defense": 65,
+    "speed": 35
+  },
+  "height": 14,
+  "weight": 750,
+  "png": "195.png",
+  "gif": "195.gif",
+  "game": {
+    "catch_rate": 90,
+    "evolve_level": -1,
+    "evolve_to": -1
+  }
+}

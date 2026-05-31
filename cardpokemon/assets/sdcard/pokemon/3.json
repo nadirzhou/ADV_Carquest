@@ -1,0 +1,30 @@
+{
+  "id": 3,
+  "name": "venusaur",
+  "names": {
+    "en": "venusaur",
+    "ko": "이상해꽃",
+    "ja": "フシギバナ"
+  },
+  "types": [
+    "grass",
+    "poison"
+  ],
+  "stats": {
+    "hp": 80,
+    "attack": 82,
+    "defense": 83,
+    "special-attack": 100,
+    "special-defense": 100,
+    "speed": 80
+  },
+  "height": 20,
+  "weight": 1000,
+  "png": "3.png",
+  "gif": "3.gif",
+  "game": {
+    "catch_rate": 45,
+    "evolve_level": -1,
+    "evolve_to": -1
+  }
+}

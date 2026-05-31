@@ -1,0 +1,30 @@
+{
+  "id": 102,
+  "name": "exeggcute",
+  "names": {
+    "en": "exeggcute",
+    "ko": "아라리",
+    "ja": "タマタマ"
+  },
+  "types": [
+    "grass",
+    "psychic"
+  ],
+  "stats": {
+    "hp": 60,
+    "attack": 40,
+    "defense": 80,
+    "special-attack": 60,
+    "special-defense": 45,
+    "speed": 40
+  },
+  "height": 4,
+  "weight": 25,
+  "png": "102.png",
+  "gif": "102.gif",
+  "game": {
+    "catch_rate": 90,
+    "evolve_level": -1,
+    "evolve_to": 103
+  }
+}

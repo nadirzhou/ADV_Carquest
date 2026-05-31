@@ -1,0 +1,29 @@
+{
+  "id": 160,
+  "name": "feraligatr",
+  "names": {
+    "en": "feraligatr",
+    "ko": "장크로다일",
+    "ja": "オーダイル"
+  },
+  "types": [
+    "water"
+  ],
+  "stats": {
+    "hp": 85,
+    "attack": 105,
+    "defense": 100,
+    "special-attack": 79,
+    "special-defense": 83,
+    "speed": 78
+  },
+  "height": 23,
+  "weight": 888,
+  "png": "160.png",
+  "gif": "160.gif",
+  "game": {
+    "catch_rate": 45,
+    "evolve_level": -1,
+    "evolve_to": -1
+  }
+}

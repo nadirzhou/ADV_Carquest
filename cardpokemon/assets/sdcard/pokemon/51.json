@@ -1,0 +1,29 @@
+{
+  "id": 51,
+  "name": "dugtrio",
+  "names": {
+    "en": "dugtrio",
+    "ko": "닥트리오",
+    "ja": "ダグトリオ"
+  },
+  "types": [
+    "ground"
+  ],
+  "stats": {
+    "hp": 35,
+    "attack": 100,
+    "defense": 50,
+    "special-attack": 50,
+    "special-defense": 70,
+    "speed": 120
+  },
+  "height": 7,
+  "weight": 333,
+  "png": "51.png",
+  "gif": "51.gif",
+  "game": {
+    "catch_rate": 50,
+    "evolve_level": -1,
+    "evolve_to": -1
+  }
+}

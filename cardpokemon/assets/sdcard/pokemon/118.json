@@ -1,0 +1,29 @@
+{
+  "id": 118,
+  "name": "goldeen",
+  "names": {
+    "en": "goldeen",
+    "ko": "콘치",
+    "ja": "トサキント"
+  },
+  "types": [
+    "water"
+  ],
+  "stats": {
+    "hp": 45,
+    "attack": 67,
+    "defense": 60,
+    "special-attack": 35,
+    "special-defense": 50,
+    "speed": 63
+  },
+  "height": 6,
+  "weight": 150,
+  "png": "118.png",
+  "gif": "118.gif",
+  "game": {
+    "catch_rate": 95,
+    "evolve_level": 33,
+    "evolve_to": 119
+  }
+}

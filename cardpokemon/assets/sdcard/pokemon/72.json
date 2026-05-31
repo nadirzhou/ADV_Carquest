@@ -1,0 +1,30 @@
+{
+  "id": 72,
+  "name": "tentacool",
+  "names": {
+    "en": "tentacool",
+    "ko": "왕눈해",
+    "ja": "メノクラゲ"
+  },
+  "types": [
+    "water",
+    "poison"
+  ],
+  "stats": {
+    "hp": 40,
+    "attack": 40,
+    "defense": 35,
+    "special-attack": 50,
+    "special-defense": 100,
+    "speed": 70
+  },
+  "height": 9,
+  "weight": 455,
+  "png": "72.png",
+  "gif": "72.gif",
+  "game": {
+    "catch_rate": 95,
+    "evolve_level": 30,
+    "evolve_to": 73
+  }
+}

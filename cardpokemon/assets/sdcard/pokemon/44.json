@@ -1,0 +1,30 @@
+{
+  "id": 44,
+  "name": "gloom",
+  "names": {
+    "en": "gloom",
+    "ko": "냄새꼬",
+    "ja": "クサイハナ"
+  },
+  "types": [
+    "grass",
+    "poison"
+  ],
+  "stats": {
+    "hp": 60,
+    "attack": 65,
+    "defense": 70,
+    "special-attack": 85,
+    "special-defense": 75,
+    "speed": 40
+  },
+  "height": 8,
+  "weight": 86,
+  "png": "44.png",
+  "gif": "44.gif",
+  "game": {
+    "catch_rate": 95,
+    "evolve_level": -1,
+    "evolve_to": 45
+  }
+}

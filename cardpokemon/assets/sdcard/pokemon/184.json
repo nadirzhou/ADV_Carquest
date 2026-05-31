@@ -1,0 +1,30 @@
+{
+  "id": 184,
+  "name": "azumarill",
+  "names": {
+    "en": "azumarill",
+    "ko": "마릴리",
+    "ja": "マリルリ"
+  },
+  "types": [
+    "water",
+    "fairy"
+  ],
+  "stats": {
+    "hp": 100,
+    "attack": 50,
+    "defense": 80,
+    "special-attack": 60,
+    "special-defense": 80,
+    "speed": 50
+  },
+  "height": 8,
+  "weight": 285,
+  "png": "184.png",
+  "gif": "184.gif",
+  "game": {
+    "catch_rate": 75,
+    "evolve_level": -1,
+    "evolve_to": -1
+  }
+}

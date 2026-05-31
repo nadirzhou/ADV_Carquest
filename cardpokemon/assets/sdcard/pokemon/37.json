@@ -1,0 +1,29 @@
+{
+  "id": 37,
+  "name": "vulpix",
+  "names": {
+    "en": "vulpix",
+    "ko": "식스테일",
+    "ja": "ロコン"
+  },
+  "types": [
+    "fire"
+  ],
+  "stats": {
+    "hp": 38,
+    "attack": 41,
+    "defense": 40,
+    "special-attack": 50,
+    "special-defense": 65,
+    "speed": 65
+  },
+  "height": 6,
+  "weight": 99,
+  "png": "37.png",
+  "gif": "37.gif",
+  "game": {
+    "catch_rate": 95,
+    "evolve_level": -1,
+    "evolve_to": 38
+  }
+}

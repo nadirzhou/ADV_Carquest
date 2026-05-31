@@ -1,0 +1,29 @@
+{
+  "id": 67,
+  "name": "machoke",
+  "names": {
+    "en": "machoke",
+    "ko": "근육몬",
+    "ja": "ゴーリキー"
+  },
+  "types": [
+    "fighting"
+  ],
+  "stats": {
+    "hp": 80,
+    "attack": 100,
+    "defense": 70,
+    "special-attack": 50,
+    "special-defense": 60,
+    "speed": 45
+  },
+  "height": 15,
+  "weight": 705,
+  "png": "67.png",
+  "gif": "67.gif",
+  "game": {
+    "catch_rate": 90,
+    "evolve_level": -1,
+    "evolve_to": 68
+  }
+}

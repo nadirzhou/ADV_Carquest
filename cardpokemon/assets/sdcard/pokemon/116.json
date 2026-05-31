@@ -1,0 +1,29 @@
+{
+  "id": 116,
+  "name": "horsea",
+  "names": {
+    "en": "horsea",
+    "ko": "쏘드라",
+    "ja": "タッツー"
+  },
+  "types": [
+    "water"
+  ],
+  "stats": {
+    "hp": 30,
+    "attack": 40,
+    "defense": 70,
+    "special-attack": 70,
+    "special-defense": 25,
+    "speed": 60
+  },
+  "height": 4,
+  "weight": 80,
+  "png": "116.png",
+  "gif": "116.gif",
+  "game": {
+    "catch_rate": 95,
+    "evolve_level": 32,
+    "evolve_to": 117
+  }
+}

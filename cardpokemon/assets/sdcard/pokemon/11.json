@@ -1,0 +1,29 @@
+{
+  "id": 11,
+  "name": "metapod",
+  "names": {
+    "en": "metapod",
+    "ko": "단데기",
+    "ja": "トランセル"
+  },
+  "types": [
+    "bug"
+  ],
+  "stats": {
+    "hp": 50,
+    "attack": 20,
+    "defense": 55,
+    "special-attack": 25,
+    "special-defense": 25,
+    "speed": 30
+  },
+  "height": 7,
+  "weight": 99,
+  "png": "11.png",
+  "gif": "11.gif",
+  "game": {
+    "catch_rate": 95,
+    "evolve_level": 10,
+    "evolve_to": 12
+  }
+}

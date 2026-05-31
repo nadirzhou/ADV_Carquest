@@ -1,0 +1,30 @@
+{
+  "id": 165,
+  "name": "ledyba",
+  "names": {
+    "en": "ledyba",
+    "ko": "레디바",
+    "ja": "レディバ"
+  },
+  "types": [
+    "bug",
+    "flying"
+  ],
+  "stats": {
+    "hp": 40,
+    "attack": 20,
+    "defense": 30,
+    "special-attack": 40,
+    "special-defense": 80,
+    "speed": 55
+  },
+  "height": 10,
+  "weight": 108,
+  "png": "165.png",
+  "gif": "165.gif",
+  "game": {
+    "catch_rate": 95,
+    "evolve_level": 18,
+    "evolve_to": 166
+  }
+}

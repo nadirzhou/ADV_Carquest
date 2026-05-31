@@ -1,0 +1,29 @@
+{
+  "id": 109,
+  "name": "koffing",
+  "names": {
+    "en": "koffing",
+    "ko": "또가스",
+    "ja": "ドガース"
+  },
+  "types": [
+    "poison"
+  ],
+  "stats": {
+    "hp": 40,
+    "attack": 65,
+    "defense": 95,
+    "special-attack": 60,
+    "special-defense": 45,
+    "speed": 35
+  },
+  "height": 6,
+  "weight": 10,
+  "png": "109.png",
+  "gif": "109.gif",
+  "game": {
+    "catch_rate": 95,
+    "evolve_level": 35,
+    "evolve_to": 110
+  }
+}

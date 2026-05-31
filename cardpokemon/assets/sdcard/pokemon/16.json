@@ -1,0 +1,30 @@
+{
+  "id": 16,
+  "name": "pidgey",
+  "names": {
+    "en": "pidgey",
+    "ko": "구구",
+    "ja": "ポッポ"
+  },
+  "types": [
+    "normal",
+    "flying"
+  ],
+  "stats": {
+    "hp": 40,
+    "attack": 45,
+    "defense": 40,
+    "special-attack": 35,
+    "special-defense": 35,
+    "speed": 56
+  },
+  "height": 3,
+  "weight": 18,
+  "png": "16.png",
+  "gif": "16.gif",
+  "game": {
+    "catch_rate": 95,
+    "evolve_level": 18,
+    "evolve_to": 17
+  }
+}

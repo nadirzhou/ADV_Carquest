@@ -1,0 +1,30 @@
+{
+  "id": 149,
+  "name": "dragonite",
+  "names": {
+    "en": "dragonite",
+    "ko": "망나뇽",
+    "ja": "カイリュー"
+  },
+  "types": [
+    "dragon",
+    "flying"
+  ],
+  "stats": {
+    "hp": 91,
+    "attack": 134,
+    "defense": 95,
+    "special-attack": 100,
+    "special-defense": 100,
+    "speed": 80
+  },
+  "height": 22,
+  "weight": 2100,
+  "png": "149.png",
+  "gif": "149.gif",
+  "game": {
+    "catch_rate": 45,
+    "evolve_level": -1,
+    "evolve_to": -1
+  }
+}

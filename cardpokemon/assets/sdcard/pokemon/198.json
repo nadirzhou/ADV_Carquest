@@ -1,0 +1,30 @@
+{
+  "id": 198,
+  "name": "murkrow",
+  "names": {
+    "en": "murkrow",
+    "ko": "니로우",
+    "ja": "ヤミカラス"
+  },
+  "types": [
+    "dark",
+    "flying"
+  ],
+  "stats": {
+    "hp": 60,
+    "attack": 85,
+    "defense": 42,
+    "special-attack": 85,
+    "special-defense": 42,
+    "speed": 91
+  },
+  "height": 5,
+  "weight": 21,
+  "png": "198.png",
+  "gif": "198.gif",
+  "game": {
+    "catch_rate": 30,
+    "evolve_level": -1,
+    "evolve_to": 430
+  }
+}

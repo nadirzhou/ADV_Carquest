@@ -1,0 +1,30 @@
+{
+  "id": 193,
+  "name": "yanma",
+  "names": {
+    "en": "yanma",
+    "ko": "왕자리",
+    "ja": "ヤンヤンマ"
+  },
+  "types": [
+    "bug",
+    "flying"
+  ],
+  "stats": {
+    "hp": 65,
+    "attack": 65,
+    "defense": 45,
+    "special-attack": 75,
+    "special-defense": 45,
+    "speed": 95
+  },
+  "height": 12,
+  "weight": 380,
+  "png": "193.png",
+  "gif": "193.gif",
+  "game": {
+    "catch_rate": 75,
+    "evolve_level": -1,
+    "evolve_to": 469
+  }
+}

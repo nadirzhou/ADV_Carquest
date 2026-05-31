@@ -1,0 +1,30 @@
+{
+  "id": 79,
+  "name": "slowpoke",
+  "names": {
+    "en": "slowpoke",
+    "ko": "야돈",
+    "ja": "ヤドン"
+  },
+  "types": [
+    "water",
+    "psychic"
+  ],
+  "stats": {
+    "hp": 90,
+    "attack": 65,
+    "defense": 65,
+    "special-attack": 40,
+    "special-defense": 40,
+    "speed": 15
+  },
+  "height": 12,
+  "weight": 360,
+  "png": "79.png",
+  "gif": "79.gif",
+  "game": {
+    "catch_rate": 95,
+    "evolve_level": 37,
+    "evolve_to": 80
+  }
+}

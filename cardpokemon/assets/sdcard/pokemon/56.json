@@ -1,0 +1,29 @@
+{
+  "id": 56,
+  "name": "mankey",
+  "names": {
+    "en": "mankey",
+    "ko": "망키",
+    "ja": "マンキー"
+  },
+  "types": [
+    "fighting"
+  ],
+  "stats": {
+    "hp": 40,
+    "attack": 80,
+    "defense": 35,
+    "special-attack": 35,
+    "special-defense": 45,
+    "speed": 70
+  },
+  "height": 5,
+  "weight": 280,
+  "png": "56.png",
+  "gif": "56.gif",
+  "game": {
+    "catch_rate": 95,
+    "evolve_level": 28,
+    "evolve_to": 57
+  }
+}

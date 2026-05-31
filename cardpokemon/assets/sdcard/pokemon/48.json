@@ -1,0 +1,30 @@
+{
+  "id": 48,
+  "name": "venonat",
+  "names": {
+    "en": "venonat",
+    "ko": "콘팡",
+    "ja": "コンパン"
+  },
+  "types": [
+    "bug",
+    "poison"
+  ],
+  "stats": {
+    "hp": 60,
+    "attack": 55,
+    "defense": 50,
+    "special-attack": 40,
+    "special-defense": 55,
+    "speed": 45
+  },
+  "height": 10,
+  "weight": 300,
+  "png": "48.png",
+  "gif": "48.gif",
+  "game": {
+    "catch_rate": 95,
+    "evolve_level": 31,
+    "evolve_to": 49
+  }
+}

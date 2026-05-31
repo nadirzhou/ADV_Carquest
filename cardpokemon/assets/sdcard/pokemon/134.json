@@ -1,0 +1,29 @@
+{
+  "id": 134,
+  "name": "vaporeon",
+  "names": {
+    "en": "vaporeon",
+    "ko": "샤미드",
+    "ja": "シャワーズ"
+  },
+  "types": [
+    "water"
+  ],
+  "stats": {
+    "hp": 130,
+    "attack": 65,
+    "defense": 60,
+    "special-attack": 110,
+    "special-defense": 95,
+    "speed": 65
+  },
+  "height": 10,
+  "weight": 290,
+  "png": "134.png",
+  "gif": "134.gif",
+  "game": {
+    "catch_rate": 45,
+    "evolve_level": -1,
+    "evolve_to": -1
+  }
+}

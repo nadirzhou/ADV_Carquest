@@ -1,0 +1,30 @@
+{
+  "id": 95,
+  "name": "onix",
+  "names": {
+    "en": "onix",
+    "ko": "롱스톤",
+    "ja": "イワーク"
+  },
+  "types": [
+    "rock",
+    "ground"
+  ],
+  "stats": {
+    "hp": 35,
+    "attack": 45,
+    "defense": 160,
+    "special-attack": 30,
+    "special-defense": 45,
+    "speed": 70
+  },
+  "height": 88,
+  "weight": 2100,
+  "png": "95.png",
+  "gif": "95.gif",
+  "game": {
+    "catch_rate": 45,
+    "evolve_level": -1,
+    "evolve_to": 208
+  }
+}

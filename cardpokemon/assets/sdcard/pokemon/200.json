@@ -1,0 +1,29 @@
+{
+  "id": 200,
+  "name": "misdreavus",
+  "names": {
+    "en": "misdreavus",
+    "ko": "무우마",
+    "ja": "ムウマ"
+  },
+  "types": [
+    "ghost"
+  ],
+  "stats": {
+    "hp": 60,
+    "attack": 60,
+    "defense": 60,
+    "special-attack": 85,
+    "special-defense": 85,
+    "speed": 85
+  },
+  "height": 7,
+  "weight": 10,
+  "png": "200.png",
+  "gif": "200.gif",
+  "game": {
+    "catch_rate": 45,
+    "evolve_level": -1,
+    "evolve_to": 429
+  }
+}

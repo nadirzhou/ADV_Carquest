@@ -1,0 +1,29 @@
+{
+  "id": 175,
+  "name": "togepi",
+  "names": {
+    "en": "togepi",
+    "ko": "토게피",
+    "ja": "トゲピー"
+  },
+  "types": [
+    "fairy"
+  ],
+  "stats": {
+    "hp": 35,
+    "attack": 20,
+    "defense": 65,
+    "special-attack": 40,
+    "special-defense": 65,
+    "speed": 20
+  },
+  "height": 3,
+  "weight": 15,
+  "png": "175.png",
+  "gif": "175.gif",
+  "game": {
+    "catch_rate": 95,
+    "evolve_level": -1,
+    "evolve_to": 176
+  }
+}

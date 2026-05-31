@@ -1,0 +1,30 @@
+{
+  "id": 93,
+  "name": "haunter",
+  "names": {
+    "en": "haunter",
+    "ko": "고우스트",
+    "ja": "ゴースト"
+  },
+  "types": [
+    "ghost",
+    "poison"
+  ],
+  "stats": {
+    "hp": 45,
+    "attack": 50,
+    "defense": 45,
+    "special-attack": 115,
+    "special-defense": 55,
+    "speed": 95
+  },
+  "height": 16,
+  "weight": 1,
+  "png": "93.png",
+  "gif": "93.gif",
+  "game": {
+    "catch_rate": 90,
+    "evolve_level": -1,
+    "evolve_to": 94
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": 65,
+  "name": "alakazam",
+  "names": {
+    "en": "alakazam",
+    "ko": "후딘",
+    "ja": "フーディン"
+  },
+  "types": [
+    "psychic"
+  ],
+  "stats": {
+    "hp": 55,
+    "attack": 50,
+    "defense": 45,
+    "special-attack": 135,
+    "special-defense": 95,
+    "speed": 120
+  },
+  "height": 15,
+  "weight": 480,
+  "png": "65.png",
+  "gif": "65.gif",
+  "game": {
+    "catch_rate": 50,
+    "evolve_level": -1,
+    "evolve_to": -1
+  }
+}

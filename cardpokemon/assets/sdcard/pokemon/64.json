@@ -1,0 +1,29 @@
+{
+  "id": 64,
+  "name": "kadabra",
+  "names": {
+    "en": "kadabra",
+    "ko": "윤겔라",
+    "ja": "ユンゲラー"
+  },
+  "types": [
+    "psychic"
+  ],
+  "stats": {
+    "hp": 40,
+    "attack": 35,
+    "defense": 30,
+    "special-attack": 120,
+    "special-defense": 70,
+    "speed": 105
+  },
+  "height": 13,
+  "weight": 565,
+  "png": "64.png",
+  "gif": "64.gif",
+  "game": {
+    "catch_rate": 95,
+    "evolve_level": -1,
+    "evolve_to": 65
+  }
+}

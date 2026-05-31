@@ -1,0 +1,29 @@
+{
+  "id": 126,
+  "name": "magmar",
+  "names": {
+    "en": "magmar",
+    "ko": "마그마",
+    "ja": "ブーバー"
+  },
+  "types": [
+    "fire"
+  ],
+  "stats": {
+    "hp": 65,
+    "attack": 95,
+    "defense": 57,
+    "special-attack": 100,
+    "special-defense": 85,
+    "speed": 93
+  },
+  "height": 13,
+  "weight": 445,
+  "png": "126.png",
+  "gif": "126.gif",
+  "game": {
+    "catch_rate": 45,
+    "evolve_level": -1,
+    "evolve_to": 467
+  }
+}

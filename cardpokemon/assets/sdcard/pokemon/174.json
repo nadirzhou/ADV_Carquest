@@ -1,0 +1,30 @@
+{
+  "id": 174,
+  "name": "igglybuff",
+  "names": {
+    "en": "igglybuff",
+    "ko": "푸푸린",
+    "ja": "ププリン"
+  },
+  "types": [
+    "normal",
+    "fairy"
+  ],
+  "stats": {
+    "hp": 90,
+    "attack": 30,
+    "defense": 15,
+    "special-attack": 40,
+    "special-defense": 20,
+    "speed": 15
+  },
+  "height": 3,
+  "weight": 10,
+  "png": "174.png",
+  "gif": "174.gif",
+  "game": {
+    "catch_rate": 95,
+    "evolve_level": -1,
+    "evolve_to": 39
+  }
+}

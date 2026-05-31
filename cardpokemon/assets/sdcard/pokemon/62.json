@@ -1,0 +1,30 @@
+{
+  "id": 62,
+  "name": "poliwrath",
+  "names": {
+    "en": "poliwrath",
+    "ko": "강챙이",
+    "ja": "ニョロボン"
+  },
+  "types": [
+    "water",
+    "fighting"
+  ],
+  "stats": {
+    "hp": 90,
+    "attack": 95,
+    "defense": 95,
+    "special-attack": 70,
+    "special-defense": 90,
+    "speed": 70
+  },
+  "height": 13,
+  "weight": 540,
+  "png": "62.png",
+  "gif": "62.gif",
+  "game": {
+    "catch_rate": 45,
+    "evolve_level": -1,
+    "evolve_to": -1
+  }
+}

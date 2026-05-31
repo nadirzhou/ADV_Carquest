@@ -1,0 +1,30 @@
+{
+  "id": 13,
+  "name": "weedle",
+  "names": {
+    "en": "weedle",
+    "ko": "뿔충이",
+    "ja": "ビードル"
+  },
+  "types": [
+    "bug",
+    "poison"
+  ],
+  "stats": {
+    "hp": 40,
+    "attack": 35,
+    "defense": 30,
+    "special-attack": 20,
+    "special-defense": 20,
+    "speed": 50
+  },
+  "height": 3,
+  "weight": 32,
+  "png": "13.png",
+  "gif": "13.gif",
+  "game": {
+    "catch_rate": 95,
+    "evolve_level": 7,
+    "evolve_to": 14
+  }
+}

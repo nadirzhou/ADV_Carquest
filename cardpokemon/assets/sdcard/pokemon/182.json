@@ -1,0 +1,29 @@
+{
+  "id": 182,
+  "name": "bellossom",
+  "names": {
+    "en": "bellossom",
+    "ko": "아르코",
+    "ja": "キレイハナ"
+  },
+  "types": [
+    "grass"
+  ],
+  "stats": {
+    "hp": 75,
+    "attack": 80,
+    "defense": 95,
+    "special-attack": 90,
+    "special-defense": 100,
+    "speed": 50
+  },
+  "height": 4,
+  "weight": 58,
+  "png": "182.png",
+  "gif": "182.gif",
+  "game": {
+    "catch_rate": 45,
+    "evolve_level": -1,
+    "evolve_to": -1
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": 76,
+  "name": "golem",
+  "names": {
+    "en": "golem",
+    "ko": "딱구리",
+    "ja": "ゴローニャ"
+  },
+  "types": [
+    "rock",
+    "ground"
+  ],
+  "stats": {
+    "hp": 80,
+    "attack": 120,
+    "defense": 130,
+    "special-attack": 55,
+    "special-defense": 65,
+    "speed": 45
+  },
+  "height": 14,
+  "weight": 3000,
+  "png": "76.png",
+  "gif": "76.gif",
+  "game": {
+    "catch_rate": 45,
+    "evolve_level": -1,
+    "evolve_to": -1
+  }
+}

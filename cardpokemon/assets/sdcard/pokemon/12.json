@@ -1,0 +1,30 @@
+{
+  "id": 12,
+  "name": "butterfree",
+  "names": {
+    "en": "butterfree",
+    "ko": "버터플",
+    "ja": "バタフリー"
+  },
+  "types": [
+    "bug",
+    "flying"
+  ],
+  "stats": {
+    "hp": 60,
+    "attack": 45,
+    "defense": 50,
+    "special-attack": 90,
+    "special-defense": 80,
+    "speed": 70
+  },
+  "height": 11,
+  "weight": 320,
+  "png": "12.png",
+  "gif": "12.gif",
+  "game": {
+    "catch_rate": 45,
+    "evolve_level": -1,
+    "evolve_to": -1
+  }
+}

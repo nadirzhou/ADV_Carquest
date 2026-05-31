@@ -1,0 +1,29 @@
+{
+  "id": 27,
+  "name": "sandshrew",
+  "names": {
+    "en": "sandshrew",
+    "ko": "모래두지",
+    "ja": "サンド"
+  },
+  "types": [
+    "ground"
+  ],
+  "stats": {
+    "hp": 50,
+    "attack": 75,
+    "defense": 85,
+    "special-attack": 20,
+    "special-defense": 30,
+    "speed": 40
+  },
+  "height": 6,
+  "weight": 120,
+  "png": "27.png",
+  "gif": "27.gif",
+  "game": {
+    "catch_rate": 95,
+    "evolve_level": 22,
+    "evolve_to": 28
+  }
+}

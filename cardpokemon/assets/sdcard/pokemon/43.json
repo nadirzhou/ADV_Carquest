@@ -1,0 +1,30 @@
+{
+  "id": 43,
+  "name": "oddish",
+  "names": {
+    "en": "oddish",
+    "ko": "뚜벅쵸",
+    "ja": "ナゾノクサ"
+  },
+  "types": [
+    "grass",
+    "poison"
+  ],
+  "stats": {
+    "hp": 45,
+    "attack": 50,
+    "defense": 55,
+    "special-attack": 75,
+    "special-defense": 65,
+    "speed": 30
+  },
+  "height": 5,
+  "weight": 54,
+  "png": "43.png",
+  "gif": "43.gif",
+  "game": {
+    "catch_rate": 95,
+    "evolve_level": 21,
+    "evolve_to": 44
+  }
+}

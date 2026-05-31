@@ -1,0 +1,30 @@
+{
+  "id": 15,
+  "name": "beedrill",
+  "names": {
+    "en": "beedrill",
+    "ko": "독침붕",
+    "ja": "スピアー"
+  },
+  "types": [
+    "bug",
+    "poison"
+  ],
+  "stats": {
+    "hp": 65,
+    "attack": 90,
+    "defense": 40,
+    "special-attack": 45,
+    "special-defense": 80,
+    "speed": 75
+  },
+  "height": 10,
+  "weight": 295,
+  "png": "15.png",
+  "gif": "15.gif",
+  "game": {
+    "catch_rate": 45,
+    "evolve_level": -1,
+    "evolve_to": -1
+  }
+}

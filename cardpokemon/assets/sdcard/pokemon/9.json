@@ -1,0 +1,29 @@
+{
+  "id": 9,
+  "name": "blastoise",
+  "names": {
+    "en": "blastoise",
+    "ko": "거북왕",
+    "ja": "カメックス"
+  },
+  "types": [
+    "water"
+  ],
+  "stats": {
+    "hp": 79,
+    "attack": 83,
+    "defense": 100,
+    "special-attack": 85,
+    "special-defense": 105,
+    "speed": 78
+  },
+  "height": 16,
+  "weight": 855,
+  "png": "9.png",
+  "gif": "9.gif",
+  "game": {
+    "catch_rate": 45,
+    "evolve_level": -1,
+    "evolve_to": -1
+  }
+}

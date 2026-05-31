@@ -1,0 +1,30 @@
+{
+  "id": 140,
+  "name": "kabuto",
+  "names": {
+    "en": "kabuto",
+    "ko": "투구",
+    "ja": "カブト"
+  },
+  "types": [
+    "rock",
+    "water"
+  ],
+  "stats": {
+    "hp": 30,
+    "attack": 80,
+    "defense": 90,
+    "special-attack": 55,
+    "special-defense": 45,
+    "speed": 55
+  },
+  "height": 5,
+  "weight": 115,
+  "png": "140.png",
+  "gif": "140.gif",
+  "game": {
+    "catch_rate": 45,
+    "evolve_level": 40,
+    "evolve_to": 141
+  }
+}

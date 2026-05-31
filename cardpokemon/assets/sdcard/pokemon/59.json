@@ -1,0 +1,29 @@
+{
+  "id": 59,
+  "name": "arcanine",
+  "names": {
+    "en": "arcanine",
+    "ko": "윈디",
+    "ja": "ウインディ"
+  },
+  "types": [
+    "fire"
+  ],
+  "stats": {
+    "hp": 90,
+    "attack": 110,
+    "defense": 80,
+    "special-attack": 100,
+    "special-defense": 80,
+    "speed": 95
+  },
+  "height": 19,
+  "weight": 1550,
+  "png": "59.png",
+  "gif": "59.gif",
+  "game": {
+    "catch_rate": 75,
+    "evolve_level": -1,
+    "evolve_to": -1
+  }
+}

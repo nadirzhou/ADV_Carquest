@@ -1,0 +1,29 @@
+{
+  "id": 153,
+  "name": "bayleef",
+  "names": {
+    "en": "bayleef",
+    "ko": "베이리프",
+    "ja": "ベイリーフ"
+  },
+  "types": [
+    "grass"
+  ],
+  "stats": {
+    "hp": 60,
+    "attack": 62,
+    "defense": 80,
+    "special-attack": 63,
+    "special-defense": 80,
+    "speed": 60
+  },
+  "height": 12,
+  "weight": 158,
+  "png": "153.png",
+  "gif": "153.gif",
+  "game": {
+    "catch_rate": 45,
+    "evolve_level": 32,
+    "evolve_to": 154
+  }
+}

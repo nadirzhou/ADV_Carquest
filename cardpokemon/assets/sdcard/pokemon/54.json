@@ -1,0 +1,29 @@
+{
+  "id": 54,
+  "name": "psyduck",
+  "names": {
+    "en": "psyduck",
+    "ko": "고라파덕",
+    "ja": "コダック"
+  },
+  "types": [
+    "water"
+  ],
+  "stats": {
+    "hp": 50,
+    "attack": 52,
+    "defense": 48,
+    "special-attack": 65,
+    "special-defense": 50,
+    "speed": 55
+  },
+  "height": 8,
+  "weight": 196,
+  "png": "54.png",
+  "gif": "54.gif",
+  "game": {
+    "catch_rate": 95,
+    "evolve_level": 33,
+    "evolve_to": 55
+  }
+}

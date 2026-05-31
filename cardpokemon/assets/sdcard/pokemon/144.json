@@ -1,0 +1,30 @@
+{
+  "id": 144,
+  "name": "articuno",
+  "names": {
+    "en": "articuno",
+    "ko": "프리져",
+    "ja": "フリーザー"
+  },
+  "types": [
+    "ice",
+    "flying"
+  ],
+  "stats": {
+    "hp": 90,
+    "attack": 85,
+    "defense": 100,
+    "special-attack": 95,
+    "special-defense": 125,
+    "speed": 85
+  },
+  "height": 17,
+  "weight": 554,
+  "png": "144.png",
+  "gif": "144.gif",
+  "game": {
+    "catch_rate": 3,
+    "evolve_level": -1,
+    "evolve_to": -1
+  }
+}

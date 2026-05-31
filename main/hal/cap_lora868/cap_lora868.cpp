@@ -28,16 +28,11 @@ bool CapLoRa868::init()
         return true;
     }
 
-    if (!lora_init()) {
-        return false;
-    }
+    const bool lora_ok = lora_init();
+    const bool gps_ok  = gps_init();
 
-    if (!gps_init()) {
-        return false;
-    }
-
-    _is_inited = true;
-    return true;
+    _is_inited = lora_ok || gps_ok;
+    return _is_inited;
 }
 
 void CapLoRa868::update()
@@ -149,6 +144,10 @@ bool CapLoRa868::enable_rf_switch()
 
 void CapLoRa868::lora_update()
 {
+    if (!_radio_lib.sx1262) {
+        return;
+    }
+
     // mclog::tagDebug(_tag, "{} {}", _lora_rx_flag, _lora_tx_flag);
 
     if (_lora_rx_flag) {
@@ -193,7 +192,7 @@ void CapLoRa868::lora_update()
 
 bool CapLoRa868::loraSendMsg(const std::string& msg)
 {
-    if (!_is_inited) {
+    if (!_is_inited || !_radio_lib.sx1262) {
         return false;
     }
 

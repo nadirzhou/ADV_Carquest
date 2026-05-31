@@ -1,0 +1,29 @@
+{
+  "id": 173,
+  "name": "cleffa",
+  "names": {
+    "en": "cleffa",
+    "ko": "삐",
+    "ja": "ピィ"
+  },
+  "types": [
+    "fairy"
+  ],
+  "stats": {
+    "hp": 50,
+    "attack": 25,
+    "defense": 28,
+    "special-attack": 45,
+    "special-defense": 55,
+    "speed": 15
+  },
+  "height": 3,
+  "weight": 30,
+  "png": "173.png",
+  "gif": "173.gif",
+  "game": {
+    "catch_rate": 95,
+    "evolve_level": -1,
+    "evolve_to": 35
+  }
+}

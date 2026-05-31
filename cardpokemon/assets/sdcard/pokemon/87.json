@@ -1,0 +1,30 @@
+{
+  "id": 87,
+  "name": "dewgong",
+  "names": {
+    "en": "dewgong",
+    "ko": "쥬레곤",
+    "ja": "ジュゴン"
+  },
+  "types": [
+    "water",
+    "ice"
+  ],
+  "stats": {
+    "hp": 90,
+    "attack": 70,
+    "defense": 80,
+    "special-attack": 70,
+    "special-defense": 95,
+    "speed": 70
+  },
+  "height": 17,
+  "weight": 1200,
+  "png": "87.png",
+  "gif": "87.gif",
+  "game": {
+    "catch_rate": 75,
+    "evolve_level": -1,
+    "evolve_to": -1
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": 111,
+  "name": "rhyhorn",
+  "names": {
+    "en": "rhyhorn",
+    "ko": "뿔카노",
+    "ja": "サイホーン"
+  },
+  "types": [
+    "ground",
+    "rock"
+  ],
+  "stats": {
+    "hp": 80,
+    "attack": 85,
+    "defense": 95,
+    "special-attack": 30,
+    "special-defense": 30,
+    "speed": 25
+  },
+  "height": 10,
+  "weight": 1150,
+  "png": "111.png",
+  "gif": "111.gif",
+  "game": {
+    "catch_rate": 95,
+    "evolve_level": 42,
+    "evolve_to": 112
+  }
+}

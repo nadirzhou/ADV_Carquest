@@ -1,0 +1,29 @@
+{
+  "id": 108,
+  "name": "lickitung",
+  "names": {
+    "en": "lickitung",
+    "ko": "내루미",
+    "ja": "ベロリンガ"
+  },
+  "types": [
+    "normal"
+  ],
+  "stats": {
+    "hp": 90,
+    "attack": 55,
+    "defense": 75,
+    "special-attack": 60,
+    "special-defense": 75,
+    "speed": 30
+  },
+  "height": 12,
+  "weight": 655,
+  "png": "108.png",
+  "gif": "108.gif",
+  "game": {
+    "catch_rate": 45,
+    "evolve_level": -1,
+    "evolve_to": 463
+  }
+}

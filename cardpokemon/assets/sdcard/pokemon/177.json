@@ -1,0 +1,30 @@
+{
+  "id": 177,
+  "name": "natu",
+  "names": {
+    "en": "natu",
+    "ko": "네이티",
+    "ja": "ネイティ"
+  },
+  "types": [
+    "psychic",
+    "flying"
+  ],
+  "stats": {
+    "hp": 40,
+    "attack": 50,
+    "defense": 45,
+    "special-attack": 70,
+    "special-defense": 45,
+    "speed": 70
+  },
+  "height": 2,
+  "weight": 20,
+  "png": "177.png",
+  "gif": "177.gif",
+  "game": {
+    "catch_rate": 95,
+    "evolve_level": 25,
+    "evolve_to": 178
+  }
+}

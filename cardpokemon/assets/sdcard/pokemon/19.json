@@ -1,0 +1,29 @@
+{
+  "id": 19,
+  "name": "rattata",
+  "names": {
+    "en": "rattata",
+    "ko": "꼬렛",
+    "ja": "コラッタ"
+  },
+  "types": [
+    "normal"
+  ],
+  "stats": {
+    "hp": 30,
+    "attack": 56,
+    "defense": 35,
+    "special-attack": 25,
+    "special-defense": 35,
+    "speed": 72
+  },
+  "height": 3,
+  "weight": 35,
+  "png": "19.png",
+  "gif": "19.gif",
+  "game": {
+    "catch_rate": 95,
+    "evolve_level": 20,
+    "evolve_to": 20
+  }
+}

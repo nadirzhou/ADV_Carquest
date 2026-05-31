@@ -1,0 +1,29 @@
+{
+  "id": 24,
+  "name": "arbok",
+  "names": {
+    "en": "arbok",
+    "ko": "아보크",
+    "ja": "アーボック"
+  },
+  "types": [
+    "poison"
+  ],
+  "stats": {
+    "hp": 60,
+    "attack": 95,
+    "defense": 69,
+    "special-attack": 65,
+    "special-defense": 79,
+    "speed": 80
+  },
+  "height": 35,
+  "weight": 650,
+  "png": "24.png",
+  "gif": "24.gif",
+  "game": {
+    "catch_rate": 90,
+    "evolve_level": -1,
+    "evolve_to": -1
+  }
+}

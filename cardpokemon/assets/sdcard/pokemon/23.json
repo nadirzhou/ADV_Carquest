@@ -1,0 +1,29 @@
+{
+  "id": 23,
+  "name": "ekans",
+  "names": {
+    "en": "ekans",
+    "ko": "아보",
+    "ja": "アーボ"
+  },
+  "types": [
+    "poison"
+  ],
+  "stats": {
+    "hp": 35,
+    "attack": 60,
+    "defense": 44,
+    "special-attack": 40,
+    "special-defense": 54,
+    "speed": 55
+  },
+  "height": 20,
+  "weight": 69,
+  "png": "23.png",
+  "gif": "23.gif",
+  "game": {
+    "catch_rate": 95,
+    "evolve_level": 22,
+    "evolve_to": 24
+  }
+}

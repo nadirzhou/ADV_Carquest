@@ -1,0 +1,29 @@
+{
+  "id": 192,
+  "name": "sunflora",
+  "names": {
+    "en": "sunflora",
+    "ko": "해루미",
+    "ja": "キマワリ"
+  },
+  "types": [
+    "grass"
+  ],
+  "stats": {
+    "hp": 75,
+    "attack": 75,
+    "defense": 55,
+    "special-attack": 105,
+    "special-defense": 85,
+    "speed": 30
+  },
+  "height": 8,
+  "weight": 85,
+  "png": "192.png",
+  "gif": "192.gif",
+  "game": {
+    "catch_rate": 95,
+    "evolve_level": -1,
+    "evolve_to": -1
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": 113,
+  "name": "chansey",
+  "names": {
+    "en": "chansey",
+    "ko": "럭키",
+    "ja": "ラッキー"
+  },
+  "types": [
+    "normal"
+  ],
+  "stats": {
+    "hp": 250,
+    "attack": 5,
+    "defense": 5,
+    "special-attack": 35,
+    "special-defense": 105,
+    "speed": 50
+  },
+  "height": 11,
+  "weight": 346,
+  "png": "113.png",
+  "gif": "113.gif",
+  "game": {
+    "catch_rate": 30,
+    "evolve_level": -1,
+    "evolve_to": 242
+  }
+}

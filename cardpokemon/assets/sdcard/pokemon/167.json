@@ -1,0 +1,30 @@
+{
+  "id": 167,
+  "name": "spinarak",
+  "names": {
+    "en": "spinarak",
+    "ko": "페이검",
+    "ja": "イトマル"
+  },
+  "types": [
+    "bug",
+    "poison"
+  ],
+  "stats": {
+    "hp": 40,
+    "attack": 60,
+    "defense": 40,
+    "special-attack": 40,
+    "special-defense": 40,
+    "speed": 30
+  },
+  "height": 5,
+  "weight": 85,
+  "png": "167.png",
+  "gif": "167.gif",
+  "game": {
+    "catch_rate": 95,
+    "evolve_level": 22,
+    "evolve_to": 168
+  }
+}

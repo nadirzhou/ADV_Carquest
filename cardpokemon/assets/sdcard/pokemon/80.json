@@ -1,0 +1,30 @@
+{
+  "id": 80,
+  "name": "slowbro",
+  "names": {
+    "en": "slowbro",
+    "ko": "야도란",
+    "ja": "ヤドラン"
+  },
+  "types": [
+    "water",
+    "psychic"
+  ],
+  "stats": {
+    "hp": 95,
+    "attack": 75,
+    "defense": 110,
+    "special-attack": 100,
+    "special-defense": 80,
+    "speed": 30
+  },
+  "height": 16,
+  "weight": 785,
+  "png": "80.png",
+  "gif": "80.gif",
+  "game": {
+    "catch_rate": 75,
+    "evolve_level": -1,
+    "evolve_to": -1
+  }
+}

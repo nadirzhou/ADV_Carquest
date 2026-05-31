@@ -1,0 +1,30 @@
+{
+  "id": 194,
+  "name": "wooper",
+  "names": {
+    "en": "wooper",
+    "ko": "우파",
+    "ja": "ウパー"
+  },
+  "types": [
+    "water",
+    "ground"
+  ],
+  "stats": {
+    "hp": 55,
+    "attack": 45,
+    "defense": 45,
+    "special-attack": 25,
+    "special-defense": 25,
+    "speed": 15
+  },
+  "height": 4,
+  "weight": 85,
+  "png": "194.png",
+  "gif": "194.gif",
+  "game": {
+    "catch_rate": 95,
+    "evolve_level": 20,
+    "evolve_to": 195
+  }
+}

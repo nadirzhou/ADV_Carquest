@@ -1,0 +1,29 @@
+{
+  "id": 88,
+  "name": "grimer",
+  "names": {
+    "en": "grimer",
+    "ko": "질퍽이",
+    "ja": "ベトベター"
+  },
+  "types": [
+    "poison"
+  ],
+  "stats": {
+    "hp": 80,
+    "attack": 80,
+    "defense": 50,
+    "special-attack": 40,
+    "special-defense": 50,
+    "speed": 25
+  },
+  "height": 9,
+  "weight": 300,
+  "png": "88.png",
+  "gif": "88.gif",
+  "game": {
+    "catch_rate": 95,
+    "evolve_level": 38,
+    "evolve_to": 89
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": 148,
+  "name": "dragonair",
+  "names": {
+    "en": "dragonair",
+    "ko": "신뇽",
+    "ja": "ハクリュー"
+  },
+  "types": [
+    "dragon"
+  ],
+  "stats": {
+    "hp": 61,
+    "attack": 84,
+    "defense": 65,
+    "special-attack": 70,
+    "special-defense": 70,
+    "speed": 70
+  },
+  "height": 40,
+  "weight": 165,
+  "png": "148.png",
+  "gif": "148.gif",
+  "game": {
+    "catch_rate": 45,
+    "evolve_level": 55,
+    "evolve_to": 149
+  }
+}

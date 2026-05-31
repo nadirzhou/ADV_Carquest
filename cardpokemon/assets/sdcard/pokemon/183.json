@@ -1,0 +1,30 @@
+{
+  "id": 183,
+  "name": "marill",
+  "names": {
+    "en": "marill",
+    "ko": "마릴",
+    "ja": "マリル"
+  },
+  "types": [
+    "water",
+    "fairy"
+  ],
+  "stats": {
+    "hp": 70,
+    "attack": 20,
+    "defense": 50,
+    "special-attack": 20,
+    "special-defense": 50,
+    "speed": 40
+  },
+  "height": 4,
+  "weight": 85,
+  "png": "183.png",
+  "gif": "183.gif",
+  "game": {
+    "catch_rate": 95,
+    "evolve_level": 18,
+    "evolve_to": 184
+  }
+}

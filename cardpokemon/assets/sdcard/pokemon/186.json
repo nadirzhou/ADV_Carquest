@@ -1,0 +1,29 @@
+{
+  "id": 186,
+  "name": "politoed",
+  "names": {
+    "en": "politoed",
+    "ko": "왕구리",
+    "ja": "ニョロトノ"
+  },
+  "types": [
+    "water"
+  ],
+  "stats": {
+    "hp": 90,
+    "attack": 75,
+    "defense": 75,
+    "special-attack": 90,
+    "special-defense": 100,
+    "speed": 70
+  },
+  "height": 11,
+  "weight": 339,
+  "png": "186.png",
+  "gif": "186.gif",
+  "game": {
+    "catch_rate": 45,
+    "evolve_level": -1,
+    "evolve_to": -1
+  }
+}

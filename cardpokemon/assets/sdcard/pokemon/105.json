@@ -1,0 +1,29 @@
+{
+  "id": 105,
+  "name": "marowak",
+  "names": {
+    "en": "marowak",
+    "ko": "텅구리",
+    "ja": "ガラガラ"
+  },
+  "types": [
+    "ground"
+  ],
+  "stats": {
+    "hp": 60,
+    "attack": 80,
+    "defense": 110,
+    "special-attack": 50,
+    "special-defense": 80,
+    "speed": 45
+  },
+  "height": 10,
+  "weight": 450,
+  "png": "105.png",
+  "gif": "105.gif",
+  "game": {
+    "catch_rate": 75,
+    "evolve_level": -1,
+    "evolve_to": -1
+  }
+}

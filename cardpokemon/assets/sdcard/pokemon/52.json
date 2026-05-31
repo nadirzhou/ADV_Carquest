@@ -1,0 +1,29 @@
+{
+  "id": 52,
+  "name": "meowth",
+  "names": {
+    "en": "meowth",
+    "ko": "나옹",
+    "ja": "ニャース"
+  },
+  "types": [
+    "normal"
+  ],
+  "stats": {
+    "hp": 40,
+    "attack": 45,
+    "defense": 35,
+    "special-attack": 40,
+    "special-defense": 40,
+    "speed": 90
+  },
+  "height": 4,
+  "weight": 42,
+  "png": "52.png",
+  "gif": "52.gif",
+  "game": {
+    "catch_rate": 95,
+    "evolve_level": 28,
+    "evolve_to": 53
+  }
+}

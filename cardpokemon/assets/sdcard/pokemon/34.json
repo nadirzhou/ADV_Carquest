@@ -1,0 +1,30 @@
+{
+  "id": 34,
+  "name": "nidoking",
+  "names": {
+    "en": "nidoking",
+    "ko": "니드킹",
+    "ja": "ニドキング"
+  },
+  "types": [
+    "poison",
+    "ground"
+  ],
+  "stats": {
+    "hp": 81,
+    "attack": 102,
+    "defense": 77,
+    "special-attack": 85,
+    "special-defense": 75,
+    "speed": 85
+  },
+  "height": 14,
+  "weight": 620,
+  "png": "34.png",
+  "gif": "34.gif",
+  "game": {
+    "catch_rate": 45,
+    "evolve_level": -1,
+    "evolve_to": -1
+  }
+}

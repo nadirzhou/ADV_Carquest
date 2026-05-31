@@ -1,0 +1,30 @@
+{
+  "id": 21,
+  "name": "spearow",
+  "names": {
+    "en": "spearow",
+    "ko": "깨비참",
+    "ja": "オニスズメ"
+  },
+  "types": [
+    "normal",
+    "flying"
+  ],
+  "stats": {
+    "hp": 40,
+    "attack": 60,
+    "defense": 30,
+    "special-attack": 31,
+    "special-defense": 31,
+    "speed": 70
+  },
+  "height": 3,
+  "weight": 20,
+  "png": "21.png",
+  "gif": "21.gif",
+  "game": {
+    "catch_rate": 95,
+    "evolve_level": 20,
+    "evolve_to": 22
+  }
+}

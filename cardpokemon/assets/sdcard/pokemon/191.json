@@ -1,0 +1,29 @@
+{
+  "id": 191,
+  "name": "sunkern",
+  "names": {
+    "en": "sunkern",
+    "ko": "해너츠",
+    "ja": "ヒマナッツ"
+  },
+  "types": [
+    "grass"
+  ],
+  "stats": {
+    "hp": 30,
+    "attack": 30,
+    "defense": 30,
+    "special-attack": 30,
+    "special-defense": 30,
+    "speed": 30
+  },
+  "height": 3,
+  "weight": 18,
+  "png": "191.png",
+  "gif": "191.gif",
+  "game": {
+    "catch_rate": 95,
+    "evolve_level": -1,
+    "evolve_to": 192
+  }
+}

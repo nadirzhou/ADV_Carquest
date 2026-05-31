@@ -1,0 +1,29 @@
+{
+  "id": 155,
+  "name": "cyndaquil",
+  "names": {
+    "en": "cyndaquil",
+    "ko": "브케인",
+    "ja": "ヒノアラシ"
+  },
+  "types": [
+    "fire"
+  ],
+  "stats": {
+    "hp": 39,
+    "attack": 52,
+    "defense": 43,
+    "special-attack": 60,
+    "special-defense": 50,
+    "speed": 65
+  },
+  "height": 5,
+  "weight": 79,
+  "png": "155.png",
+  "gif": "155.gif",
+  "game": {
+    "catch_rate": 45,
+    "evolve_level": 14,
+    "evolve_to": 156
+  }
+}

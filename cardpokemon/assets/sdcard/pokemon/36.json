@@ -1,0 +1,29 @@
+{
+  "id": 36,
+  "name": "clefable",
+  "names": {
+    "en": "clefable",
+    "ko": "픽시",
+    "ja": "ピクシー"
+  },
+  "types": [
+    "fairy"
+  ],
+  "stats": {
+    "hp": 95,
+    "attack": 70,
+    "defense": 73,
+    "special-attack": 95,
+    "special-defense": 90,
+    "speed": 60
+  },
+  "height": 13,
+  "weight": 400,
+  "png": "36.png",
+  "gif": "36.gif",
+  "game": {
+    "catch_rate": 25,
+    "evolve_level": -1,
+    "evolve_to": -1
+  }
+}

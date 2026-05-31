@@ -1,0 +1,29 @@
+{
+  "id": 97,
+  "name": "hypno",
+  "names": {
+    "en": "hypno",
+    "ko": "슬리퍼",
+    "ja": "スリーパー"
+  },
+  "types": [
+    "psychic"
+  ],
+  "stats": {
+    "hp": 85,
+    "attack": 73,
+    "defense": 70,
+    "special-attack": 73,
+    "special-defense": 115,
+    "speed": 67
+  },
+  "height": 16,
+  "weight": 756,
+  "png": "97.png",
+  "gif": "97.gif",
+  "game": {
+    "catch_rate": 75,
+    "evolve_level": -1,
+    "evolve_to": -1
+  }
+}

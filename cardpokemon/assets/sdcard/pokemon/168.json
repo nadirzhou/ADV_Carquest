@@ -1,0 +1,30 @@
+{
+  "id": 168,
+  "name": "ariados",
+  "names": {
+    "en": "ariados",
+    "ko": "아리아도스",
+    "ja": "アリアドス"
+  },
+  "types": [
+    "bug",
+    "poison"
+  ],
+  "stats": {
+    "hp": 70,
+    "attack": 90,
+    "defense": 70,
+    "special-attack": 60,
+    "special-defense": 70,
+    "speed": 40
+  },
+  "height": 11,
+  "weight": 335,
+  "png": "168.png",
+  "gif": "168.gif",
+  "game": {
+    "catch_rate": 90,
+    "evolve_level": -1,
+    "evolve_to": -1
+  }
+}

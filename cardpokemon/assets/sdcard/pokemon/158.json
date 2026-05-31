@@ -1,0 +1,29 @@
+{
+  "id": 158,
+  "name": "totodile",
+  "names": {
+    "en": "totodile",
+    "ko": "리아코",
+    "ja": "ワニノコ"
+  },
+  "types": [
+    "water"
+  ],
+  "stats": {
+    "hp": 50,
+    "attack": 65,
+    "defense": 64,
+    "special-attack": 44,
+    "special-defense": 48,
+    "speed": 43
+  },
+  "height": 6,
+  "weight": 95,
+  "png": "158.png",
+  "gif": "158.gif",
+  "game": {
+    "catch_rate": 45,
+    "evolve_level": 18,
+    "evolve_to": 159
+  }
+}

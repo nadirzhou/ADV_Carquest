@@ -1,0 +1,30 @@
+{
+  "id": 170,
+  "name": "chinchou",
+  "names": {
+    "en": "chinchou",
+    "ko": "초라기",
+    "ja": "チョンチー"
+  },
+  "types": [
+    "water",
+    "electric"
+  ],
+  "stats": {
+    "hp": 75,
+    "attack": 38,
+    "defense": 38,
+    "special-attack": 56,
+    "special-defense": 56,
+    "speed": 67
+  },
+  "height": 5,
+  "weight": 120,
+  "png": "170.png",
+  "gif": "170.gif",
+  "game": {
+    "catch_rate": 95,
+    "evolve_level": 27,
+    "evolve_to": 171
+  }
+}

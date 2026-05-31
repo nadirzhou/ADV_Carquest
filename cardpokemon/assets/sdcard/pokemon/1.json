@@ -1,0 +1,30 @@
+{
+  "id": 1,
+  "name": "bulbasaur",
+  "names": {
+    "en": "bulbasaur",
+    "ko": "이상해씨",
+    "ja": "フシギダネ"
+  },
+  "types": [
+    "grass",
+    "poison"
+  ],
+  "stats": {
+    "hp": 45,
+    "attack": 49,
+    "defense": 49,
+    "special-attack": 65,
+    "special-defense": 65,
+    "speed": 45
+  },
+  "height": 7,
+  "weight": 69,
+  "png": "1.png",
+  "gif": "1.gif",
+  "game": {
+    "catch_rate": 45,
+    "evolve_level": 16,
+    "evolve_to": 2
+  }
+}

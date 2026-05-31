@@ -1,0 +1,30 @@
+{
+  "id": 112,
+  "name": "rhydon",
+  "names": {
+    "en": "rhydon",
+    "ko": "코뿌리",
+    "ja": "サイドン"
+  },
+  "types": [
+    "ground",
+    "rock"
+  ],
+  "stats": {
+    "hp": 105,
+    "attack": 130,
+    "defense": 120,
+    "special-attack": 45,
+    "special-defense": 45,
+    "speed": 40
+  },
+  "height": 19,
+  "weight": 1200,
+  "png": "112.png",
+  "gif": "112.gif",
+  "game": {
+    "catch_rate": 60,
+    "evolve_level": -1,
+    "evolve_to": 464
+  }
+}

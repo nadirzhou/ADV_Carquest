@@ -1,0 +1,30 @@
+{
+  "id": 83,
+  "name": "farfetchd",
+  "names": {
+    "en": "farfetchd",
+    "ko": "파오리",
+    "ja": "カモネギ"
+  },
+  "types": [
+    "normal",
+    "flying"
+  ],
+  "stats": {
+    "hp": 52,
+    "attack": 90,
+    "defense": 55,
+    "special-attack": 58,
+    "special-defense": 62,
+    "speed": 60
+  },
+  "height": 8,
+  "weight": 150,
+  "png": "83.png",
+  "gif": "83.gif",
+  "game": {
+    "catch_rate": 45,
+    "evolve_level": -1,
+    "evolve_to": 865
+  }
+}

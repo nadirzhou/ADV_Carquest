@@ -1,0 +1,29 @@
+{
+  "id": 185,
+  "name": "sudowoodo",
+  "names": {
+    "en": "sudowoodo",
+    "ko": "꼬지모",
+    "ja": "ウソッキー"
+  },
+  "types": [
+    "rock"
+  ],
+  "stats": {
+    "hp": 70,
+    "attack": 100,
+    "defense": 115,
+    "special-attack": 30,
+    "special-defense": 65,
+    "speed": 30
+  },
+  "height": 12,
+  "weight": 380,
+  "png": "185.png",
+  "gif": "185.gif",
+  "game": {
+    "catch_rate": 65,
+    "evolve_level": -1,
+    "evolve_to": -1
+  }
+}

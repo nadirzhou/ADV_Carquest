@@ -1,0 +1,29 @@
+{
+  "id": 99,
+  "name": "kingler",
+  "names": {
+    "en": "kingler",
+    "ko": "킹크랩",
+    "ja": "キングラー"
+  },
+  "types": [
+    "water"
+  ],
+  "stats": {
+    "hp": 55,
+    "attack": 130,
+    "defense": 115,
+    "special-attack": 50,
+    "special-defense": 50,
+    "speed": 75
+  },
+  "height": 13,
+  "weight": 600,
+  "png": "99.png",
+  "gif": "99.gif",
+  "game": {
+    "catch_rate": 60,
+    "evolve_level": -1,
+    "evolve_to": -1
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": 81,
+  "name": "magnemite",
+  "names": {
+    "en": "magnemite",
+    "ko": "코일",
+    "ja": "コイル"
+  },
+  "types": [
+    "electric",
+    "steel"
+  ],
+  "stats": {
+    "hp": 25,
+    "attack": 35,
+    "defense": 70,
+    "special-attack": 95,
+    "special-defense": 55,
+    "speed": 45
+  },
+  "height": 3,
+  "weight": 60,
+  "png": "81.png",
+  "gif": "81.gif",
+  "game": {
+    "catch_rate": 95,
+    "evolve_level": 30,
+    "evolve_to": 82
+  }
+}

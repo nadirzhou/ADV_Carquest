@@ -1,0 +1,30 @@
+{
+  "id": 85,
+  "name": "dodrio",
+  "names": {
+    "en": "dodrio",
+    "ko": "두트리오",
+    "ja": "ドードリオ"
+  },
+  "types": [
+    "normal",
+    "flying"
+  ],
+  "stats": {
+    "hp": 60,
+    "attack": 110,
+    "defense": 70,
+    "special-attack": 60,
+    "special-defense": 60,
+    "speed": 110
+  },
+  "height": 18,
+  "weight": 852,
+  "png": "85.png",
+  "gif": "85.gif",
+  "game": {
+    "catch_rate": 45,
+    "evolve_level": -1,
+    "evolve_to": -1
+  }
+}

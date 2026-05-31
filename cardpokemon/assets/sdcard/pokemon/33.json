@@ -1,0 +1,29 @@
+{
+  "id": 33,
+  "name": "nidorino",
+  "names": {
+    "en": "nidorino",
+    "ko": "니드리노",
+    "ja": "ニドリーノ"
+  },
+  "types": [
+    "poison"
+  ],
+  "stats": {
+    "hp": 61,
+    "attack": 72,
+    "defense": 57,
+    "special-attack": 55,
+    "special-defense": 55,
+    "speed": 65
+  },
+  "height": 9,
+  "weight": 195,
+  "png": "33.png",
+  "gif": "33.gif",
+  "game": {
+    "catch_rate": 95,
+    "evolve_level": -1,
+    "evolve_to": 34
+  }
+}

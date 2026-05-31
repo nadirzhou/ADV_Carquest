@@ -1,0 +1,29 @@
+{
+  "id": 162,
+  "name": "furret",
+  "names": {
+    "en": "furret",
+    "ko": "다꼬리",
+    "ja": "オオタチ"
+  },
+  "types": [
+    "normal"
+  ],
+  "stats": {
+    "hp": 85,
+    "attack": 76,
+    "defense": 64,
+    "special-attack": 45,
+    "special-defense": 55,
+    "speed": 90
+  },
+  "height": 18,
+  "weight": 325,
+  "png": "162.png",
+  "gif": "162.gif",
+  "game": {
+    "catch_rate": 90,
+    "evolve_level": -1,
+    "evolve_to": -1
+  }
+}

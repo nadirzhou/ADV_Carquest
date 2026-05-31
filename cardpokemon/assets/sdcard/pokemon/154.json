@@ -1,0 +1,29 @@
+{
+  "id": 154,
+  "name": "meganium",
+  "names": {
+    "en": "meganium",
+    "ko": "메가니움",
+    "ja": "メガニウム"
+  },
+  "types": [
+    "grass"
+  ],
+  "stats": {
+    "hp": 80,
+    "attack": 82,
+    "defense": 100,
+    "special-attack": 83,
+    "special-defense": 100,
+    "speed": 80
+  },
+  "height": 18,
+  "weight": 1005,
+  "png": "154.png",
+  "gif": "154.gif",
+  "game": {
+    "catch_rate": 45,
+    "evolve_level": -1,
+    "evolve_to": -1
+  }
+}

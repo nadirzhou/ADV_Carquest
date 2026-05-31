@@ -1,0 +1,29 @@
+{
+  "id": 137,
+  "name": "porygon",
+  "names": {
+    "en": "porygon",
+    "ko": "폴리곤",
+    "ja": "ポリゴン"
+  },
+  "types": [
+    "normal"
+  ],
+  "stats": {
+    "hp": 65,
+    "attack": 60,
+    "defense": 70,
+    "special-attack": 85,
+    "special-defense": 75,
+    "speed": 40
+  },
+  "height": 8,
+  "weight": 365,
+  "png": "137.png",
+  "gif": "137.gif",
+  "game": {
+    "catch_rate": 45,
+    "evolve_level": -1,
+    "evolve_to": 233
+  }
+}

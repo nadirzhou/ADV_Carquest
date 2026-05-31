@@ -1,0 +1,30 @@
+{
+  "id": 169,
+  "name": "crobat",
+  "names": {
+    "en": "crobat",
+    "ko": "크로뱃",
+    "ja": "クロバット"
+  },
+  "types": [
+    "poison",
+    "flying"
+  ],
+  "stats": {
+    "hp": 85,
+    "attack": 90,
+    "defense": 80,
+    "special-attack": 70,
+    "special-defense": 80,
+    "speed": 130
+  },
+  "height": 18,
+  "weight": 750,
+  "png": "169.png",
+  "gif": "169.gif",
+  "game": {
+    "catch_rate": 90,
+    "evolve_level": -1,
+    "evolve_to": -1
+  }
+}

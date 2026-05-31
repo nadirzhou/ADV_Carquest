@@ -1,0 +1,29 @@
+{
+  "id": 86,
+  "name": "seel",
+  "names": {
+    "en": "seel",
+    "ko": "쥬쥬",
+    "ja": "パウワウ"
+  },
+  "types": [
+    "water"
+  ],
+  "stats": {
+    "hp": 65,
+    "attack": 45,
+    "defense": 55,
+    "special-attack": 45,
+    "special-defense": 70,
+    "speed": 45
+  },
+  "height": 11,
+  "weight": 900,
+  "png": "86.png",
+  "gif": "86.gif",
+  "game": {
+    "catch_rate": 95,
+    "evolve_level": 34,
+    "evolve_to": 87
+  }
+}

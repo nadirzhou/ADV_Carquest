@@ -1,0 +1,30 @@
+{
+  "id": 92,
+  "name": "gastly",
+  "names": {
+    "en": "gastly",
+    "ko": "고오스",
+    "ja": "ゴース"
+  },
+  "types": [
+    "ghost",
+    "poison"
+  ],
+  "stats": {
+    "hp": 30,
+    "attack": 35,
+    "defense": 30,
+    "special-attack": 100,
+    "special-defense": 35,
+    "speed": 80
+  },
+  "height": 13,
+  "weight": 1,
+  "png": "92.png",
+  "gif": "92.gif",
+  "game": {
+    "catch_rate": 95,
+    "evolve_level": 25,
+    "evolve_to": 93
+  }
+}

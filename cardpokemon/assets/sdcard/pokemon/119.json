@@ -1,0 +1,29 @@
+{
+  "id": 119,
+  "name": "seaking",
+  "names": {
+    "en": "seaking",
+    "ko": "왕콘치",
+    "ja": "アズマオウ"
+  },
+  "types": [
+    "water"
+  ],
+  "stats": {
+    "hp": 80,
+    "attack": 92,
+    "defense": 65,
+    "special-attack": 65,
+    "special-defense": 80,
+    "speed": 68
+  },
+  "height": 13,
+  "weight": 390,
+  "png": "119.png",
+  "gif": "119.gif",
+  "game": {
+    "catch_rate": 60,
+    "evolve_level": -1,
+    "evolve_to": -1
+  }
+}

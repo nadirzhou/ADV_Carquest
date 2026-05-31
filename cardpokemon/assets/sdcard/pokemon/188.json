@@ -1,0 +1,30 @@
+{
+  "id": 188,
+  "name": "skiploom",
+  "names": {
+    "en": "skiploom",
+    "ko": "두코",
+    "ja": "ポポッコ"
+  },
+  "types": [
+    "grass",
+    "flying"
+  ],
+  "stats": {
+    "hp": 55,
+    "attack": 45,
+    "defense": 50,
+    "special-attack": 45,
+    "special-defense": 65,
+    "speed": 80
+  },
+  "height": 6,
+  "weight": 10,
+  "png": "188.png",
+  "gif": "188.gif",
+  "game": {
+    "catch_rate": 95,
+    "evolve_level": 27,
+    "evolve_to": 189
+  }
+}

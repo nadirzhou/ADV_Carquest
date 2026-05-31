@@ -1,0 +1,29 @@
+{
+  "id": 63,
+  "name": "abra",
+  "names": {
+    "en": "abra",
+    "ko": "캐이시",
+    "ja": "ケーシィ"
+  },
+  "types": [
+    "psychic"
+  ],
+  "stats": {
+    "hp": 25,
+    "attack": 20,
+    "defense": 15,
+    "special-attack": 105,
+    "special-defense": 55,
+    "speed": 90
+  },
+  "height": 9,
+  "weight": 195,
+  "png": "63.png",
+  "gif": "63.gif",
+  "game": {
+    "catch_rate": 95,
+    "evolve_level": 16,
+    "evolve_to": 64
+  }
+}

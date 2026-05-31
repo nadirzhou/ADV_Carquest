@@ -1,0 +1,30 @@
+{
+  "id": 163,
+  "name": "hoothoot",
+  "names": {
+    "en": "hoothoot",
+    "ko": "부우부",
+    "ja": "ホーホー"
+  },
+  "types": [
+    "normal",
+    "flying"
+  ],
+  "stats": {
+    "hp": 60,
+    "attack": 30,
+    "defense": 30,
+    "special-attack": 36,
+    "special-defense": 56,
+    "speed": 50
+  },
+  "height": 7,
+  "weight": 212,
+  "png": "163.png",
+  "gif": "163.gif",
+  "game": {
+    "catch_rate": 95,
+    "evolve_level": 20,
+    "evolve_to": 164
+  }
+}

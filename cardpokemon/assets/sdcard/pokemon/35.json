@@ -1,0 +1,29 @@
+{
+  "id": 35,
+  "name": "clefairy",
+  "names": {
+    "en": "clefairy",
+    "ko": "삐삐",
+    "ja": "ピッピ"
+  },
+  "types": [
+    "fairy"
+  ],
+  "stats": {
+    "hp": 70,
+    "attack": 45,
+    "defense": 48,
+    "special-attack": 60,
+    "special-defense": 65,
+    "speed": 35
+  },
+  "height": 6,
+  "weight": 75,
+  "png": "35.png",
+  "gif": "35.gif",
+  "game": {
+    "catch_rate": 95,
+    "evolve_level": -1,
+    "evolve_to": 36
+  }
+}

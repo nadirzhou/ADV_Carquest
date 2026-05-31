@@ -1,0 +1,30 @@
+{
+  "id": 82,
+  "name": "magneton",
+  "names": {
+    "en": "magneton",
+    "ko": "레어코일",
+    "ja": "レアコイル"
+  },
+  "types": [
+    "electric",
+    "steel"
+  ],
+  "stats": {
+    "hp": 50,
+    "attack": 60,
+    "defense": 95,
+    "special-attack": 120,
+    "special-defense": 70,
+    "speed": 70
+  },
+  "height": 10,
+  "weight": 600,
+  "png": "82.png",
+  "gif": "82.gif",
+  "game": {
+    "catch_rate": 60,
+    "evolve_level": -1,
+    "evolve_to": 462
+  }
+}

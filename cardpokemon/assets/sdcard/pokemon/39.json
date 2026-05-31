@@ -1,0 +1,30 @@
+{
+  "id": 39,
+  "name": "jigglypuff",
+  "names": {
+    "en": "jigglypuff",
+    "ko": "푸린",
+    "ja": "プリン"
+  },
+  "types": [
+    "normal",
+    "fairy"
+  ],
+  "stats": {
+    "hp": 115,
+    "attack": 45,
+    "defense": 20,
+    "special-attack": 45,
+    "special-defense": 25,
+    "speed": 20
+  },
+  "height": 5,
+  "weight": 55,
+  "png": "39.png",
+  "gif": "39.gif",
+  "game": {
+    "catch_rate": 95,
+    "evolve_level": -1,
+    "evolve_to": 40
+  }
+}

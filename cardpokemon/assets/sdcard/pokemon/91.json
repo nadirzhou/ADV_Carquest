@@ -1,0 +1,30 @@
+{
+  "id": 91,
+  "name": "cloyster",
+  "names": {
+    "en": "cloyster",
+    "ko": "파르셀",
+    "ja": "パルシェン"
+  },
+  "types": [
+    "water",
+    "ice"
+  ],
+  "stats": {
+    "hp": 50,
+    "attack": 95,
+    "defense": 180,
+    "special-attack": 85,
+    "special-defense": 45,
+    "speed": 70
+  },
+  "height": 15,
+  "weight": 1325,
+  "png": "91.png",
+  "gif": "91.gif",
+  "game": {
+    "catch_rate": 60,
+    "evolve_level": -1,
+    "evolve_to": -1
+  }
+}

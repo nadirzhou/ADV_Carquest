@@ -1,0 +1,29 @@
+{
+  "id": 8,
+  "name": "wartortle",
+  "names": {
+    "en": "wartortle",
+    "ko": "어니부기",
+    "ja": "カメール"
+  },
+  "types": [
+    "water"
+  ],
+  "stats": {
+    "hp": 59,
+    "attack": 63,
+    "defense": 80,
+    "special-attack": 65,
+    "special-defense": 80,
+    "speed": 58
+  },
+  "height": 10,
+  "weight": 225,
+  "png": "8.png",
+  "gif": "8.gif",
+  "game": {
+    "catch_rate": 45,
+    "evolve_level": 36,
+    "evolve_to": 9
+  }
+}

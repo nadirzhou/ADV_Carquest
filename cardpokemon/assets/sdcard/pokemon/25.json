@@ -1,0 +1,29 @@
+{
+  "id": 25,
+  "name": "pikachu",
+  "names": {
+    "en": "pikachu",
+    "ko": "피카츄",
+    "ja": "ピカチュウ"
+  },
+  "types": [
+    "electric"
+  ],
+  "stats": {
+    "hp": 35,
+    "attack": 55,
+    "defense": 40,
+    "special-attack": 50,
+    "special-defense": 50,
+    "speed": 90
+  },
+  "height": 4,
+  "weight": 60,
+  "png": "25.png",
+  "gif": "25.gif",
+  "game": {
+    "catch_rate": 95,
+    "evolve_level": -1,
+    "evolve_to": 26
+  }
+}

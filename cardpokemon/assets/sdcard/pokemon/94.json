@@ -1,0 +1,30 @@
+{
+  "id": 94,
+  "name": "gengar",
+  "names": {
+    "en": "gengar",
+    "ko": "팬텀",
+    "ja": "ゲンガー"
+  },
+  "types": [
+    "ghost",
+    "poison"
+  ],
+  "stats": {
+    "hp": 60,
+    "attack": 65,
+    "defense": 60,
+    "special-attack": 130,
+    "special-defense": 75,
+    "speed": 110
+  },
+  "height": 15,
+  "weight": 405,
+  "png": "94.png",
+  "gif": "94.gif",
+  "game": {
+    "catch_rate": 45,
+    "evolve_level": -1,
+    "evolve_to": -1
+  }
+}

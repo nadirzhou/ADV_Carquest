@@ -1,0 +1,30 @@
+{
+  "id": 138,
+  "name": "omanyte",
+  "names": {
+    "en": "omanyte",
+    "ko": "암나이트",
+    "ja": "オムナイト"
+  },
+  "types": [
+    "rock",
+    "water"
+  ],
+  "stats": {
+    "hp": 35,
+    "attack": 40,
+    "defense": 100,
+    "special-attack": 90,
+    "special-defense": 55,
+    "speed": 35
+  },
+  "height": 4,
+  "weight": 75,
+  "png": "138.png",
+  "gif": "138.gif",
+  "game": {
+    "catch_rate": 45,
+    "evolve_level": 40,
+    "evolve_to": 139
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": 159,
+  "name": "croconaw",
+  "names": {
+    "en": "croconaw",
+    "ko": "엘리게이",
+    "ja": "アリゲイツ"
+  },
+  "types": [
+    "water"
+  ],
+  "stats": {
+    "hp": 65,
+    "attack": 80,
+    "defense": 80,
+    "special-attack": 59,
+    "special-defense": 63,
+    "speed": 58
+  },
+  "height": 11,
+  "weight": 250,
+  "png": "159.png",
+  "gif": "159.gif",
+  "game": {
+    "catch_rate": 45,
+    "evolve_level": 30,
+    "evolve_to": 160
+  }
+}

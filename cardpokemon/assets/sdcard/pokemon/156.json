@@ -1,0 +1,29 @@
+{
+  "id": 156,
+  "name": "quilava",
+  "names": {
+    "en": "quilava",
+    "ko": "마그케인",
+    "ja": "マグマラシ"
+  },
+  "types": [
+    "fire"
+  ],
+  "stats": {
+    "hp": 58,
+    "attack": 64,
+    "defense": 58,
+    "special-attack": 80,
+    "special-defense": 65,
+    "speed": 80
+  },
+  "height": 9,
+  "weight": 190,
+  "png": "156.png",
+  "gif": "156.gif",
+  "game": {
+    "catch_rate": 45,
+    "evolve_level": 36,
+    "evolve_to": 157
+  }
+}

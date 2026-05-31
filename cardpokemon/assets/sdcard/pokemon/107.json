@@ -1,0 +1,29 @@
+{
+  "id": 107,
+  "name": "hitmonchan",
+  "names": {
+    "en": "hitmonchan",
+    "ko": "홍수몬",
+    "ja": "エビワラー"
+  },
+  "types": [
+    "fighting"
+  ],
+  "stats": {
+    "hp": 50,
+    "attack": 105,
+    "defense": 79,
+    "special-attack": 35,
+    "special-defense": 110,
+    "speed": 76
+  },
+  "height": 14,
+  "weight": 502,
+  "png": "107.png",
+  "gif": "107.gif",
+  "game": {
+    "catch_rate": 45,
+    "evolve_level": -1,
+    "evolve_to": -1
+  }
+}

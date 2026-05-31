@@ -1,0 +1,29 @@
+{
+  "id": 117,
+  "name": "seadra",
+  "names": {
+    "en": "seadra",
+    "ko": "시드라",
+    "ja": "シードラ"
+  },
+  "types": [
+    "water"
+  ],
+  "stats": {
+    "hp": 55,
+    "attack": 65,
+    "defense": 95,
+    "special-attack": 95,
+    "special-defense": 45,
+    "speed": 85
+  },
+  "height": 12,
+  "weight": 250,
+  "png": "117.png",
+  "gif": "117.gif",
+  "game": {
+    "catch_rate": 75,
+    "evolve_level": -1,
+    "evolve_to": 230
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": 77,
+  "name": "ponyta",
+  "names": {
+    "en": "ponyta",
+    "ko": "포니타",
+    "ja": "ポニータ"
+  },
+  "types": [
+    "fire"
+  ],
+  "stats": {
+    "hp": 50,
+    "attack": 85,
+    "defense": 55,
+    "special-attack": 65,
+    "special-defense": 65,
+    "speed": 90
+  },
+  "height": 10,
+  "weight": 300,
+  "png": "77.png",
+  "gif": "77.gif",
+  "game": {
+    "catch_rate": 95,
+    "evolve_level": 40,
+    "evolve_to": 78
+  }
+}

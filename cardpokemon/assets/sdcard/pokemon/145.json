@@ -1,0 +1,30 @@
+{
+  "id": 145,
+  "name": "zapdos",
+  "names": {
+    "en": "zapdos",
+    "ko": "썬더",
+    "ja": "サンダー"
+  },
+  "types": [
+    "electric",
+    "flying"
+  ],
+  "stats": {
+    "hp": 90,
+    "attack": 90,
+    "defense": 85,
+    "special-attack": 125,
+    "special-defense": 90,
+    "speed": 100
+  },
+  "height": 16,
+  "weight": 526,
+  "png": "145.png",
+  "gif": "145.gif",
+  "game": {
+    "catch_rate": 3,
+    "evolve_level": -1,
+    "evolve_to": -1
+  }
+}

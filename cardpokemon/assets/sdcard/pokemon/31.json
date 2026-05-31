@@ -1,0 +1,30 @@
+{
+  "id": 31,
+  "name": "nidoqueen",
+  "names": {
+    "en": "nidoqueen",
+    "ko": "니드퀸",
+    "ja": "ニドクイン"
+  },
+  "types": [
+    "poison",
+    "ground"
+  ],
+  "stats": {
+    "hp": 90,
+    "attack": 92,
+    "defense": 87,
+    "special-attack": 75,
+    "special-defense": 85,
+    "speed": 76
+  },
+  "height": 13,
+  "weight": 600,
+  "png": "31.png",
+  "gif": "31.gif",
+  "game": {
+    "catch_rate": 45,
+    "evolve_level": -1,
+    "evolve_to": -1
+  }
+}

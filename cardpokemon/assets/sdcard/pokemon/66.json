@@ -1,0 +1,29 @@
+{
+  "id": 66,
+  "name": "machop",
+  "names": {
+    "en": "machop",
+    "ko": "알통몬",
+    "ja": "ワンリキー"
+  },
+  "types": [
+    "fighting"
+  ],
+  "stats": {
+    "hp": 70,
+    "attack": 80,
+    "defense": 50,
+    "special-attack": 35,
+    "special-defense": 35,
+    "speed": 35
+  },
+  "height": 8,
+  "weight": 195,
+  "png": "66.png",
+  "gif": "66.gif",
+  "game": {
+    "catch_rate": 95,
+    "evolve_level": 28,
+    "evolve_to": 67
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": 114,
+  "name": "tangela",
+  "names": {
+    "en": "tangela",
+    "ko": "덩쿠리",
+    "ja": "モンジャラ"
+  },
+  "types": [
+    "grass"
+  ],
+  "stats": {
+    "hp": 65,
+    "attack": 55,
+    "defense": 115,
+    "special-attack": 100,
+    "special-defense": 40,
+    "speed": 60
+  },
+  "height": 10,
+  "weight": 350,
+  "png": "114.png",
+  "gif": "114.gif",
+  "game": {
+    "catch_rate": 45,
+    "evolve_level": -1,
+    "evolve_to": 465
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": 139,
+  "name": "omastar",
+  "names": {
+    "en": "omastar",
+    "ko": "암스타",
+    "ja": "オムスター"
+  },
+  "types": [
+    "rock",
+    "water"
+  ],
+  "stats": {
+    "hp": 70,
+    "attack": 60,
+    "defense": 125,
+    "special-attack": 115,
+    "special-defense": 70,
+    "speed": 55
+  },
+  "height": 10,
+  "weight": 350,
+  "png": "139.png",
+  "gif": "139.gif",
+  "game": {
+    "catch_rate": 45,
+    "evolve_level": -1,
+    "evolve_to": -1
+  }
+}

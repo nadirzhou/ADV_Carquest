@@ -1,0 +1,30 @@
+{
+  "id": 121,
+  "name": "starmie",
+  "names": {
+    "en": "starmie",
+    "ko": "아쿠스타",
+    "ja": "スターミー"
+  },
+  "types": [
+    "water",
+    "psychic"
+  ],
+  "stats": {
+    "hp": 60,
+    "attack": 75,
+    "defense": 85,
+    "special-attack": 100,
+    "special-defense": 85,
+    "speed": 115
+  },
+  "height": 11,
+  "weight": 800,
+  "png": "121.png",
+  "gif": "121.gif",
+  "game": {
+    "catch_rate": 60,
+    "evolve_level": -1,
+    "evolve_to": -1
+  }
+}

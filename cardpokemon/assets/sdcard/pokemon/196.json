@@ -1,0 +1,29 @@
+{
+  "id": 196,
+  "name": "espeon",
+  "names": {
+    "en": "espeon",
+    "ko": "에브이",
+    "ja": "エーフィ"
+  },
+  "types": [
+    "psychic"
+  ],
+  "stats": {
+    "hp": 65,
+    "attack": 65,
+    "defense": 60,
+    "special-attack": 130,
+    "special-defense": 95,
+    "speed": 110
+  },
+  "height": 9,
+  "weight": 265,
+  "png": "196.png",
+  "gif": "196.gif",
+  "game": {
+    "catch_rate": 45,
+    "evolve_level": -1,
+    "evolve_to": -1
+  }
+}

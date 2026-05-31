@@ -1,0 +1,29 @@
+{
+  "id": 28,
+  "name": "sandslash",
+  "names": {
+    "en": "sandslash",
+    "ko": "고지",
+    "ja": "サンドパン"
+  },
+  "types": [
+    "ground"
+  ],
+  "stats": {
+    "hp": 75,
+    "attack": 100,
+    "defense": 110,
+    "special-attack": 45,
+    "special-defense": 55,
+    "speed": 65
+  },
+  "height": 10,
+  "weight": 295,
+  "png": "28.png",
+  "gif": "28.gif",
+  "game": {
+    "catch_rate": 90,
+    "evolve_level": -1,
+    "evolve_to": -1
+  }
+}

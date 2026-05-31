@@ -1,0 +1,30 @@
+{
+  "id": 49,
+  "name": "venomoth",
+  "names": {
+    "en": "venomoth",
+    "ko": "도나리",
+    "ja": "モルフォン"
+  },
+  "types": [
+    "bug",
+    "poison"
+  ],
+  "stats": {
+    "hp": 70,
+    "attack": 65,
+    "defense": 60,
+    "special-attack": 90,
+    "special-defense": 75,
+    "speed": 90
+  },
+  "height": 15,
+  "weight": 125,
+  "png": "49.png",
+  "gif": "49.gif",
+  "game": {
+    "catch_rate": 75,
+    "evolve_level": -1,
+    "evolve_to": -1
+  }
+}

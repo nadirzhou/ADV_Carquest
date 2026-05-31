@@ -1,0 +1,30 @@
+{
+  "id": 42,
+  "name": "golbat",
+  "names": {
+    "en": "golbat",
+    "ko": "골뱃",
+    "ja": "ゴルバット"
+  },
+  "types": [
+    "poison",
+    "flying"
+  ],
+  "stats": {
+    "hp": 75,
+    "attack": 80,
+    "defense": 70,
+    "special-attack": 65,
+    "special-defense": 75,
+    "speed": 90
+  },
+  "height": 16,
+  "weight": 550,
+  "png": "42.png",
+  "gif": "42.gif",
+  "game": {
+    "catch_rate": 90,
+    "evolve_level": -1,
+    "evolve_to": 169
+  }
+}

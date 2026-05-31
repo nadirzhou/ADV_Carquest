@@ -1,0 +1,29 @@
+{
+  "id": 115,
+  "name": "kangaskhan",
+  "names": {
+    "en": "kangaskhan",
+    "ko": "캥카",
+    "ja": "ガルーラ"
+  },
+  "types": [
+    "normal"
+  ],
+  "stats": {
+    "hp": 105,
+    "attack": 95,
+    "defense": 80,
+    "special-attack": 40,
+    "special-defense": 80,
+    "speed": 90
+  },
+  "height": 22,
+  "weight": 800,
+  "png": "115.png",
+  "gif": "115.gif",
+  "game": {
+    "catch_rate": 45,
+    "evolve_level": -1,
+    "evolve_to": -1
+  }
+}

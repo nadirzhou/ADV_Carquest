@@ -1,0 +1,29 @@
+{
+  "id": 129,
+  "name": "magikarp",
+  "names": {
+    "en": "magikarp",
+    "ko": "잉어킹",
+    "ja": "コイキング"
+  },
+  "types": [
+    "water"
+  ],
+  "stats": {
+    "hp": 20,
+    "attack": 10,
+    "defense": 55,
+    "special-attack": 15,
+    "special-defense": 20,
+    "speed": 80
+  },
+  "height": 9,
+  "weight": 100,
+  "png": "129.png",
+  "gif": "129.gif",
+  "game": {
+    "catch_rate": 95,
+    "evolve_level": 20,
+    "evolve_to": 130
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": 55,
+  "name": "golduck",
+  "names": {
+    "en": "golduck",
+    "ko": "골덕",
+    "ja": "ゴルダック"
+  },
+  "types": [
+    "water"
+  ],
+  "stats": {
+    "hp": 80,
+    "attack": 82,
+    "defense": 78,
+    "special-attack": 95,
+    "special-defense": 80,
+    "speed": 85
+  },
+  "height": 17,
+  "weight": 766,
+  "png": "55.png",
+  "gif": "55.gif",
+  "game": {
+    "catch_rate": 75,
+    "evolve_level": -1,
+    "evolve_to": -1
+  }
+}

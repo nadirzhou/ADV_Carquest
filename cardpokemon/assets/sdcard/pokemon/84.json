@@ -1,0 +1,30 @@
+{
+  "id": 84,
+  "name": "doduo",
+  "names": {
+    "en": "doduo",
+    "ko": "두두",
+    "ja": "ドードー"
+  },
+  "types": [
+    "normal",
+    "flying"
+  ],
+  "stats": {
+    "hp": 35,
+    "attack": 85,
+    "defense": 45,
+    "special-attack": 35,
+    "special-defense": 35,
+    "speed": 75
+  },
+  "height": 14,
+  "weight": 392,
+  "png": "84.png",
+  "gif": "84.gif",
+  "game": {
+    "catch_rate": 95,
+    "evolve_level": 31,
+    "evolve_to": 85
+  }
+}

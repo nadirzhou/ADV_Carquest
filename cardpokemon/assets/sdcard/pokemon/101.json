@@ -1,0 +1,29 @@
+{
+  "id": 101,
+  "name": "electrode",
+  "names": {
+    "en": "electrode",
+    "ko": "붐볼",
+    "ja": "マルマイン"
+  },
+  "types": [
+    "electric"
+  ],
+  "stats": {
+    "hp": 60,
+    "attack": 50,
+    "defense": 70,
+    "special-attack": 80,
+    "special-defense": 80,
+    "speed": 150
+  },
+  "height": 12,
+  "weight": 666,
+  "png": "101.png",
+  "gif": "101.gif",
+  "game": {
+    "catch_rate": 60,
+    "evolve_level": -1,
+    "evolve_to": -1
+  }
+}

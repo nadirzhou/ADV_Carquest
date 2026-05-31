@@ -1,0 +1,30 @@
+{
+  "id": 199,
+  "name": "slowking",
+  "names": {
+    "en": "slowking",
+    "ko": "야도킹",
+    "ja": "ヤドキング"
+  },
+  "types": [
+    "water",
+    "psychic"
+  ],
+  "stats": {
+    "hp": 95,
+    "attack": 75,
+    "defense": 80,
+    "special-attack": 100,
+    "special-defense": 110,
+    "speed": 30
+  },
+  "height": 20,
+  "weight": 795,
+  "png": "199.png",
+  "gif": "199.gif",
+  "game": {
+    "catch_rate": 70,
+    "evolve_level": -1,
+    "evolve_to": -1
+  }
+}

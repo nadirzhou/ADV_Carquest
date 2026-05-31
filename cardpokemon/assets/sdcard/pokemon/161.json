@@ -1,0 +1,29 @@
+{
+  "id": 161,
+  "name": "sentret",
+  "names": {
+    "en": "sentret",
+    "ko": "꼬리선",
+    "ja": "オタチ"
+  },
+  "types": [
+    "normal"
+  ],
+  "stats": {
+    "hp": 35,
+    "attack": 46,
+    "defense": 34,
+    "special-attack": 35,
+    "special-defense": 45,
+    "speed": 20
+  },
+  "height": 8,
+  "weight": 60,
+  "png": "161.png",
+  "gif": "161.gif",
+  "game": {
+    "catch_rate": 95,
+    "evolve_level": 15,
+    "evolve_to": 162
+  }
+}

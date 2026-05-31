@@ -1,0 +1,29 @@
+{
+  "id": 26,
+  "name": "raichu",
+  "names": {
+    "en": "raichu",
+    "ko": "라이츄",
+    "ja": "ライチュウ"
+  },
+  "types": [
+    "electric"
+  ],
+  "stats": {
+    "hp": 60,
+    "attack": 90,
+    "defense": 55,
+    "special-attack": 90,
+    "special-defense": 80,
+    "speed": 110
+  },
+  "height": 8,
+  "weight": 300,
+  "png": "26.png",
+  "gif": "26.gif",
+  "game": {
+    "catch_rate": 75,
+    "evolve_level": -1,
+    "evolve_to": -1
+  }
+}

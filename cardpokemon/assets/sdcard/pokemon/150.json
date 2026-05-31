@@ -1,0 +1,29 @@
+{
+  "id": 150,
+  "name": "mewtwo",
+  "names": {
+    "en": "mewtwo",
+    "ko": "뮤츠",
+    "ja": "ミュウツー"
+  },
+  "types": [
+    "psychic"
+  ],
+  "stats": {
+    "hp": 106,
+    "attack": 110,
+    "defense": 90,
+    "special-attack": 154,
+    "special-defense": 90,
+    "speed": 130
+  },
+  "height": 20,
+  "weight": 1220,
+  "png": "150.png",
+  "gif": "150.gif",
+  "game": {
+    "catch_rate": 3,
+    "evolve_level": -1,
+    "evolve_to": -1
+  }
+}

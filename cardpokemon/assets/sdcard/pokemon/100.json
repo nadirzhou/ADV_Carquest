@@ -1,0 +1,29 @@
+{
+  "id": 100,
+  "name": "voltorb",
+  "names": {
+    "en": "voltorb",
+    "ko": "찌리리공",
+    "ja": "ビリリダマ"
+  },
+  "types": [
+    "electric"
+  ],
+  "stats": {
+    "hp": 40,
+    "attack": 30,
+    "defense": 50,
+    "special-attack": 55,
+    "special-defense": 55,
+    "speed": 100
+  },
+  "height": 5,
+  "weight": 104,
+  "png": "100.png",
+  "gif": "100.gif",
+  "game": {
+    "catch_rate": 95,
+    "evolve_level": 30,
+    "evolve_to": 101
+  }
+}

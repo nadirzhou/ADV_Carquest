@@ -1,0 +1,29 @@
+{
+  "id": 135,
+  "name": "jolteon",
+  "names": {
+    "en": "jolteon",
+    "ko": "쥬피썬더",
+    "ja": "サンダース"
+  },
+  "types": [
+    "electric"
+  ],
+  "stats": {
+    "hp": 65,
+    "attack": 65,
+    "defense": 60,
+    "special-attack": 110,
+    "special-defense": 95,
+    "speed": 130
+  },
+  "height": 8,
+  "weight": 245,
+  "png": "135.png",
+  "gif": "135.gif",
+  "game": {
+    "catch_rate": 45,
+    "evolve_level": -1,
+    "evolve_to": -1
+  }
+}

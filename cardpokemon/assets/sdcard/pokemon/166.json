@@ -1,0 +1,30 @@
+{
+  "id": 166,
+  "name": "ledian",
+  "names": {
+    "en": "ledian",
+    "ko": "레디안",
+    "ja": "レディアン"
+  },
+  "types": [
+    "bug",
+    "flying"
+  ],
+  "stats": {
+    "hp": 55,
+    "attack": 35,
+    "defense": 50,
+    "special-attack": 55,
+    "special-defense": 110,
+    "speed": 85
+  },
+  "height": 14,
+  "weight": 356,
+  "png": "166.png",
+  "gif": "166.gif",
+  "game": {
+    "catch_rate": 90,
+    "evolve_level": -1,
+    "evolve_to": -1
+  }
+}
