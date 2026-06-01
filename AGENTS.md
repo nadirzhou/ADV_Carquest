@@ -94,6 +94,7 @@ See `docs/CARQUEST_DESIGN.md` and `docs/FIRMWARE_STATUS.md`.
 - `cardpokemon/`: standalone CardPokemon firmware, docs, SD resource pack tooling and generated SD assets.
 - `cardpokemon/main/cardpokemon_main.cpp`: CardPokemon gameplay, rendering, SD catalog loading, input, save/load.
 - `cardpokemon/tools/fetch_pokemon_assets.py`: downloads and preprocesses PokeAPI JSON/PNG/GIF resources for the SD card.
+- `cardpokemon/docs/AGENT_WORKFLOW.md`: CardPokemon sub-agent workflow, roles, file ownership, handoff format and verification rules.
 - `main/apps/app_signal_quest/app_signal_quest.cpp`: CarQuest gameplay, rendering, input, save/load.
 - `main/apps/app_signal_quest/app_signal_quest.h`: CarQuest state and method declarations.
 - `main/apps/app_signal_quest/assets/`: CarQuest app icon assets.

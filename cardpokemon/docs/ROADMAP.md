@@ -4,6 +4,8 @@ This plan treats CardPokemon as a standalone Cardputer ADV game, not a launcher 
 
 For the full gameplay specification, see `GAME_DESIGN.md`.
 
+For the sub-agent collaboration model, see `AGENT_WORKFLOW.md`.
+
 ## Phase 0: Isolation And First Playable Build
 
 Status: complete.
@@ -53,6 +55,7 @@ Status: initial implementation complete.
 - Pokedex 2x4 grid browser with detail page
 - Refactored encounter logic: GPS movement gates encounters; IMU heat tunes encounter distance, rarity and wild level
 - GPS speed-aware IMU scaling: walking dampens level pressure, driving preserves stronger road-intensity effects
+- Sub-agent workflow documented for firmware/gameplay/UI/assets/Docs-QA collaboration
 
 ## Phase 4: Visual Identity
 

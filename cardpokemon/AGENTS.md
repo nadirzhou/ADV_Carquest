@@ -59,12 +59,15 @@ The startup logo is firmware-embedded at `main/assets/cardpokemon_logo.png`; it 
 - `docs/ROADMAP.md`: phased project plan.
 - `docs/RESOURCE_PACK.md`: SD card layout and manifest contract.
 - `docs/ARCHITECTURE.md`: firmware architecture notes.
+- `docs/AGENT_WORKFLOW.md`: sub-agent collaboration model, file ownership, handoff format and build/flash rules.
 
 ## Development Notes
 
 Keep CardPokemon isolated inside this directory. Avoid changes to the legacy launcher or CarQuest app unless the user explicitly asks for integration work.
 
 The compact display needs stable, low-noise screens. Prefer paging or replacing existing rows over adding crowded text.
+
+Use the sub-agent workflow in `docs/AGENT_WORKFLOW.md` for substantial work. The main agent owns final integration, verification, docs updates and any flash step.
 
 Current encounter rule:
 

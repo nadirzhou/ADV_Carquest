@@ -96,12 +96,19 @@ cardpokemon/
     README.md
   docs/
     ARCHITECTURE.md
+    AGENT_WORKFLOW.md
     GAME_DESIGN.md
     RESOURCE_PACK.md
     ROADMAP.md
   tools/
     README.md
 ```
+
+## Agent Workflow
+
+Future work should follow the sub-agent workflow in `docs/AGENT_WORKFLOW.md`.
+
+The main agent owns final integration, build, flash and documentation updates. Focused sub-agents can be used for firmware, gameplay, UI, assets and Docs/QA work so changes stay scoped and easier to review.
 
 ## Build Direction
 
